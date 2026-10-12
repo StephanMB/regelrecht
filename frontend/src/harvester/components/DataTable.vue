@@ -58,7 +58,7 @@ function formatCellValue(value, key) {
     >
       <nldd-button
         slot="actions"
-        variant="secondary"
+        appearance="secondary"
         text="Clear filters"
         @click="clearFilters"
       />
@@ -67,7 +67,7 @@ function formatCellValue(value, key) {
       <slot name="empty-action" />
     </nldd-inline-dialog>
 
-    <nldd-list v-else variant="simple">
+    <nldd-list v-else appearance="simple">
       <!-- Data rows -->
       <slot name="rows" :data="data" :columns="columns">
         <nldd-list-item
@@ -124,7 +124,7 @@ function formatCellValue(value, key) {
             <nldd-text-cell
               v-else
               :text="formatCellValue(row[col.key], col.key) || '—'"
-              :color="formatCellValue(row[col.key], col.key) ? 'default' : 'secondary'"
+              :color="formatCellValue(row[col.key], col.key) ? 'content' : 'secondary'"
               :width="col.width || 'stretch'"
               :min-width="col.minWidth"
               :horizontal-alignment="col.align"

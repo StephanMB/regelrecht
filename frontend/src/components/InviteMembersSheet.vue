@@ -139,8 +139,8 @@ defineExpose({ show });
             :text="`${inviteResult.succeeded.length} uitnodiging${inviteResult.succeeded.length === 1 ? '' : 'en'} verstuurd`"
             supporting-text="Toegang wordt actief bij de eerste login."
           >
-            <nldd-button slot="actions" variant="primary" size="md" width="full" text="Sluit" @click="closeInvite"></nldd-button>
-            <nldd-button slot="actions" variant="secondary" size="md" width="full" text="Meer uitnodigen" @click="inviteAgain"></nldd-button>
+            <nldd-button slot="actions" appearance="primary" size="md" width="full" text="Sluit" @click="closeInvite"></nldd-button>
+            <nldd-button slot="actions" appearance="secondary" size="md" width="full" text="Meer uitnodigen" @click="inviteAgain"></nldd-button>
           </nldd-inline-dialog>
 
           <nldd-form v-else>
@@ -154,16 +154,18 @@ defineExpose({ show });
                   accessible-label="E-mailadressen"
                   placeholder="Toevoegen..."
                   :invalid="inviteError ? true : undefined"
-                  :error-message="inviteError ? 'invite-email-error' : undefined"
+                  :unmet="inviteError ? 'invite-email-error' : undefined"
                   @change="onEmailsChange"
                   @input="onEmailsInput"
                 ></nldd-token-field>
                 <nldd-form-field-help-text>
                   Typ een adres en gebruik een komma om nog een adres in te voeren. Toegang tot '{{ trajectName }}' wordt actief bij de eerste login.
                 </nldd-form-field-help-text>
-                <nldd-form-field-error-text id="invite-email-error">
-                  {{ inviteError }}
-                </nldd-form-field-error-text>
+                <nldd-validation-list>
+                  <nldd-validation-item id="invite-email-error">
+                    {{ inviteError }}
+                  </nldd-validation-item>
+                </nldd-validation-list>
               </nldd-form-field>
 
               <nldd-form-field label="Rol">
@@ -172,7 +174,7 @@ defineExpose({ show });
                   <nldd-toggle-button value="owner" text="Beheerder" :selected="inviteRole === 'owner' || undefined"></nldd-toggle-button>
                 </nldd-toggle-button-group>
                 <nldd-form-field-help-text>
-                  Een bijdrager kan wetten en scenario's in dit traject bekijken en bewerken. Een beheerder kan daarnaast ook leden en instellingen van dit traject aanpassen.
+                  Een bijdrager kan regelwerken en scenario's in dit traject bekijken en bewerken. Een beheerder kan daarnaast ook leden en instellingen van dit traject aanpassen.
                 </nldd-form-field-help-text>
               </nldd-form-field>
 
@@ -189,7 +191,7 @@ defineExpose({ show });
 
               <nldd-form-actions>
                 <nldd-button
-                  variant="primary"
+                  appearance="primary"
                   size="md"
                   type="submit"
                   width="full"

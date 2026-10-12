@@ -557,6 +557,7 @@ async fn process_next_job(
             } else {
                 for provider_name in crate::enrich::ENRICH_PROVIDERS {
                     let enrich_payload = EnrichPayload {
+                        pass: Default::default(),
                         law_id: job.law_id.clone(),
                         yaml_path: result.file_path.clone(),
                         provider: Some((*provider_name).to_string()),
@@ -575,6 +576,8 @@ async fn process_next_job(
                         new_law: None,
                         chunk_articles: None,
                         skip_mvt: None,
+                        // Queue payload: a session never outlives its window.
+                        session: None,
                     };
                     let payload_json = match serde_json::to_value(&enrich_payload) {
                         Ok(json) => json,
@@ -1192,8 +1195,29 @@ enum RelatedResolution {
     Resolved(String),
     /// SRU search matched more than one law — a human must pick; skip for now.
     NeedsConfirmation,
-    /// No candidate (unknown slug, zero SRU hits, or a lookup error). Skip.
+    /// No candidate: unknown slug or zero SRU hits. Skip.
     Unresolved,
+    /// The source could not be asked — a throttle or an outage at
+    /// wetten.overheid.nl. Distinct from `Unresolved` on purpose: the law may
+    /// well exist, so counting this as "not found" hides an incomplete
+    /// enrichment behind a normal-looking number.
+    LookupFailed,
+}
+
+/// Map an SRU search outcome onto a resolution. Only an unambiguous single hit
+/// with a well-formed BWB id resolves; a malformed id must not slip into a
+/// harvest payload.
+fn classify_sru_result(
+    results: std::result::Result<Vec<crate::api::bwb_search::BwbSearchResult>, String>,
+) -> RelatedResolution {
+    match results {
+        Ok(results) if results.len() == 1 && is_valid_bwb_id(&results[0].bwb_id) => {
+            RelatedResolution::Resolved(results[0].bwb_id.clone())
+        }
+        Ok(results) if results.len() > 1 => RelatedResolution::NeedsConfirmation,
+        Ok(_) => RelatedResolution::Unresolved,
+        Err(_) => RelatedResolution::LookupFailed,
+    }
 }
 
 /// Resolve a related-legislation entry to a BWB id via the hybrid order:
@@ -1237,17 +1261,11 @@ async fn resolve_related_bwb_id(
     // (c) SRU search by name — accept only an unambiguous single hit, and only
     // if it is a well-formed BWB id (paths a/b validate too; don't let a
     // malformed SRU id slip into a harvest payload).
-    match crate::api::bwb_search::search_bwb_by_name(http_client, &entry.name).await {
-        Ok(results) if results.len() == 1 && is_valid_bwb_id(&results[0].bwb_id) => {
-            RelatedResolution::Resolved(results[0].bwb_id.clone())
-        }
-        Ok(results) if results.len() > 1 => RelatedResolution::NeedsConfirmation,
-        Ok(_) => RelatedResolution::Unresolved,
-        Err(e) => {
-            tracing::warn!(name = %entry.name, error = %e, "SRU search failed for related legislation");
-            RelatedResolution::Unresolved
-        }
+    let results = crate::api::bwb_search::search_bwb_by_name(http_client, &entry.name).await;
+    if let Err(e) = &results {
+        tracing::warn!(name = %entry.name, error = %e, "SRU search failed for related legislation");
     }
+    classify_sru_result(results)
 }
 
 /// Resolve every related-legislation entry declared by an enrichment and enqueue
@@ -1275,6 +1293,7 @@ async fn harvest_related_legislation(
     let mut exhausted = 0u32;
     let mut needs_confirmation = 0u32;
     let mut unresolved = 0u32;
+    let mut lookup_failed = 0u32;
 
     for entry in related {
         let bwb_id = match resolve_related_bwb_id(pool, http_client, entry).await {
@@ -1290,6 +1309,15 @@ async fn harvest_related_legislation(
             }
             RelatedResolution::Unresolved => {
                 unresolved += 1;
+                continue;
+            }
+            RelatedResolution::LookupFailed => {
+                lookup_failed += 1;
+                tracing::warn!(
+                    parent_law_id = %parent_law_id,
+                    name = %entry.name,
+                    "related legislation could not be looked up: enrichment is incomplete for this entry"
+                );
                 continue;
             }
         };
@@ -1343,6 +1371,7 @@ async fn harvest_related_legislation(
         exhausted,
         needs_confirmation,
         unresolved,
+        lookup_failed,
         "related-legislation harvest summary"
     );
 }
@@ -1675,7 +1704,10 @@ async fn process_next_law_convert_job(
                             assignee_account_id: Some(account_id),
                             traject_id: Some(payload.traject_id),
                             job_id: Some(job.id),
-                            title: format!("Conversie naar wet mislukt: {}", payload.filename),
+                            title: format!(
+                                "Conversie naar regelwerk mislukt: {}",
+                                payload.filename
+                            ),
                             payload: Some(serde_json::json!({
                                 "traject_ref": payload.traject_ref,
                                 "filename": payload.filename,
@@ -1877,7 +1909,7 @@ pub async fn materialize_task_workdir(
 /// gewoon worden aangemaakt en zou de gebruiker een taak openen die per
 /// definitie niet af te maken is.
 pub(crate) const NO_REVIEWABLE_LAW: &str =
-    "de verrijking leverde geen wet-YAML op om te beoordelen";
+    "de verrijking leverde geen regelwerk op om te beoordelen";
 
 /// Whether an enrich run wrote something the review UI can actually open.
 ///
@@ -1968,20 +2000,33 @@ pub(crate) fn changed_articles(source_yaml: &str, proposal_yaml: &str) -> Option
 /// Taak-flow succes: schrijf de door de enrichment aangeraakte bestanden als
 /// result-blobs, verwijder de input-blobs, complete de job en maak de
 /// review-taak aan — alles in één transactie.
+///
+/// Is de wet na dit venster nog niet af (`law_complete == false`), dan komt er
+/// in dezelfde transactie een vervolgjob bij. Zijn input is het resultaat van
+/// deze job: het voorstel, zodat het volgende venster voortbouwt op wat hier
+/// verrijkt is, en de `.enrichment.yaml` met de cursor, zodat het weet waar het
+/// verder moet. Elk venster wordt zo een eigen verrijking met eigen
+/// review-taken; de diff tegen zijn input bevat alleen wat dát venster deed.
 pub async fn finish_enrich_task_job(
     pool: &PgPool,
     job: &crate::models::Job,
     workdir: &Path,
     written_files: &[std::path::PathBuf],
+    law_complete: bool,
     result_json: Option<serde_json::Value>,
-) -> Result<()> {
+) -> Result<Option<crate::models::Job>> {
     let payload: EnrichPayload = serde_json::from_value(job.payload.clone().unwrap_or_default())
         .map_err(|e| PipelineError::Enrich(format!("invalid enrich payload: {e}")))?;
 
     // Vóór de transactie, want delete_blobs_for_job hieronder gooit de
     // input-blobs weg: dit is de bronsnapshot waartegen we de proposal diffen.
-    let source_yaml = crate::tasks::load_blobs(pool, job.id, crate::tasks::BlobKind::Input)
-        .await?
+    let inputs = crate::tasks::load_blobs(pool, job.id, crate::tasks::BlobKind::Input).await?;
+    // Alleen een vervolgjob krijgt de cursor-sidecar mee; de eerste job van
+    // een reeks heeft enkel de wet-YAML uit de editor als input.
+    let continuation_input = inputs
+        .iter()
+        .any(|b| Path::new(&b.path).file_name() == Some(std::ffi::OsStr::new(".enrichment.yaml")));
+    let source_yaml = inputs
         .into_iter()
         .find(|b| b.path == payload.yaml_path)
         .map(|b| b.content);
@@ -1989,6 +2034,7 @@ pub async fn finish_enrich_task_job(
     let mut tx = pool.begin().await?;
     crate::tasks::delete_blobs_for_job(&mut *tx, job.id).await?;
     let mut proposal_yaml: Option<String> = None;
+    let mut result_blobs: Vec<(String, String)> = Vec::new();
     for abs in written_files {
         let rel = abs
             .strip_prefix(workdir)
@@ -2012,6 +2058,7 @@ pub async fn finish_enrich_task_job(
             &content,
         )
         .await?;
+        result_blobs.push((rel, content));
     }
     job_queue::complete_job(&mut *tx, job.id, result_json).await?;
     // Een nieuwe wet (geketend vanuit law_convert) krijgt een eigen titel en
@@ -2046,17 +2093,64 @@ pub async fn finish_enrich_task_job(
         }
     };
 
-    match per_article {
-        Some(articles) if !articles.is_empty() => {
-            tracing::info!(
-                job_id = %job.id,
-                law_id = %payload.law_id,
-                articles = articles.len(),
-                "review-taken per artikel aangemaakt"
-            );
-            for number in articles {
-                let mut article_payload = task_payload.clone();
-                article_payload["article"] = serde_json::json!(number);
+    // Binnen een reeks vensters van een bestaande wet is die terugval er niet,
+    // ook niet in het laatste venster: het voorstel bevat dan ook de nog niet
+    // beoordeelde (of afgewezen) artikelen van eerdere vensters, en één taak
+    // voor het geheel zou die ongezien terugzetten. Alleen een wet die in één
+    // venster past, diffte tegen de echte traject-snapshot. De transactie rolt
+    // terug en de aanroeper probeert het venster opnieuw.
+    if per_article.is_none() && !new_law && (!law_complete || continuation_input) {
+        return Err(PipelineError::Enrich(
+            "voorstel van dit venster is niet per artikel te vergelijken met de bron".into(),
+        ));
+    }
+
+    // Een nieuwe wet wordt als geheel aangemaakt: de tussenvensters leveren
+    // nog geen taak op, het laatste venster de hele wet als één voorstel.
+    if new_law && !law_complete {
+        tracing::info!(
+            job_id = %job.id,
+            law_id = %payload.law_id,
+            "nieuwe wet nog niet af; de review-taak volgt na het laatste venster"
+        );
+    } else {
+        match per_article {
+            // Een lege lijst betekent: de proposal verschilt nergens van de
+            // bron. Dan valt er niets te beoordelen en komt er geen taak; de
+            // job is klaar (bij een venster: het volgende venster volgt).
+            Some(articles) => {
+                tracing::info!(
+                    job_id = %job.id,
+                    law_id = %payload.law_id,
+                    articles = articles.len(),
+                    "review-taken per gewijzigd artikel (0 = geen wijziging, geen taak)"
+                );
+                for number in articles {
+                    let mut article_payload = task_payload.clone();
+                    article_payload["article"] = serde_json::json!(number);
+                    crate::tasks::create_task(
+                        &mut *tx,
+                        crate::tasks::NewTask {
+                            task_type: crate::tasks::TaskType::JobReview,
+                            assignee_account_id: payload.requested_by,
+                            traject_id: payload.traject_id,
+                            job_id: Some(job.id),
+                            title: format!(
+                                "Verrijking beoordelen: {} artikel {}",
+                                payload.law_id, number
+                            ),
+                            payload: Some(article_payload),
+                        },
+                    )
+                    .await?;
+                }
+            }
+            None => {
+                let title = if new_law {
+                    format!("Nieuw regelwerk beoordelen: {}", payload.law_id)
+                } else {
+                    format!("Verrijking beoordelen: {}", payload.law_id)
+                };
                 crate::tasks::create_task(
                     &mut *tx,
                     crate::tasks::NewTask {
@@ -2064,47 +2158,70 @@ pub async fn finish_enrich_task_job(
                         assignee_account_id: payload.requested_by,
                         traject_id: payload.traject_id,
                         job_id: Some(job.id),
-                        title: format!(
-                            "Verrijking beoordelen: {} artikel {}",
-                            payload.law_id, number
-                        ),
-                        payload: Some(article_payload),
+                        title,
+                        payload: Some(task_payload),
                     },
                 )
                 .await?;
             }
         }
-        // Leeg betekent: de proposal verschilt nergens van de bron. Dan valt er
-        // niets te beoordelen en hoort er geen taak te komen; de job is klaar.
-        Some(_) => {
-            tracing::info!(
+    }
+
+    let continuation = if law_complete {
+        None
+    } else {
+        // Na `complete_job` in dezelfde transactie, zodat
+        // `idx_unique_active_enrich_job` deze job niet meer als actief ziet
+        // (zelfde patroon als `complete_enrich_success_tx`).
+        let next_json = serde_json::to_value(&payload).map_err(|e| {
+            PipelineError::Enrich(format!("serialize continuation enrich payload: {e}"))
+        })?;
+        let mut req = CreateJobRequest::new(JobType::Enrich, &job.law_id)
+            .with_priority(Priority::new(job.priority))
+            .with_payload(next_json)
+            .with_max_attempts(job.max_attempts);
+        if let Some(ref traject_ref) = payload.traject_ref {
+            req = req.with_traject_ref(traject_ref.clone());
+        }
+        let created = job_queue::create_enrich_job_if_not_exists(&mut *tx, req).await?;
+        match &created {
+            Some(next) => {
+                // Alleen de wet en zijn sidecars (de cursor): wat de agent
+                // verder schreef, zoals `features/*.feature` met een vrij
+                // gekozen naam, kan bij het materialiseren stranden.
+                let carried = result_blobs.iter().filter(|(rel, _)| {
+                    rel == &payload.yaml_path
+                        || Path::new(rel)
+                            .file_name()
+                            .and_then(|n| n.to_str())
+                            .is_some_and(|n| n.starts_with('.'))
+                });
+                for (rel, content) in carried {
+                    crate::tasks::insert_blob(
+                        &mut *tx,
+                        next.id,
+                        crate::tasks::BlobKind::Input,
+                        rel,
+                        content,
+                    )
+                    .await?;
+                }
+            }
+            // In de praktijk onbereikbaar: zolang deze job `processing` was,
+            // weigerde de index elke tweede actieve verrijking van deze wet in
+            // dit traject, dus na `complete_job` staat er niets om mee te
+            // botsen. Mocht het toch gebeuren, dan stopt de reeks hier.
+            None => tracing::warn!(
                 job_id = %job.id,
                 law_id = %payload.law_id,
-                "verrijking leverde geen wijziging op, geen review-taak"
-            );
+                "vervolgjob niet aangemaakt: er loopt al een verrijking voor deze wet"
+            ),
         }
-        None => {
-            let title = if new_law {
-                format!("Nieuwe wet beoordelen: {}", payload.law_id)
-            } else {
-                format!("Verrijking beoordelen: {}", payload.law_id)
-            };
-            crate::tasks::create_task(
-                &mut *tx,
-                crate::tasks::NewTask {
-                    task_type: crate::tasks::TaskType::JobReview,
-                    assignee_account_id: payload.requested_by,
-                    traject_id: payload.traject_id,
-                    job_id: Some(job.id),
-                    title,
-                    payload: Some(task_payload),
-                },
-            )
-            .await?;
-        }
-    }
+        created
+    };
+
     tx.commit().await?;
-    Ok(())
+    Ok(continuation)
 }
 
 /// Taak-flow succes voor document-convert: sla de gegenereerde markdown op
@@ -2184,7 +2301,7 @@ async fn finalize_failed_task_job_tx(
         // De geketende enrich van een geüploade wet: de gebruiker kent geen
         // "verrijking", alleen de wet die er niet kwam. De input-blob (de
         // basis-YAML) gaat hier mee weg; opnieuw uploaden is het herstel.
-        format!("Wet aanmaken mislukt: {}", payload.law_id)
+        format!("Regelwerk aanmaken mislukt: {}", payload.law_id)
     } else {
         format!("Verrijking mislukt: {}", payload.law_id)
     };
@@ -2256,6 +2373,15 @@ pub async fn fail_enrich_task_job_with_retry(
     Ok(())
 }
 
+/// Of de taak-flow na deze run klaar is met de wet, of er een vervolgjob moet
+/// komen.
+///
+/// Zonder vertaalstap (`ENRICH_STEPS` zonder `window`) schuift de cursor niet
+/// op; een vervolgjob zou hetzelfde venster dan eindeloos herhalen.
+fn task_walk_complete(law_complete: bool, steps: crate::enrich::RunSteps) -> bool {
+    law_complete || !steps.window
+}
+
 /// Taak-flow-verwerking van een enrich-job: werkdirectory uit input-blobs,
 /// enrichment draaien, resultaat als blobs + taak terugschrijven. Raakt
 /// bewust geen law_entries, untranslatables of vervolg-harvests aan: dit is
@@ -2303,13 +2429,11 @@ async fn process_enrich_task_job(
     }
 
     let mut bounded_config = effective_config.clone();
-    if bounded_config.timeout >= job_timeout {
-        bounded_config.timeout = job_timeout.saturating_sub(Duration::from_secs(30));
-    }
-    // Taak-flow verrijkt altijd de hele wet in één sessie: het resultaat wordt
-    // een review-taak (blobs), niet een push naar de enrich-branch, dus er is
-    // geen cursor-persistentie of continuation-lus om op te bouwen.
-    bounded_config.max_articles_per_run = 0;
+    bound_llm_timeout(&mut bounded_config, job_timeout);
+    // De taak-flow loopt in vensters, net als het corpus-pad: een grote wet in
+    // één sessie haalt de timeout per agent-call niet (de Kieswet, 593
+    // artikelen). De cursor reist mee in de `.enrichment.yaml` die
+    // `finish_enrich_task_job` als input-blob aan de vervolgjob doorgeeft.
 
     let outcome = tokio::time::timeout(
         job_timeout,
@@ -2363,12 +2487,34 @@ async fn process_enrich_task_job(
                     None
                 }
             };
-            if let Err(e) =
-                finish_enrich_task_job(pool, job, workdir.path(), &written_files, result_json).await
+            let law_complete = task_walk_complete(result.law_complete, bounded_config.steps);
+            match finish_enrich_task_job(
+                pool,
+                job,
+                workdir.path(),
+                &written_files,
+                law_complete,
+                result_json,
+            )
+            .await
             {
-                // Persist-fout is retryable (DB-hik).
-                tracing::error!(job_id = %job.id, error = %e, "taak-resultaat wegschrijven mislukt");
-                fail_enrich_task_job_with_retry(pool, job, &e.to_string()).await?;
+                Ok(Some(continuation)) => {
+                    tracing::info!(
+                        job_id = %job.id,
+                        continuation_job_id = %continuation.id,
+                        law_id = %job.law_id,
+                        enrich_cursor = result.enrich_cursor,
+                        "wet nog niet af na dit venster; vervolgjob aangemaakt"
+                    );
+                }
+                Ok(None) => {}
+                Err(e) => {
+                    // Een DB-hik bij het wegschrijven, of een voorstel dat niet per
+                    // artikel te vergelijken is; de fout noemt de oorzaak. Retry
+                    // zolang er pogingen over zijn.
+                    tracing::error!(job_id = %job.id, error = %e, "taak-resultaat afronden mislukt");
+                    fail_enrich_task_job_with_retry(pool, job, &e.to_string()).await?;
+                }
             }
             Ok(JobOutcome::Processed)
         }
@@ -2406,15 +2552,31 @@ pub async fn complete_enrich_success_tx(
 ) -> Result<Option<crate::models::Job>> {
     let mut tx = pool.begin().await?;
     job_queue::complete_job(&mut *tx, job.id, result_json).await?;
-    // Mirror the captured untranslatables into their table so they
-    // surface in the harvester UI. Atomic with the completion:
-    // delete-and-replace per (law_id, provider).
+    // Mirror the captured flags into their tables so they surface in the
+    // harvester UI. Atomic with the completion: delete-and-replace per
+    // (law_id, provider).
+    //
+    // Both channels are written on every run, and which one carries anything
+    // follows from the law's schema version: a law on v0.5.x yields
+    // untranslatables and no markings, one on v0.7.0 the reverse. Writing both
+    // unconditionally is what makes a migration safe in either direction,
+    // because each call clears its own table for this (law, provider) before
+    // inserting. Skipping the empty one would leave the other channel's stale
+    // rows standing after a law changed schema version.
     crate::untranslatables::replace_untranslatables(
         &mut tx,
         &result.law_id,
         &result.provider,
         job.id,
         &result.untranslatables,
+    )
+    .await?;
+    crate::markings::replace_markings(
+        &mut tx,
+        &result.law_id,
+        &result.provider,
+        job.id,
+        &result.markings,
     )
     .await?;
 
@@ -2426,6 +2588,7 @@ pub async fn complete_enrich_success_tx(
         // cursor on the enrich branch at claim time, so it does NOT ride in
         // the queue payload (`chunk_articles`/`skip_mvt` stay transport-only).
         let continuation_payload = EnrichPayload {
+            pass: Default::default(),
             law_id: payload.law_id.clone(),
             yaml_path: payload.yaml_path.clone(),
             provider: Some(result.provider.clone()),
@@ -2438,6 +2601,8 @@ pub async fn complete_enrich_success_tx(
             new_law: None,
             chunk_articles: None,
             skip_mvt: None,
+            // The continuation is a new window and opens its own session.
+            session: None,
         };
         let continuation_json = serde_json::to_value(&continuation_payload).map_err(|e| {
             PipelineError::Enrich(format!("serialize continuation enrich payload: {e}"))
@@ -2468,6 +2633,45 @@ pub async fn complete_enrich_success_tx(
     tx.commit().await?;
     Ok(continuation)
 }
+
+/// Shrink the per-call LLM timeouts so a whole run fits the job budget.
+///
+/// A run is not one agent call. Translation, the feedback rounds of every
+/// gate, the closing pass and the final gates all count, as many as
+/// `ENRICH_FEEDBACK_ROUNDS` allows ([`FeedbackRounds::max_calls`]), and the
+/// job timeout covers all of them at once, so each call gets a share of the
+/// budget (minus a reserve for commit and cleanup). Lowering a ceiling is
+/// right here: a call that would overrun the job is a call whose result is
+/// thrown away.
+///
+/// The shares are not equal. The translation reads the window and writes
+/// every `machine_readable` in it; a feedback round answers a list of
+/// findings. Splitting evenly gave both about 550 s under the production
+/// budget, and a 15-article window of the Kieswet did not translate in that.
+/// The translation weighs [`TRANSLATE_SHARE_WEIGHT`] shares, each other call
+/// one.
+///
+/// [`FeedbackRounds::max_calls`]: crate::enrich::FeedbackRounds::max_calls
+fn bound_llm_timeout(config: &mut crate::enrich::EnrichConfig, job_timeout: Duration) {
+    let reserve = Duration::from_secs(30);
+    let budget = job_timeout.saturating_sub(reserve);
+    let feedback_calls = config.feedback_rounds.max_calls();
+    let unit = budget / TRANSLATE_SHARE_WEIGHT.saturating_add(feedback_calls);
+    let translate_share = unit * TRANSLATE_SHARE_WEIGHT;
+    config.timeout = config.timeout.min(translate_share);
+    config.feedback_timeout = config.feedback_timeout.min(unit);
+    tracing::info!(
+        job_timeout = ?job_timeout,
+        feedback_calls,
+        translate_timeout = ?config.timeout,
+        feedback_timeout = ?config.feedback_timeout,
+        "LLM ceilings sized to fit a full chain in the job budget"
+    );
+}
+
+/// How many per-call shares of the job budget the translation call gets; every
+/// other call of a run gets one. See [`bound_llm_timeout`].
+const TRANSLATE_SHARE_WEIGHT: u32 = 3;
 
 /// Process the next available enrich job.
 ///
@@ -2674,15 +2878,7 @@ async fn process_next_enrich_job(
     // if LLM_TIMEOUT_SECS > WORKER_JOB_TIMEOUT_SECS, the outer timeout would
     // drop the future while the OS subprocess keeps running.
     let mut bounded_config = effective_config.clone();
-    if bounded_config.timeout >= job_timeout {
-        bounded_config.timeout = job_timeout.saturating_sub(Duration::from_secs(30));
-        tracing::warn!(
-            llm_timeout = ?effective_config.timeout,
-            job_timeout = ?job_timeout,
-            adjusted_to = ?bounded_config.timeout,
-            "LLM timeout >= job timeout, reducing LLM timeout to leave headroom"
-        );
-    }
+    bound_llm_timeout(&mut bounded_config, job_timeout);
 
     let source_hash = enrich_corpus
         .as_ref()
@@ -3129,7 +3325,7 @@ async fn execute_harvest_job(
 /// voor het succespad, en die de frontend sinds de poll-cap-exemptie voor
 /// `enriching` niet meer met een (vals) timeout-signaal afdekt. Spiegel daarom
 /// het synchrone pad: markeer de wet `enrich_failed` en laat
-/// [`handle_enrich_exhausted_or_retry`] óf een retry-job met backoff plannen
+/// `handle_enrich_exhausted_or_retry` óf een retry-job met backoff plannen
 /// (de lus hervat bij de cursor op de branch) óf de wet `enrich_exhausted`
 /// maken. Taak-flow-jobs (`deliver=task`) volgen het bestaande
 /// task-notificatiepad (`tasks::notify_reaped_task_jobs`) en raken
@@ -3258,6 +3454,58 @@ async fn handle_enrich_exhausted_or_retry(
 
 #[cfg(test)]
 mod tests {
+    use crate::api::bwb_search::BwbSearchResult;
+
+    fn hit(bwb_id: &str) -> BwbSearchResult {
+        BwbSearchResult {
+            bwb_id: bwb_id.to_string(),
+            title: "Een wet".to_string(),
+            law_type: "wet".to_string(),
+        }
+    }
+
+    #[test]
+    fn a_throttled_sru_lookup_is_not_a_law_that_does_not_exist() {
+        assert!(matches!(
+            classify_sru_result(Err(
+                "BWB search returned HTTP 429 Too Many Requests".to_string()
+            )),
+            RelatedResolution::LookupFailed
+        ));
+    }
+
+    #[test]
+    fn zero_hits_stays_unresolved() {
+        assert!(matches!(
+            classify_sru_result(Ok(vec![])),
+            RelatedResolution::Unresolved
+        ));
+    }
+
+    #[test]
+    fn one_well_formed_hit_resolves() {
+        assert!(matches!(
+            classify_sru_result(Ok(vec![hit("BWBR0018451")])),
+            RelatedResolution::Resolved(id) if id == "BWBR0018451"
+        ));
+    }
+
+    #[test]
+    fn one_malformed_hit_does_not_resolve() {
+        assert!(matches!(
+            classify_sru_result(Ok(vec![hit("CVDR123456")])),
+            RelatedResolution::Unresolved
+        ));
+    }
+
+    #[test]
+    fn several_hits_need_a_human() {
+        assert!(matches!(
+            classify_sru_result(Ok(vec![hit("BWBR0018451"), hit("BWBR0000001")])),
+            RelatedResolution::NeedsConfirmation
+        ));
+    }
+
     use super::*;
     use std::path::PathBuf;
 
@@ -3687,6 +3935,72 @@ articles:
         let root_json = serde_json::to_string(&root).unwrap();
         assert!(!root_json.contains("depth"));
     }
+
+    #[test]
+    fn task_walk_stops_only_when_the_law_is_done_or_nothing_walks() {
+        use crate::enrich::RunSteps;
+        let walking = RunSteps::all();
+        let reconcile_only = RunSteps {
+            window: false,
+            reconcile: true,
+        };
+        assert!(!task_walk_complete(false, walking));
+        assert!(task_walk_complete(true, walking));
+        assert!(task_walk_complete(false, reconcile_only));
+        assert!(task_walk_complete(true, reconcile_only));
+    }
+
+    fn config_with_timeouts(secs: u64) -> crate::enrich::EnrichConfig {
+        let mut config =
+            crate::enrich::EnrichConfig::for_test(crate::enrich::LlmProvider::Claude {
+                path: "claude".into(),
+                model: None,
+            });
+        config.timeout = Duration::from_secs(secs);
+        config.feedback_timeout = Duration::from_secs(secs);
+        config
+    }
+
+    #[test]
+    fn bound_llm_timeout_gives_the_translation_a_larger_share() {
+        // Production: LLM_TIMEOUT_SECS=3600, WORKER_JOB_TIMEOUT_SECS=3900.
+        let mut config = config_with_timeouts(3600);
+        bound_llm_timeout(&mut config, Duration::from_secs(3900));
+        // (3900 - 30) / (3 + 6) = 430 per share.
+        assert_eq!(config.feedback_timeout, Duration::from_secs(430));
+        assert_eq!(config.timeout, Duration::from_secs(1290));
+        // A run that uses every call still fits the job.
+        let all_calls =
+            config.timeout + config.feedback_timeout * config.feedback_rounds.max_calls();
+        assert!(all_calls <= Duration::from_secs(3900 - 30));
+    }
+
+    #[test]
+    fn bound_llm_timeout_counts_the_configured_feedback_rounds() {
+        let mut config = config_with_timeouts(3600);
+        config.feedback_rounds = crate::enrich::FeedbackRounds::uniform(2);
+        bound_llm_timeout(&mut config, Duration::from_secs(3900));
+        // (3900 - 30) / (3 + 12) = 258 per share.
+        assert_eq!(config.feedback_timeout, Duration::from_secs(258));
+        assert_eq!(config.timeout, Duration::from_secs(774));
+    }
+
+    #[test]
+    fn bound_llm_timeout_leaves_ceilings_that_already_fit() {
+        let mut config = config_with_timeouts(300);
+        bound_llm_timeout(&mut config, Duration::from_secs(3900));
+        assert_eq!(config.timeout, Duration::from_secs(300));
+        assert_eq!(config.feedback_timeout, Duration::from_secs(300));
+    }
+
+    #[test]
+    fn bound_llm_timeout_lowers_each_ceiling_on_its_own() {
+        // Between the two shares: only the feedback ceiling has to come down.
+        let mut config = config_with_timeouts(1000);
+        bound_llm_timeout(&mut config, Duration::from_secs(3900));
+        assert_eq!(config.timeout, Duration::from_secs(1000));
+        assert_eq!(config.feedback_timeout, Duration::from_secs(430));
+    }
 }
 
 /// DB-backed borging van het worker/traject-contract op jobniveau (zie de
@@ -3695,7 +4009,8 @@ articles:
 /// vóór de conversie, zonder taak, zonder blob, en (structureel: het push-pad
 /// bestaat niet meer in `document_convert`) zonder ook maar een git-backend
 /// aan te raken.
-#[cfg(all(test, feature = "test-utils"))]
+#[cfg(test)]
+#[cfg(feature = "test-utils")]
 mod contract_tests {
     use super::*;
     use crate::enrich::LlmProvider;
@@ -3898,5 +4213,44 @@ mod contract_tests {
 
         process_one(&db).await;
         assert_rejected_without_delivery(&db, job_id).await;
+    }
+
+    #[tokio::test]
+    async fn related_legislation_with_a_bwb_id_enqueues_a_follow_up_harvest() {
+        // Path (a): an explicit, valid bwb_id resolves without the slug table
+        // or the SRU search, so no network is involved. The follow-up harvest
+        // must land one level deeper, at the related-harvest priority.
+        let db = TestDb::new().await;
+        let related = vec![crate::enrich::RelatedLegislation {
+            name: "Wet op de zorgtoeslag".to_string(),
+            relation: "legal_basis".to_string(),
+            bwb_id: Some("BWBR0018451".to_string()),
+            slug: None,
+            open_term: None,
+        }];
+
+        harvest_related_legislation(&db.pool, &Client::new(), "parent_law", &related, 0).await;
+
+        let rows: Vec<(String, i32, Option<serde_json::Value>)> =
+            sqlx::query_as("SELECT law_id, priority, payload FROM jobs WHERE job_type = 'harvest'")
+                .fetch_all(&db.pool)
+                .await
+                .expect("query jobs");
+        assert_eq!(rows.len(), 1, "exactly one follow-up harvest");
+        let (law_id, priority, payload) = &rows[0];
+        assert_eq!(law_id, "BWBR0018451");
+        assert_eq!(*priority, related_harvest_priority(0).value());
+        let payload = payload.as_ref().expect("harvest payload");
+        assert_eq!(payload["bwb_id"], "BWBR0018451");
+        assert_eq!(payload["depth"], 1);
+
+        // Running it again finds the pending job and does not duplicate it.
+        harvest_related_legislation(&db.pool, &Client::new(), "parent_law", &related, 0).await;
+        let (count,): (i64,) =
+            sqlx::query_as("SELECT count(*) FROM jobs WHERE job_type = 'harvest'")
+                .fetch_one(&db.pool)
+                .await
+                .expect("count jobs");
+        assert_eq!(count, 1);
     }
 }

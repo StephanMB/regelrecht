@@ -1,0 +1,49 @@
+---
+# Herkomst van de brontekst. Opgehaald met `curl` als ruwe bytes, zonder
+# omzetting. `scripts/valideer.py` controleert de sha256 van elk bestand.
+#
+# Route: https://publications.europa.eu/resource/celex/32025R0327 met
+# `Accept: application/zip;mtype=fmx4` en `Accept-Language: nld` (resp. `eng`)
+# geeft een 303 naar de Cellar-manifestatie hieronder. EUR-Lex zelf
+# (eur-lex.europa.eu) gaf aan curl alleen een WAF-uitdaging (HTTP 202, leeg).
+celex: 32025R0327
+eli: http://data.europa.eu/eli/reg/2025/327/oj
+cellar_werk: http://publications.europa.eu/resource/cellar/531b8c37-f962-11ef-b7db-01aa75ed71a1
+bestanden:
+  - pad: L_202500327NL.fmx4.zip
+    taal: NL
+    formaat: Formex 4 (ZIP)
+    url: https://publications.europa.eu/resource/cellar/531b8c37-f962-11ef-b7db-01aa75ed71a1.0017.02/zip
+    opgehaald: '2026-10-12T12:31:27Z'
+    last_modified: Wed, 05 Mar 2025 01:51:16 GMT
+    sha256: 540f91f2579517792f9835c8c0abefdfae4926b68c0f358aec717c4c92b92354
+  - pad: L_202500327EN.fmx4.zip
+    taal: EN
+    formaat: Formex 4 (ZIP)
+    url: https://publications.europa.eu/resource/cellar/531b8c37-f962-11ef-b7db-01aa75ed71a1.0006.02/zip
+    opgehaald: '2026-10-12T12:31:27Z'
+    gebruik: alleen de NL/EN-vergelijking in het interpretatielogboek
+    sha256: 608daa1f1aa1fea2a17e31361eaf6bcea9e7c4c59cc3ec27632d53582d00a294
+  - pad: rectificaties.rq
+    beschrijving: SPARQL-vraag naar rectificaties (cdm:resource_legal_corrects_resource_legal) van 32025R0327
+    sha256: 063082c922253f5f0c0f670b990a1e2911e1bc873189d36be7ee34fe51a29273
+  - pad: rectificaties.csv
+    beschrijving: antwoord van het endpoint op rectificaties.rq
+    url: https://publications.europa.eu/webapi/rdf/sparql
+    opgehaald: '2026-10-12T12:31:27Z'
+    sha256: ba1ea4ef6bdd369f2ef7312a5211f13680ab961f4c7a92e13786872164d16d07
+  - pad: wijzigingen.rq
+    beschrijving: SPARQL-vraag naar handelingen die 32025R0327 wijzigen, intrekken of rectificeren
+    sha256: ac113d2a3aac5831ff46a525406c3195a97cdbffa752e8d9b37b495719508fd7
+  - pad: wijzigingen.csv
+    beschrijving: antwoord van het endpoint op wijzigingen.rq
+    url: https://publications.europa.eu/webapi/rdf/sparql
+    opgehaald: '2026-10-12T12:31:56Z'
+    sha256: 0eef293d82c9c45bfb7314ce7cfde9f40686f38d37eff132ba417ec0da3cfdc4
+rectificaties:
+  gecontroleerd: '2026-10-12'
+  uitkomst: >-
+    Drie rectificaties gepubliceerd: 32025R0327R(01) (FRA, HRV, LAV), R(02) (HUN) en
+    R(03) (HUN). Geen ervan heeft een Nederlandse of Engelse taalversie; de NL- en
+    EN-tekst zijn dus niet gerectificeerd en er is niets te verwerken. Volgens wijzigingen.csv is er
+    geen wijzigings- of intrekkingshandeling geregistreerd; alleen deze drie rectificaties.

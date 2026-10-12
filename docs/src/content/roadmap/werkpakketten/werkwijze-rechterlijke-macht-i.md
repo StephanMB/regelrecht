@@ -1,0 +1,25 @@
+---
+id: werkwijze-rechterlijke-macht-i
+titel: Werkwijze rechterlijke macht I
+faseId: wat-fase-2
+disciplineId: mensen
+prioriteit: hoog
+omvang: M
+categorie: bet
+capability: verifieren
+capaciteit: ''
+toelichting: |-
+  Dit werkpakket richt zich op het gebruik van regelwerken in individuele zaken voor de rechter: hoe worden het
+  regelwerk en het uitvoeringsspoor (execution trace) van een concreet
+  besluit ingebracht en getoetst in een lopende procedure?
+volgorde: 3000
+onderzoeksvragen:
+  - Welke informatie — het regelwerk en de execution trace — moet in een
+    individuele zaak voor de rechter beschikbaar zijn, en in welke vorm?
+  - Hoe worden rechters en gerechtsjuristen toegerust om deze informatie in
+    een individuele zaak te kunnen beoordelen?
+onderzoek: open
+bouw: niet
+rfcs: []
+samenhangIds: []
+---

@@ -1,0 +1,10 @@
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+SELECT ?handeling ?celex ?relatie
+WHERE {
+  ?basis cdm:resource_legal_id_celex "32025R0327"^^<http://www.w3.org/2001/XMLSchema#string> .
+  ?handeling ?relatie ?basis .
+  ?handeling cdm:resource_legal_id_celex ?celex .
+  FILTER(?relatie IN (cdm:resource_legal_amends_resource_legal, cdm:resource_legal_repeals_resource_legal,
+                      cdm:resource_legal_implicitly_repeals_resource_legal, cdm:resource_legal_corrects_resource_legal))
+}
+ORDER BY ?celex

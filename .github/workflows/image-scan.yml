@@ -53,10 +53,14 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Resolve registry namespace
+        id: ns
+        run: echo "owner=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_OUTPUT"
+
       - name: Scan
         uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25  # v0.36.0
         with:
-          image-ref: ghcr.io/minbzk/${{ matrix.image }}:latest
+          image-ref: ghcr.io/${{ steps.ns.outputs.owner }}/${{ matrix.image }}:latest
           format: sarif
           output: trivy.sarif
           severity: ${{ inputs.severity || 'CRITICAL,HIGH' }}
@@ -66,7 +70,7 @@ jobs:
           ignore-unfixed: true
 
       - name: Upload naar code scanning
-        uses: github/codeql-action/upload-sarif@cdf488f595d80d6e07e03d4674febd5ab45fa938  # v4
+        uses: github/codeql-action/upload-sarif@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2  # v4
         with:
           sarif_file: trivy.sarif
           category: trivy-${{ matrix.image }}

@@ -66,7 +66,7 @@ pub async fn request_enrich(
     if yaml.len() > MAX_INPUT_BYTES {
         return Err((
             StatusCode::PAYLOAD_TOO_LARGE,
-            "Deze wet is te groot om via een taak te verrijken.".to_string(),
+            "Deze versie is te groot om via een taak te verrijken.".to_string(),
         ));
     }
     let source_etag = document_etag(&yaml);
@@ -76,6 +76,7 @@ pub async fn request_enrich(
     let yaml_path = format!("laws/{law_id}/law.yaml");
 
     let payload = regelrecht_pipeline::enrich::EnrichPayload {
+        pass: Default::default(),
         law_id: law_id.clone(),
         yaml_path: yaml_path.clone(),
         provider: Some(state.config.task_enrich_provider.clone()),
@@ -88,6 +89,8 @@ pub async fn request_enrich(
         new_law: None,
         chunk_articles: None,
         skip_mvt: None,
+        // Wachtrij-payload: de sessie hoort bij de run, niet bij de rij.
+        session: None,
     };
     let payload_json = serde_json::to_value(&payload).map_err(internal("payload serialiseren"))?;
 
@@ -111,7 +114,7 @@ pub async fn request_enrich(
     let Some(job) = job else {
         return Err((
             StatusCode::CONFLICT,
-            "Er loopt al een verrijking voor deze wet.".to_string(),
+            "Er loopt al een verrijking voor dit regelwerk.".to_string(),
         ));
     };
     tasks::insert_blob(&mut *tx, job.id, BlobKind::Input, &yaml_path, &yaml)

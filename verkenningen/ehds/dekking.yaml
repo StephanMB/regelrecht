@@ -1,0 +1,1387 @@
+---
+# Dekkingsmatrix: elke bepaling uit inventaris.json heeft hier precies één status.
+#   gemodelleerd: `elementen` noemt de elementen van het regelwerk (artikel/naam) die de
+#                 bepaling of een bepaling eronder citeren; scripts/valideer.py rekent dat na.
+#   buiten_scope: `reden`.
+#   open:         `vraag` voor de jurist.
+# Volgorde: die van de inventaris.
+titel:
+  status: buiten_scope
+  reden: titel; geen norm
+aanhef:
+  status: buiten_scope
+  reden: aanhef; geen norm
+overweging-1:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-2:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-3:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-4:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-5:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-6:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-7:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-8:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-9:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-10:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-11:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-12:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-13:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-14:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-15:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-16:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-17:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-18:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-19:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-20:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-21:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-22:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-23:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-24:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-25:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-26:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-27:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-28:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-29:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-30:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-31:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-32:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-33:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-34:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-35:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-36:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-37:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-38:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-39:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-40:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-41:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-42:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-43:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-44:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-45:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-46:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-47:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-48:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-49:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-50:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-51:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-52:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-53:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-54:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-55:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-56:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-57:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-58:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-59:
+  status: buiten_scope
+  reden: >-
+    overweging: geen normatieve bepaling; gebruikt als uitlegbron bij art. 2, lid 2, punt t), en art. 50
+    (interpretatielogboek)
+overweging-60:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-61:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-62:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-63:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-64:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-65:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-66:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-67:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-68:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-69:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-70:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-71:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-72:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-73:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-74:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-75:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-76:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-77:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-78:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-79:
+  status: buiten_scope
+  reden: >-
+    overweging: geen normatieve bepaling; gebruikt als uitlegbron bij de rol van de houder als
+    verwerkingsverantwoordelijke (interpretatielogboek)
+overweging-80:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-81:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-82:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-83:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-84:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-85:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-86:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-87:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-88:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-89:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-90:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-91:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-92:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-93:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-94:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-95:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-96:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-97:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-98:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-99:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-100:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-101:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-102:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-103:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-104:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-105:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-106:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-107:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-108:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-109:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-110:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-111:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-112:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-113:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-114:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+overweging-115:
+  status: buiten_scope
+  reden: 'overweging: geen normatieve bepaling'
+vaststellingsformule:
+  status: buiten_scope
+  reden: slotformule; geen norm
+hoofdstuk-i:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art1:
+  status: gemodelleerd
+  elementen:
+    - art1/verordening_niet_van_toepassing_art1_lid9
+    - art1/verwerking_buiten_werkingssfeer_unierecht
+    - art1/verwerking_door_bevoegde_autoriteit_strafrecht
+    - art50/heeft_plichten_als_houder
+art1-lid1:
+  status: buiten_scope
+  reden: onderwerp van de verordening; geen criterium
+art1-lid2:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid2-onderdeel-a:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid2-onderdeel-b:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid2-onderdeel-c:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid2-onderdeel-d:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid2-onderdeel-e:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid2-onderdeel-f:
+  status: buiten_scope
+  reden: opsomming van wat de verordening regelt; geen criterium
+art1-lid3:
+  status: buiten_scope
+  reden: >-
+    verhouding tot ander Unierecht (“doet geen afbreuk”); beperkt de plichten van hoofdstuk IV niet; zie
+    interpretatielogboek
+art1-lid4:
+  status: buiten_scope
+  reden: leesregel voor verwijzingen naar Verordening (EU) 2016/679 bij Unie-instellingen
+art1-lid5:
+  status: buiten_scope
+  reden: verhouding tot recht over medische hulpmiddelen en AI (EPD-systemen)
+art1-lid6:
+  status: buiten_scope
+  reden: verhouding tot recht over rapportage en openbaarmaking (“doet geen afbreuk”); zie interpretatielogboek
+art1-lid7:
+  status: buiten_scope
+  reden: >-
+    verhouding tot bijzondere toegangsregels voor openbare lichamen (“doet geen afbreuk”); zie
+    interpretatielogboek
+art1-lid8:
+  status: buiten_scope
+  reden: verhouding tot contractuele of administratieve regelingen (“doet geen afbreuk”); zie interpretatielogboek
+art1-lid9:
+  status: gemodelleerd
+  elementen:
+    - art1/verordening_niet_van_toepassing_art1_lid9
+    - art1/verwerking_buiten_werkingssfeer_unierecht
+    - art1/verwerking_door_bevoegde_autoriteit_strafrecht
+    - art50/heeft_plichten_als_houder
+art1-lid9-onderdeel-a:
+  status: gemodelleerd
+  elementen:
+    - art1/verwerking_buiten_werkingssfeer_unierecht
+art1-lid9-onderdeel-b:
+  status: gemodelleerd
+  elementen:
+    - art1/verwerking_door_bevoegde_autoriteit_strafrecht
+art2:
+  status: gemodelleerd
+  elementen:
+    - art2/bevat_elektronische_gezondheidsgegevens
+    - art2/bevat_gegevens_over_gezondheid_of_genetische_gegevens
+    - art2/bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+    - art2/bevat_persoonlijke_elektronische_gezondheidsgegevens
+    - art2/gegevens_in_elektronische_vorm_verwerkt
+    - art2/heeft_recht_of_plicht_tot_verwerking
+    - art2/in_gezondheidszorg_of_zorgsector
+    - art2/is_houder_van_gezondheidsgegevens
+    - art2/is_instelling_orgaan_of_instantie_van_de_unie
+    - art2/is_vergoedingsdienst_waar_noodzakelijk
+    - art2/kan_niet_persoonsgebonden_gegevens_beschikbaar_stellen_via_ontwerp
+    - art2/lezing_punt_t_voorwaarden_gelden_voor_alle_partijen
+    - art2/ontwikkelt_of_vervaardigt_wellnessapps
+    - art2/ontwikkelt_producten_of_diensten_voor_gezondheidssector
+    - art2/partij_uit_opsomming_punt_t
+    - art2/treedt_op_als_sterfteregister
+    - art2/verricht_onderzoek_gezondheidszorg_of_zorgsector
+    - art2/verwerkt_als_verwerkingsverantwoordelijke
+    - art2/verwerkt_voor_doel_uit_punt_t_i
+    - art2/voldoet_aan_punt_t_i
+    - art2/voldoet_aan_punt_t_i_of_ii
+    - art51/valt_in_categorie_a
+    - art51/valt_in_categorie_h
+    - art51/valt_in_categorie_i
+    - art51/valt_in_categorie_j
+    - art51/valt_in_categorie_n
+    - art51/valt_in_categorie_o
+    - art60/databron_is_gestructureerde_verzameling
+art2-lid1:
+  status: buiten_scope
+  reden: inleidende zin; de definities staan in de onderdelen
+art2-lid1-onderdeel-a:
+  status: gemodelleerd
+  elementen:
+    - art2/bevat_gegevens_over_gezondheid_of_genetische_gegevens
+    - art2/verwerkt_als_verwerkingsverantwoordelijke
+art2-lid1-onderdeel-b:
+  status: gemodelleerd
+  elementen:
+    - art2/in_gezondheidszorg_of_zorgsector
+    - art51/valt_in_categorie_j
+art2-lid1-onderdeel-c:
+  status: buiten_scope
+  reden: begrippen uit Verordening (EU) 2022/868; niet gebruikt in de toets
+art2-lid1-onderdeel-d:
+  status: buiten_scope
+  reden: markttoezichtbegrippen (EPD-systemen)
+art2-lid1-onderdeel-e:
+  status: gemodelleerd
+  elementen:
+    - art51/valt_in_categorie_h
+    - art51/valt_in_categorie_n
+    - art51/valt_in_categorie_o
+art2-lid1-onderdeel-f:
+  status: buiten_scope
+  reden: elektronische identificatie (primair gebruik)
+art2-lid1-onderdeel-g:
+  status: buiten_scope
+  reden: aanbestedende diensten; niet gebruikt in de toets
+art2-lid1-onderdeel-h:
+  status: gemodelleerd
+  elementen:
+    - art2/verwerkt_voor_doel_uit_punt_t_i
+art2-lid2:
+  status: buiten_scope
+  reden: inleidende zin; de definities staan in de onderdelen
+art2-lid2-onderdeel-a:
+  status: gemodelleerd
+  elementen:
+    - art2/bevat_gegevens_over_gezondheid_of_genetische_gegevens
+    - art2/bevat_persoonlijke_elektronische_gezondheidsgegevens
+    - art2/gegevens_in_elektronische_vorm_verwerkt
+art2-lid2-onderdeel-b:
+  status: gemodelleerd
+  elementen:
+    - art2/bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+  opmerking: 'circulaire definitie: K6 in het interpretatielogboek'
+art2-lid2-onderdeel-c:
+  status: gemodelleerd
+  elementen:
+    - art2/bevat_elektronische_gezondheidsgegevens
+art2-lid2-onderdeel-d:
+  status: buiten_scope
+  reden: primair gebruik
+art2-lid2-onderdeel-e:
+  status: buiten_scope
+  reden: bepaalt het doel van het gebruik door gebruikers, niet of de houder onder de plicht valt
+art2-lid2-onderdeel-f:
+  status: buiten_scope
+  reden: interoperabiliteit (primair gebruik, EPD-systemen)
+art2-lid2-onderdeel-g:
+  status: buiten_scope
+  reden: registratie in EPD-systemen (primair gebruik)
+art2-lid2-onderdeel-h:
+  status: buiten_scope
+  reden: toegangsdienst voor natuurlijke personen (primair gebruik)
+art2-lid2-onderdeel-i:
+  status: buiten_scope
+  reden: toegangsdienst voor gezondheidswerkers (primair gebruik)
+art2-lid2-onderdeel-j:
+  status: gemodelleerd
+  elementen:
+    - art51/valt_in_categorie_a
+art2-lid2-onderdeel-k:
+  status: buiten_scope
+  reden: EPD-systeem (hoofdstuk III)
+art2-lid2-onderdeel-l:
+  status: buiten_scope
+  reden: ingebruikneming (EPD-systemen)
+art2-lid2-onderdeel-m:
+  status: buiten_scope
+  reden: softwarecomponent (EPD-systemen)
+art2-lid2-onderdeel-n:
+  status: buiten_scope
+  reden: interoperabiliteitssoftwarecomponent (EPD-systemen)
+art2-lid2-onderdeel-o:
+  status: buiten_scope
+  reden: logsoftwarecomponent (EPD-systemen)
+art2-lid2-onderdeel-p:
+  status: buiten_scope
+  reden: CE-markering (EPD-systemen)
+art2-lid2-onderdeel-q:
+  status: buiten_scope
+  reden: risico (EPD-systemen)
+art2-lid2-onderdeel-r:
+  status: buiten_scope
+  reden: ernstig incident (EPD-systemen)
+art2-lid2-onderdeel-r-i:
+  status: buiten_scope
+  reden: ernstig incident (EPD-systemen)
+art2-lid2-onderdeel-r-ii:
+  status: buiten_scope
+  reden: ernstig incident (EPD-systemen)
+art2-lid2-onderdeel-r-iii:
+  status: buiten_scope
+  reden: ernstig incident (EPD-systemen)
+art2-lid2-onderdeel-s:
+  status: gemodelleerd
+  elementen:
+    - art2/in_gezondheidszorg_of_zorgsector
+art2-lid2-onderdeel-t:
+  status: gemodelleerd
+  elementen:
+    - art2/heeft_recht_of_plicht_tot_verwerking
+    - art2/in_gezondheidszorg_of_zorgsector
+    - art2/is_houder_van_gezondheidsgegevens
+    - art2/is_instelling_orgaan_of_instantie_van_de_unie
+    - art2/is_vergoedingsdienst_waar_noodzakelijk
+    - art2/kan_niet_persoonsgebonden_gegevens_beschikbaar_stellen_via_ontwerp
+    - art2/lezing_punt_t_voorwaarden_gelden_voor_alle_partijen
+    - art2/ontwikkelt_of_vervaardigt_wellnessapps
+    - art2/ontwikkelt_producten_of_diensten_voor_gezondheidssector
+    - art2/partij_uit_opsomming_punt_t
+    - art2/treedt_op_als_sterfteregister
+    - art2/verricht_onderzoek_gezondheidszorg_of_zorgsector
+    - art2/verwerkt_als_verwerkingsverantwoordelijke
+    - art2/verwerkt_voor_doel_uit_punt_t_i
+    - art2/voldoet_aan_punt_t_i
+    - art2/voldoet_aan_punt_t_i_of_ii
+  opmerking: >-
+    leesvraag over de reikwijdte van “die: i) … ofwel ii)” is een parameter; open punt K1 en N1 in het
+    interpretatielogboek
+art2-lid2-onderdeel-t-i:
+  status: gemodelleerd
+  elementen:
+    - art2/heeft_recht_of_plicht_tot_verwerking
+    - art2/verwerkt_als_verwerkingsverantwoordelijke
+    - art2/verwerkt_voor_doel_uit_punt_t_i
+    - art2/voldoet_aan_punt_t_i
+    - art2/voldoet_aan_punt_t_i_of_ii
+  opmerking: 'verwerker in opdracht van een ander: K5 in het interpretatielogboek; zie ook art74-lid1-alinea1'
+art2-lid2-onderdeel-t-ii:
+  status: gemodelleerd
+  elementen:
+    - art2/kan_niet_persoonsgebonden_gegevens_beschikbaar_stellen_via_ontwerp
+    - art2/voldoet_aan_punt_t_i_of_ii
+  opmerking: 'NL/EN-verschil “beperken” / “restricting access to”: N4 in het interpretatielogboek'
+art2-lid2-onderdeel-u:
+  status: buiten_scope
+  reden: gebruiker van gezondheidsgegevens
+art2-lid2-onderdeel-v:
+  status: buiten_scope
+  reden: gegevensvergunning (vergunningen)
+art2-lid2-onderdeel-w:
+  status: gemodelleerd
+  elementen:
+    - art60/databron_is_gestructureerde_verzameling
+art2-lid2-onderdeel-x:
+  status: buiten_scope
+  reden: dataset met een grote impact; geen voorwaarde voor de plicht
+art2-lid2-onderdeel-y:
+  status: buiten_scope
+  reden: catalogus van datasets (procedure)
+art2-lid2-onderdeel-z:
+  status: buiten_scope
+  reden: gegevenskwaliteit (procedure)
+art2-lid2-onderdeel-aa:
+  status: buiten_scope
+  reden: kwaliteitslabel (procedure)
+art2-lid2-onderdeel-ab:
+  status: gemodelleerd
+  elementen:
+    - art2/ontwikkelt_of_vervaardigt_wellnessapps
+    - art51/valt_in_categorie_i
+hoofdstuk-ii:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+hoofdstuk-ii-afdeling-1:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art3:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art4:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art5:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art6:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art7:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art8:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art9:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art10:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art11:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art12:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art13:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art14:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art15:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art16:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art17:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art18:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+hoofdstuk-ii-afdeling-2:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art19:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art20:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art21:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art22:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+hoofdstuk-ii-afdeling-3:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art23:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+art24:
+  status: buiten_scope
+  reden: hoofdstuk II (primair gebruik)
+hoofdstuk-iii:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+hoofdstuk-iii-afdeling-1:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art25:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art26:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art27:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art28:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art29:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+hoofdstuk-iii-afdeling-2:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art30:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art31:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art32:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art33:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art34:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art35:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+hoofdstuk-iii-afdeling-3:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art36:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art37:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art38:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art39:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art40:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art41:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art42:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+hoofdstuk-iii-afdeling-4:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art43:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art44:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art45:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art46:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+hoofdstuk-iii-afdeling-5:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art47:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+art48:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+hoofdstuk-iii-afdeling-6:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art49:
+  status: buiten_scope
+  reden: hoofdstuk III (EPD-systemen en wellnessapps)
+hoofdstuk-iv:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+hoofdstuk-iv-afdeling-1:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art50:
+  status: gemodelleerd
+  elementen:
+    - art50/heeft_plichten_als_houder
+    - art50/houder_is_micro_onderneming
+    - art50/houder_is_natuurlijke_persoon
+    - art50/nationaal_recht_past_plichten_toe_op_vrijgestelde_houder
+    - art50/nationaal_recht_wijst_bemiddelingsentiteit_aan
+    - art50/plichten_vervuld_door_bemiddelingsentiteit
+    - art50/vrijgesteld_volgens_lid1
+    - art50/vrijstelling_geldt
+art50-lid1:
+  status: gemodelleerd
+  elementen:
+    - art50/heeft_plichten_als_houder
+    - art50/houder_is_micro_onderneming
+    - art50/houder_is_natuurlijke_persoon
+    - art50/vrijgesteld_volgens_lid1
+    - art50/vrijstelling_geldt
+art50-lid1-onderdeel-a:
+  status: gemodelleerd
+  elementen:
+    - art50/houder_is_natuurlijke_persoon
+art50-lid1-onderdeel-b:
+  status: gemodelleerd
+  elementen:
+    - art50/houder_is_micro_onderneming
+art50-lid2:
+  status: gemodelleerd
+  elementen:
+    - art50/nationaal_recht_past_plichten_toe_op_vrijgestelde_houder
+    - art50/vrijstelling_geldt
+art50-lid3:
+  status: gemodelleerd
+  elementen:
+    - art50/nationaal_recht_wijst_bemiddelingsentiteit_aan
+    - art50/plichten_vervuld_door_bemiddelingsentiteit
+  opmerking: 'NL/EN: “verplichtingen” / “duties”, N5 in het interpretatielogboek'
+art50-lid4:
+  status: buiten_scope
+  reden: kennisgeving van nationaal recht aan de Commissie (procedure)
+art51:
+  status: gemodelleerd
+  elementen:
+    - art105/beschikbaarstellingsplicht_geldt_op_peildatum
+    - art105/eerste_toepassingsdatum_beschikbaarstellingsplicht
+    - art105/toepassingsdatum_aanvullende_nationale_categorie
+    - art51/aanvullende_nationale_categorie
+    - art51/categorie_a
+    - art51/categorie_b
+    - art51/categorie_c
+    - art51/categorie_d
+    - art51/categorie_e
+    - art51/categorie_f
+    - art51/categorie_g
+    - art51/categorie_h
+    - art51/categorie_i
+    - art51/categorie_j
+    - art51/categorie_k
+    - art51/categorie_l
+    - art51/categorie_m
+    - art51/categorie_n
+    - art51/categorie_o
+    - art51/categorie_p
+    - art51/categorie_q
+    - art51/valt_in_aanvullende_nationale_categorie
+    - art51/valt_in_categorie_a
+    - art51/valt_in_categorie_b
+    - art51/valt_in_categorie_c
+    - art51/valt_in_categorie_d
+    - art51/valt_in_categorie_e
+    - art51/valt_in_categorie_f
+    - art51/valt_in_categorie_g
+    - art51/valt_in_categorie_h
+    - art51/valt_in_categorie_i
+    - art51/valt_in_categorie_j
+    - art51/valt_in_categorie_k
+    - art51/valt_in_categorie_l
+    - art51/valt_in_categorie_m
+    - art51/valt_in_categorie_n
+    - art51/valt_in_categorie_o
+    - art51/valt_in_categorie_p
+    - art51/valt_in_categorie_q
+    - art51/valt_onder_beschikbaarstellingsplicht
+art51-lid1:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_a
+    - art51/categorie_b
+    - art51/categorie_c
+    - art51/categorie_d
+    - art51/categorie_e
+    - art51/categorie_f
+    - art51/categorie_g
+    - art51/categorie_h
+    - art51/categorie_i
+    - art51/categorie_j
+    - art51/categorie_k
+    - art51/categorie_l
+    - art51/categorie_m
+    - art51/categorie_n
+    - art51/categorie_o
+    - art51/categorie_p
+    - art51/categorie_q
+    - art51/valt_in_categorie_a
+    - art51/valt_in_categorie_b
+    - art51/valt_in_categorie_c
+    - art51/valt_in_categorie_d
+    - art51/valt_in_categorie_e
+    - art51/valt_in_categorie_f
+    - art51/valt_in_categorie_g
+    - art51/valt_in_categorie_h
+    - art51/valt_in_categorie_i
+    - art51/valt_in_categorie_j
+    - art51/valt_in_categorie_k
+    - art51/valt_in_categorie_l
+    - art51/valt_in_categorie_m
+    - art51/valt_in_categorie_n
+    - art51/valt_in_categorie_o
+    - art51/valt_in_categorie_p
+    - art51/valt_in_categorie_q
+    - art51/valt_onder_beschikbaarstellingsplicht
+art51-lid1-onderdeel-a:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_a
+    - art51/valt_in_categorie_a
+art51-lid1-onderdeel-b:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_b
+    - art51/valt_in_categorie_b
+art51-lid1-onderdeel-c:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_c
+    - art51/valt_in_categorie_c
+art51-lid1-onderdeel-d:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_d
+    - art51/valt_in_categorie_d
+art51-lid1-onderdeel-e:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_e
+    - art51/valt_in_categorie_e
+  opmerking: 'NL/EN-verschil “verstrekkingen” / “dispensations”: N2 in het interpretatielogboek'
+art51-lid1-onderdeel-f:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_f
+    - art51/valt_in_categorie_f
+art51-lid1-onderdeel-g:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_g
+    - art51/valt_in_categorie_g
+art51-lid1-onderdeel-h:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_h
+    - art51/valt_in_categorie_h
+art51-lid1-onderdeel-i:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_i
+    - art51/valt_in_categorie_i
+art51-lid1-onderdeel-j:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_j
+    - art51/valt_in_categorie_j
+art51-lid1-onderdeel-k:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_k
+    - art51/valt_in_categorie_k
+art51-lid1-onderdeel-l:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_l
+    - art51/valt_in_categorie_l
+art51-lid1-onderdeel-m:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_m
+    - art51/valt_in_categorie_m
+art51-lid1-onderdeel-n:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_n
+    - art51/valt_in_categorie_n
+art51-lid1-onderdeel-o:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_o
+    - art51/valt_in_categorie_o
+art51-lid1-onderdeel-p:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_p
+    - art51/valt_in_categorie_p
+  opmerking: 'NL/EN-verschil over de publicatie van resultaten: N3 in het interpretatielogboek'
+art51-lid1-onderdeel-q:
+  status: gemodelleerd
+  elementen:
+    - art51/categorie_q
+    - art51/valt_in_categorie_q
+art51-lid2:
+  status: gemodelleerd
+  elementen:
+    - art105/beschikbaarstellingsplicht_geldt_op_peildatum
+    - art105/eerste_toepassingsdatum_beschikbaarstellingsplicht
+    - art105/toepassingsdatum_aanvullende_nationale_categorie
+    - art51/aanvullende_nationale_categorie
+    - art51/valt_in_aanvullende_nationale_categorie
+    - art51/valt_onder_beschikbaarstellingsplicht
+art51-lid3:
+  status: buiten_scope
+  reden: regels voor verwerking met verbeteringen op basis van een gegevensvergunning (gebruik, vergunningen)
+art51-lid4:
+  status: open
+  vraag: >-
+    Kunnen nationale “strengere maatregelen en aanvullende waarborgen” voor de punten f), g), i) en q) ook bepalen
+    dat (een deel van) die gegevens niet of later beschikbaar hoeft te worden gesteld, of raken ze alleen de
+    voorwaarden van toegang? In het eerste geval hoort lid 4 als uitzondering in de toets.
+art52:
+  status: buiten_scope
+  reden: zie de leden; geen ervan beperkt de plicht
+art52-lid1:
+  status: buiten_scope
+  reden: >-
+    bevestigt dat bescherming door IE-rechten, bedrijfsgeheimen of het recht op gegevensbescherming van art. 10,
+    lid 1, Richtlijn 2001/83/EG of art. 14, lid 11, Verordening (EG) nr. 726/2004 de beschikbaarstelling niet
+    uitsluit; verandert de uitkomst niet; zie interpretatielogboek
+art52-lid2:
+  status: buiten_scope
+  reden: kennisgevingsplicht van de houder bij beschermde gegevens (procedure)
+art52-lid3:
+  status: buiten_scope
+  reden: maatregelen van de toegangsinstantie (procedure)
+art52-lid4:
+  status: buiten_scope
+  reden: voorwaarden bij gegevensvergunningen (vergunningen)
+art52-lid5:
+  status: buiten_scope
+  reden: weigering van toegang door de toegangsinstantie (procedure)
+art53:
+  status: buiten_scope
+  reden: >-
+    doeleinden waarvoor een toegangsinstantie toegang verleent; regelt het gebruik, niet of de houder beschikbaar
+    moet stellen
+art54:
+  status: buiten_scope
+  reden: verboden gebruik door gebruikers van gezondheidsgegevens
+hoofdstuk-iv-afdeling-2:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art55:
+  status: buiten_scope
+  reden: instanties voor toegang tot gezondheidsgegevens (governance)
+art56:
+  status: buiten_scope
+  reden: dienst van de Unie voor toegang tot gezondheidsgegevens (governance)
+art57:
+  status: buiten_scope
+  reden: taken van toegangsinstanties (procedure)
+art58:
+  status: buiten_scope
+  reden: verplichtingen van toegangsinstanties (procedure)
+art59:
+  status: buiten_scope
+  reden: rapportage door toegangsinstanties (procedure)
+art60:
+  status: gemodelleerd
+  elementen:
+    - art51/valt_onder_beschikbaarstellingsplicht
+    - art60/beschrijvingsplicht_dataset
+    - art60/toegang_via_betrouwbare_open_databanken
+art60-lid1:
+  status: gemodelleerd
+  elementen:
+    - art51/valt_onder_beschikbaarstellingsplicht
+art60-lid2:
+  status: buiten_scope
+  reden: termijn voor terbeschikkingstelling (procedure)
+art60-lid3:
+  status: gemodelleerd
+  elementen:
+    - art60/beschrijvingsplicht_dataset
+art60-lid4:
+  status: buiten_scope
+  reden: documentatie bij een kwaliteitslabel (procedure)
+art60-lid5:
+  status: gemodelleerd
+  elementen:
+    - art60/toegang_via_betrouwbare_open_databanken
+art61:
+  status: buiten_scope
+  reden: verplichtingen van gebruikers van gezondheidsgegevens
+art62:
+  status: buiten_scope
+  reden: vergoedingen (procedure)
+art63:
+  status: buiten_scope
+  reden: handhaving door toegangsinstanties
+art64:
+  status: buiten_scope
+  reden: administratieve boeten (handhaving)
+art65:
+  status: buiten_scope
+  reden: verhouding tot toezichthoudende autoriteiten (governance)
+hoofdstuk-iv-afdeling-3:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art66:
+  status: buiten_scope
+  reden: minimale gegevensverwerking en doelbinding bij toegang (procedure)
+art67:
+  status: buiten_scope
+  reden: aanvragen voor toegang (procedure)
+art68:
+  status: buiten_scope
+  reden: gegevensvergunning (vergunningen)
+art69:
+  status: buiten_scope
+  reden: verzoek om gezondheidsgegevens (procedure)
+art70:
+  status: buiten_scope
+  reden: modellen voor toegang (procedure)
+art71:
+  status: buiten_scope
+  reden: >-
+    opt-out van natuurlijke personen: bepaalt welke gegevens van een persoon niet beschikbaar komen, niet of de
+    databron onder de plicht valt; zie interpretatielogboek
+art72:
+  status: buiten_scope
+  reden: vereenvoudigde procedure via een betrouwbare houder (procedure)
+art73:
+  status: buiten_scope
+  reden: beveiligde verwerkingsomgeving (procedure)
+art74:
+  status: open
+  vraag: zie art74-lid1-alinea1
+art74-lid1:
+  status: open
+  vraag: zie art74-lid1-alinea1
+art74-lid1-alinea1:
+  status: open
+  vraag: >-
+    Volgt uit de eerste alinea (de houder “wordt beschouwd als verwerkingsverantwoordelijke voor de
+    beschikbaarstelling”) dat ook een partij die de gegevens alleen als verwerker in opdracht van een ander
+    verwerkt, houder kan zijn — of veronderstelt de alinea dat de houder al verwerkingsverantwoordelijke is, zoals
+    art. 2, lid 2, punt t), onder i), vraagt? Dit raakt de randgevallen met een verwerker.
+art74-lid1-alinea2:
+  status: buiten_scope
+  reden: rol van de toegangsinstantie (governance)
+art74-lid1-alinea3:
+  status: buiten_scope
+  reden: rol van de toegangsinstantie (governance)
+art74-lid2:
+  status: buiten_scope
+  reden: betrouwbare houder (procedure van art. 72)
+art74-lid3:
+  status: buiten_scope
+  reden: modelovereenkomst (uitvoeringshandeling)
+hoofdstuk-iv-afdeling-4:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art75:
+  status: buiten_scope
+  reden: HealthData@EU (grensoverschrijdende infrastructuur)
+art76:
+  status: buiten_scope
+  reden: toegang tot grensoverschrijdende registers (grensoverschrijdende infrastructuur)
+hoofdstuk-iv-afdeling-5:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art77:
+  status: buiten_scope
+  reden: inhoud en vorm van de catalogus; of de beschrijvingsplicht geldt volgt uit art. 60, lid 3
+art77-lid1:
+  status: buiten_scope
+  reden: inhoud van de catalogus en de beschrijving (procedure)
+art77-lid2:
+  status: buiten_scope
+  reden: taal van de catalogus (procedure)
+art77-lid3:
+  status: buiten_scope
+  reden: centrale informatiepunten (governance)
+art77-lid4:
+  status: buiten_scope
+  reden: uitvoeringshandeling over de elementen van de beschrijving (inhoud, niet of de plicht geldt)
+art78:
+  status: buiten_scope
+  reden: gegevenskwaliteits- en gegevensbruikbaarheidslabel (procedure)
+art79:
+  status: buiten_scope
+  reden: EU-catalogus van datasets (governance)
+art80:
+  status: buiten_scope
+  reden: minimumspecificaties voor datasets met een grote impact (uitvoeringshandelingen)
+hoofdstuk-iv-afdeling-6:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art81:
+  status: buiten_scope
+  reden: klachten bij een toegangsinstantie (procedure)
+hoofdstuk-v:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art82:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art83:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art84:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art85:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art86:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art87:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art88:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art89:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art90:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+art91:
+  status: buiten_scope
+  reden: hoofdstuk V (aanvullende maatregelen)
+hoofdstuk-vi:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art92:
+  status: buiten_scope
+  reden: hoofdstuk VI (Europese governance en coördinatie)
+art93:
+  status: buiten_scope
+  reden: hoofdstuk VI (Europese governance en coördinatie)
+art94:
+  status: buiten_scope
+  reden: hoofdstuk VI (Europese governance en coördinatie)
+art95:
+  status: buiten_scope
+  reden: hoofdstuk VI (Europese governance en coördinatie)
+art96:
+  status: buiten_scope
+  reden: hoofdstuk VI (Europese governance en coördinatie)
+hoofdstuk-vii:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art97:
+  status: buiten_scope
+  reden: hoofdstuk VII (bevoegdheidsdelegatie en comitéprocedure)
+art98:
+  status: buiten_scope
+  reden: hoofdstuk VII (bevoegdheidsdelegatie en comitéprocedure)
+hoofdstuk-viii:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art99:
+  status: buiten_scope
+  reden: sancties (hoofdstuk VIII)
+art100:
+  status: buiten_scope
+  reden: recht op schadevergoeding (hoofdstuk VIII)
+art101:
+  status: buiten_scope
+  reden: vertegenwoordiging van een natuurlijke persoon (hoofdstuk VIII)
+art102:
+  status: buiten_scope
+  reden: evaluatie en toetsing (hoofdstuk VIII)
+art103:
+  status: buiten_scope
+  reden: wijziging van Richtlijn 2011/24/EU
+art104:
+  status: buiten_scope
+  reden: wijziging van Verordening (EU) 2024/2847
+hoofdstuk-ix:
+  status: buiten_scope
+  reden: opschrift van een hoofdstuk of afdeling; geen norm
+art105:
+  status: gemodelleerd
+  elementen:
+    - art105/beschikbaarstellingsplicht_geldt_op_peildatum
+    - art105/beschrijvingsplicht_geldt_op_peildatum
+    - art105/datum_toepassing_art51_lid1_b_f_g_m_p
+    - art105/datum_toepassing_hoofdstuk_iv
+    - art105/eerste_toepassingsdatum_beschikbaarstellingsplicht
+    - art105/open_databank_plicht_geldt_op_peildatum
+    - art105/plicht_in_categorie_met_uitstel
+    - art105/plicht_in_categorie_zonder_uitstel
+    - art105/toepassingsdatum_aanvullende_nationale_categorie
+art105-alinea1:
+  status: gemodelleerd
+  elementen:
+    - kop/valid_from
+  opmerking: inwerkingtreding als valid_from in de kop; berekend, zie interpretatielogboek
+art105-alinea2:
+  status: buiten_scope
+  reden: algemene toepassingsdatum; voor hoofdstuk IV geldt de vijfde alinea; zie interpretatielogboek
+art105-alinea3:
+  status: buiten_scope
+  reden: toepassing van primair-gebruikbepalingen
+art105-alinea3-onderdeel-a:
+  status: buiten_scope
+  reden: toepassing van primair-gebruikbepalingen
+art105-alinea3-onderdeel-b:
+  status: buiten_scope
+  reden: toepassing van primair-gebruikbepalingen
+art105-alinea3-onderdeel-c:
+  status: buiten_scope
+  reden: toepassing van primair-gebruikbepalingen
+art105-alinea4:
+  status: buiten_scope
+  reden: toepassing van hoofdstuk III
+art105-alinea5:
+  status: gemodelleerd
+  elementen:
+    - art105/beschikbaarstellingsplicht_geldt_op_peildatum
+    - art105/beschrijvingsplicht_geldt_op_peildatum
+    - art105/datum_toepassing_art51_lid1_b_f_g_m_p
+    - art105/datum_toepassing_hoofdstuk_iv
+    - art105/eerste_toepassingsdatum_beschikbaarstellingsplicht
+    - art105/open_databank_plicht_geldt_op_peildatum
+    - art105/plicht_in_categorie_met_uitstel
+    - art105/plicht_in_categorie_zonder_uitstel
+    - art105/toepassingsdatum_aanvullende_nationale_categorie
+  opmerking: >-
+    alleen de eerste zin (hoofdstuk IV) en het deel over art. 51, lid 1, punten b), f), g), m) en p); de andere
+    data betreffen procedurebepalingen
+art105-alinea6:
+  status: buiten_scope
+  reden: uitvoeringshandelingen voor primair gebruik en EPD-systemen
+art105-alinea7:
+  status: buiten_scope
+  reden: toepassing van uitvoeringshandelingen (procedure)
+slot:
+  status: buiten_scope
+  reden: slot; geen norm
+bijlage-i:
+  status: buiten_scope
+  reden: bijlage bij hoofdstuk II of III (primair gebruik, EPD-systemen)
+bijlage-ii:
+  status: buiten_scope
+  reden: bijlage bij hoofdstuk II of III (primair gebruik, EPD-systemen)
+bijlage-iii:
+  status: buiten_scope
+  reden: bijlage bij hoofdstuk II of III (primair gebruik, EPD-systemen)
+bijlage-iv:
+  status: buiten_scope
+  reden: bijlage bij hoofdstuk II of III (primair gebruik, EPD-systemen)
