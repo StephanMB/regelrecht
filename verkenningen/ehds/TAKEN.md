@@ -19,7 +19,9 @@
 - [x] **Stap 6** — inventaris twee keer gedraaid: byte-identiek (sha256 39350cb0…); valideer.py OK;
       BDD 13/13; pre-commit hooks groen; elk element herlezen naast de brontekst (één correctie:
       “leden” i.p.v. “punten” in de vraag over gezondheidsgegevens).
-- [x] **Stap 7** — gecommit en gepusht naar `claude/blissful-lamport-vf4bbt`; draft-PR: zie hieronder.
+- [x] **Stap 7** — gecommit en gepusht naar `claude/blissful-lamport-vf4bbt`; draft-PR
+      https://github.com/StephanMB/regelrecht/pull/1 (tegen de fork; een PR tegen
+      `NederlandseDigitaleDienst/regelrecht` kon vanuit deze sessie niet worden geopend).
 
 ## Bevindingen stap 0
 
