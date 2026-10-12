@@ -1,0 +1,2824 @@
+{
+ "bron": {
+  "bestand": "bron/L_202500327NL.fmx4.zip",
+  "sha256": "540f91f2579517792f9835c8c0abefdfae4926b68c0f358aec717c4c92b92354",
+  "zip_leden": {
+   "L_202500327NL.000101.fmx.xml": "b248e185d397b879d744a47bf06e76fcaf25962a9db68ac0c07304f37a658a69",
+   "L_202500327NL.009201.fmx.xml": "46542957a9ecf33aa6cd990f463b69a6110aa45a18d84e88ae32be9fd58bcb5b",
+   "L_202500327NL.009301.fmx.xml": "a662d56ee0dcdfe1267fa823bc574ec9e43e1f80c49845f18ef494044a2d239e",
+   "L_202500327NL.009501.fmx.xml": "7382fc833405bf3f8ad362245f4eb796c9683ca6be0d45cc23cdca625dafbd68",
+   "L_202500327NL.009601.fmx.xml": "efc05190e234ea7a5e211d7ffb450d3cb25f3e9a05214a30626b6898bbda5cf9",
+   "L_202500327NL.doc.fmx.xml": "c4cf36b5db78c786d1dbce60c49c2da51e0b4f178cae6c12ab2c0c7fe152fc96",
+   "L_202500327NL.toc.fmx.xml": "a57a51cf57f4157b0d778a24bb6bc7dd2dff75d1662fc22cdcafee27f56ec060"
+  },
+  "celex": "32025R0327",
+  "taal": "NL"
+ },
+ "fijnmazig": [
+  "1",
+  "2",
+  "50",
+  "51",
+  "52",
+  "60",
+  "74",
+  "77",
+  "105"
+ ],
+ "bepalingen": [
+  {
+   "id": "titel",
+   "soort": "titel",
+   "vindplaats": "Titel",
+   "tekst": "Verordening (EU) 2025/327 van het Europees Parlement en de Raad van 11 februari 2025 betreffende de Europese ruimte voor gezondheidsgegevens en tot wijziging van Richtlijn 2011/24/EU en Verordening (EU) 2024/2847 (Voor de EER relevante tekst)",
+   "sha256": "9175be15dbebeccdbe8afcde8f2e4ee58e7416bf2dedecaea0d1d41fc221a07e"
+  },
+  {
+   "id": "aanhef",
+   "soort": "aanhef",
+   "vindplaats": "Aanhef en visa",
+   "tekst": "HET EUROPEES PARLEMENT EN DE RAAD VAN DE EUROPESE UNIE, Gezien het Verdrag betreffende de werking van de Europese Unie, en met name de artikelen 16 en 114, Gezien het voorstel van de Europese Commissie, Na toezending van het ontwerp van wetgevingshandeling aan de nationale parlementen, Gezien het advies van het Europees Economisch en Sociaal Comité, Gezien het advies van het Comité van de Regio’s, Handelend volgens de gewone wetgevingsprocedure, Overwegende hetgeen volgt:",
+   "sha256": "13870c9355d9302e417512d993dcbbdca1aea8e215314bb71f63415a2c6c87b0"
+  },
+  {
+   "id": "overweging-1",
+   "soort": "overweging",
+   "vindplaats": "Overweging (1)",
+   "sha256": "7406ad72773a4deee981e00463931d2adfa7eba92f9caec61cb136840b0b822a"
+  },
+  {
+   "id": "overweging-2",
+   "soort": "overweging",
+   "vindplaats": "Overweging (2)",
+   "sha256": "24c47ae8b08efc042f797c3874216d0ca66d819b13612dfa428f273a80ec713b"
+  },
+  {
+   "id": "overweging-3",
+   "soort": "overweging",
+   "vindplaats": "Overweging (3)",
+   "sha256": "4375d6c0a3f171f96ed50f53a0eb45c49389aa170cf784ba63f8ac6cd086bd56"
+  },
+  {
+   "id": "overweging-4",
+   "soort": "overweging",
+   "vindplaats": "Overweging (4)",
+   "sha256": "5e03ba320bd14ad19fdf904e863d2dc789796af84a3b09f68a209c43ae736ce9"
+  },
+  {
+   "id": "overweging-5",
+   "soort": "overweging",
+   "vindplaats": "Overweging (5)",
+   "sha256": "9c6aec56ea8a566667e44f484cfbca24177392db2f3ab5c03bcefcb4c26c7829"
+  },
+  {
+   "id": "overweging-6",
+   "soort": "overweging",
+   "vindplaats": "Overweging (6)",
+   "sha256": "d4798219a5c75338a68041860e13eff88a6ca93f6458ea9645c0e17b5728548c"
+  },
+  {
+   "id": "overweging-7",
+   "soort": "overweging",
+   "vindplaats": "Overweging (7)",
+   "sha256": "58b1154fc4adbc897b53c60d06a40fc037c7f45bcb09267bd6768dff875a70c2"
+  },
+  {
+   "id": "overweging-8",
+   "soort": "overweging",
+   "vindplaats": "Overweging (8)",
+   "sha256": "fc736a643e57b9e17369a0bddbc29fcbe454a12806b4f8bb8025b69e882e05e1"
+  },
+  {
+   "id": "overweging-9",
+   "soort": "overweging",
+   "vindplaats": "Overweging (9)",
+   "sha256": "bfce4f9bf581c3dcbc622bc33fd4bd296fc06389ffaae7c9597510ebd814f831"
+  },
+  {
+   "id": "overweging-10",
+   "soort": "overweging",
+   "vindplaats": "Overweging (10)",
+   "sha256": "7566e3f844bb4ee61fcc34b5cc85890d6a300d9381dc7c9cb41d7c186c482a15"
+  },
+  {
+   "id": "overweging-11",
+   "soort": "overweging",
+   "vindplaats": "Overweging (11)",
+   "sha256": "de294bd0a1eca655bb9652fbfa98d6710dd81468792ba22830b48fa4cb2e1ba7"
+  },
+  {
+   "id": "overweging-12",
+   "soort": "overweging",
+   "vindplaats": "Overweging (12)",
+   "sha256": "1e704fa0a937fd63009828ed1c17edac93ea59a58799b0c32134e1d7f85b3feb"
+  },
+  {
+   "id": "overweging-13",
+   "soort": "overweging",
+   "vindplaats": "Overweging (13)",
+   "sha256": "0099153dcbfb5be402e98c4ffb064e2496e970c8d0f3dd539e32f09f96960463"
+  },
+  {
+   "id": "overweging-14",
+   "soort": "overweging",
+   "vindplaats": "Overweging (14)",
+   "sha256": "fe6fdc6ef4febbe3164f4a67ad5b741204b3d5d72c6e4614f5f3bfeb99fff750"
+  },
+  {
+   "id": "overweging-15",
+   "soort": "overweging",
+   "vindplaats": "Overweging (15)",
+   "sha256": "74d8801c6b91bf1edf8f67184609e67078b62e2a5623f1370b2d7a6a9b828c61"
+  },
+  {
+   "id": "overweging-16",
+   "soort": "overweging",
+   "vindplaats": "Overweging (16)",
+   "sha256": "30ffc1a6602409aab0cc43926f848a37095bc2bb9c53b108f4fc616b670b17f6"
+  },
+  {
+   "id": "overweging-17",
+   "soort": "overweging",
+   "vindplaats": "Overweging (17)",
+   "sha256": "295ff7943188175ae5b7dfa5c64e50032a77f5f81c1663deb3e16d8db344a610"
+  },
+  {
+   "id": "overweging-18",
+   "soort": "overweging",
+   "vindplaats": "Overweging (18)",
+   "sha256": "67c1e6eba2bb585cb6d19147ad3bdfdf65614fb467f86540cba259c3df763239"
+  },
+  {
+   "id": "overweging-19",
+   "soort": "overweging",
+   "vindplaats": "Overweging (19)",
+   "sha256": "c13ac3431010482e97138f0516b682b7f4d224ebc25b8d3b6e73483120f2d105"
+  },
+  {
+   "id": "overweging-20",
+   "soort": "overweging",
+   "vindplaats": "Overweging (20)",
+   "sha256": "9ef489fc495fa336b410679e4848d803715dc5a227c1645b1c9fcf8e45e6fd85"
+  },
+  {
+   "id": "overweging-21",
+   "soort": "overweging",
+   "vindplaats": "Overweging (21)",
+   "sha256": "80e09caf341b3c9fcd3f30b055c4306e23ee133ccf1334b6e2ee57da9a07a284"
+  },
+  {
+   "id": "overweging-22",
+   "soort": "overweging",
+   "vindplaats": "Overweging (22)",
+   "sha256": "105ac34427e5b5f8cefafd8f918ec86d27c56895878da97111082e85d5f1a7ee"
+  },
+  {
+   "id": "overweging-23",
+   "soort": "overweging",
+   "vindplaats": "Overweging (23)",
+   "sha256": "aaa86f503a0a50ca77c8047eddd52236e79b19704237c196ce6f2c31d29c3aef"
+  },
+  {
+   "id": "overweging-24",
+   "soort": "overweging",
+   "vindplaats": "Overweging (24)",
+   "sha256": "e67dc341e4f69ed681704747f1d6fbe7c42e3100e605ceabfa8a0a98034f1b6e"
+  },
+  {
+   "id": "overweging-25",
+   "soort": "overweging",
+   "vindplaats": "Overweging (25)",
+   "sha256": "ae06e659156e5bdc61b1b6648f8e19a6adb298b454b56841674105817b2f1067"
+  },
+  {
+   "id": "overweging-26",
+   "soort": "overweging",
+   "vindplaats": "Overweging (26)",
+   "sha256": "df406e83c1b217e1ad837e405d4a662d5fbea756a90c1668f097f700de14284c"
+  },
+  {
+   "id": "overweging-27",
+   "soort": "overweging",
+   "vindplaats": "Overweging (27)",
+   "sha256": "4a2ff51d03adaa351035cf1246fb6fe64f4d35bb965d3100c48c1ae5dbfb7aa6"
+  },
+  {
+   "id": "overweging-28",
+   "soort": "overweging",
+   "vindplaats": "Overweging (28)",
+   "sha256": "96a45bc82b23e86f9987d5463fad89f8527c9b3725a510dde192b35dfac7b5e4"
+  },
+  {
+   "id": "overweging-29",
+   "soort": "overweging",
+   "vindplaats": "Overweging (29)",
+   "sha256": "14acd38ce11325ad271b7c170d6836bc04eb88932d2b9a3eb53db4611c0a4766"
+  },
+  {
+   "id": "overweging-30",
+   "soort": "overweging",
+   "vindplaats": "Overweging (30)",
+   "sha256": "82344aeb1aa604be4c08a4b766e9f1af8dd86e61834f6e75c75a5dcb32ebb10b"
+  },
+  {
+   "id": "overweging-31",
+   "soort": "overweging",
+   "vindplaats": "Overweging (31)",
+   "sha256": "92bc859a02eafbadf5eb21ca578fb77eb29fe6fdd02200c8c316b4ed02a95438"
+  },
+  {
+   "id": "overweging-32",
+   "soort": "overweging",
+   "vindplaats": "Overweging (32)",
+   "sha256": "26a184458450d148670911c76fafccf565230b3f961c34ffac1056644a197d2e"
+  },
+  {
+   "id": "overweging-33",
+   "soort": "overweging",
+   "vindplaats": "Overweging (33)",
+   "sha256": "10b2431f02c9a3280bf59ff29fcd3f44d8ffe003e32d5ffbe21f1107f1bd3a3b"
+  },
+  {
+   "id": "overweging-34",
+   "soort": "overweging",
+   "vindplaats": "Overweging (34)",
+   "sha256": "2e1d2fd060c76f47d2211f236c2c24347354ec9ea04426612e32dd61e7be169c"
+  },
+  {
+   "id": "overweging-35",
+   "soort": "overweging",
+   "vindplaats": "Overweging (35)",
+   "sha256": "c3e914a8d7aab2fc9ced2374d7a4b63d2325f94d9bd4ea7cd0da88e835cbb268"
+  },
+  {
+   "id": "overweging-36",
+   "soort": "overweging",
+   "vindplaats": "Overweging (36)",
+   "sha256": "a1fab230db7bfe05e7321872cd97d79e57094bd017c7e422cf1a467738de8c18"
+  },
+  {
+   "id": "overweging-37",
+   "soort": "overweging",
+   "vindplaats": "Overweging (37)",
+   "sha256": "63967e5eaf37d7f85bf7763fda0f1c3347b6c5334e33f10e579ac215a7f148d8"
+  },
+  {
+   "id": "overweging-38",
+   "soort": "overweging",
+   "vindplaats": "Overweging (38)",
+   "sha256": "d177f85a46c29f6911c2d184475ffeebde43684c694bded44ed2c80eeb5baf13"
+  },
+  {
+   "id": "overweging-39",
+   "soort": "overweging",
+   "vindplaats": "Overweging (39)",
+   "sha256": "7a4b1bc502a4f0cb56e9633cf7d96b90df15b4eeccc9dc954126a30c6a9e3f6a"
+  },
+  {
+   "id": "overweging-40",
+   "soort": "overweging",
+   "vindplaats": "Overweging (40)",
+   "sha256": "8f31969d21d4ae1def6792c1709d21f959e34d53efb7fe75fce0c43a79c2b099"
+  },
+  {
+   "id": "overweging-41",
+   "soort": "overweging",
+   "vindplaats": "Overweging (41)",
+   "sha256": "07f51bbd702b9886e4340054442e4cace2af71b853c862c75602d5f0a40db86b"
+  },
+  {
+   "id": "overweging-42",
+   "soort": "overweging",
+   "vindplaats": "Overweging (42)",
+   "sha256": "3d8bf371705927bfcc242247b928201ae1819174ab4341aab497a036b693dd01"
+  },
+  {
+   "id": "overweging-43",
+   "soort": "overweging",
+   "vindplaats": "Overweging (43)",
+   "sha256": "c11128d8564dcb2d561c472a496065f6896b7c0a41ca145d17e69ac76330eb6c"
+  },
+  {
+   "id": "overweging-44",
+   "soort": "overweging",
+   "vindplaats": "Overweging (44)",
+   "sha256": "1845f67b79e35be054ba656c9c36d3972ef63ee6142e6260ab313b56db6d28ec"
+  },
+  {
+   "id": "overweging-45",
+   "soort": "overweging",
+   "vindplaats": "Overweging (45)",
+   "sha256": "7dd37b88a74b35fb77938c85b33b3d405133a054cc686dc75a21893b2ed9cae0"
+  },
+  {
+   "id": "overweging-46",
+   "soort": "overweging",
+   "vindplaats": "Overweging (46)",
+   "sha256": "0fb5e2f6d8a87a923b180aeb23e98c43a7d1b4cbc80f1d708e4f662f4903b9be"
+  },
+  {
+   "id": "overweging-47",
+   "soort": "overweging",
+   "vindplaats": "Overweging (47)",
+   "sha256": "2f7d96686dfb7e3a64564aefc502d1360591d056616df3ac89483b6cb02861a3"
+  },
+  {
+   "id": "overweging-48",
+   "soort": "overweging",
+   "vindplaats": "Overweging (48)",
+   "sha256": "6f496c1ba8155fb0eee93f96d52715dc32474b2ca899d37087b2355d536d8bd4"
+  },
+  {
+   "id": "overweging-49",
+   "soort": "overweging",
+   "vindplaats": "Overweging (49)",
+   "sha256": "350f0fdc48d377716a4abc8d1482ace0bf0aeece5499a88f08b91b96c570f8e9"
+  },
+  {
+   "id": "overweging-50",
+   "soort": "overweging",
+   "vindplaats": "Overweging (50)",
+   "sha256": "057a7b8b0232c416101d8d9d8814aae4cbcc19d2ee3e3e2df0ce387a153a54d1"
+  },
+  {
+   "id": "overweging-51",
+   "soort": "overweging",
+   "vindplaats": "Overweging (51)",
+   "sha256": "4d58d66640bc7744463c7ada3402f5ab7216e416189eac04207306124d7c845b"
+  },
+  {
+   "id": "overweging-52",
+   "soort": "overweging",
+   "vindplaats": "Overweging (52)",
+   "sha256": "0767b85b5d0ab028c57f4ec248e0e08d22160c1fe9fdd32760370a98f61d4438"
+  },
+  {
+   "id": "overweging-53",
+   "soort": "overweging",
+   "vindplaats": "Overweging (53)",
+   "sha256": "17818f196c37b678a0f8d71d6650e3504bdbcc64892126e45eb6a37a50f3c45c"
+  },
+  {
+   "id": "overweging-54",
+   "soort": "overweging",
+   "vindplaats": "Overweging (54)",
+   "sha256": "431f5cfc70b2f15c7c8bbd7e5df62375a079e454bbff9c9af39316b40173c144"
+  },
+  {
+   "id": "overweging-55",
+   "soort": "overweging",
+   "vindplaats": "Overweging (55)",
+   "sha256": "d5cc65a87beff613564cd44a72eeed550a87b17562b12f3aa1d9d2829f51937b"
+  },
+  {
+   "id": "overweging-56",
+   "soort": "overweging",
+   "vindplaats": "Overweging (56)",
+   "sha256": "13a90bea6068ee645a468c9da48f6ba4e19bd19aa88e3372827e2f7f65c4e82c"
+  },
+  {
+   "id": "overweging-57",
+   "soort": "overweging",
+   "vindplaats": "Overweging (57)",
+   "sha256": "39f0ce4290ddd3c1ea5e64172063a14ebc399d0bdcb7950629cf376a323dab26"
+  },
+  {
+   "id": "overweging-58",
+   "soort": "overweging",
+   "vindplaats": "Overweging (58)",
+   "sha256": "8ee7073fa4820989d5127d25ea100a8a594a69e877465201d5737269c47cde63"
+  },
+  {
+   "id": "overweging-59",
+   "soort": "overweging",
+   "vindplaats": "Overweging (59)",
+   "sha256": "8be414f7484052d1f3118f6271e4340e56549496432d42c0a38fd2a2d155fb61"
+  },
+  {
+   "id": "overweging-60",
+   "soort": "overweging",
+   "vindplaats": "Overweging (60)",
+   "sha256": "15a6d171f6ec342ed6b45fcc490edffe0f610f5c3f685b40db4e034e578f3c3b"
+  },
+  {
+   "id": "overweging-61",
+   "soort": "overweging",
+   "vindplaats": "Overweging (61)",
+   "sha256": "21cbd893165ac479b062308e7c556e5ec3c99b302d5b83a093df7c5df6079ad0"
+  },
+  {
+   "id": "overweging-62",
+   "soort": "overweging",
+   "vindplaats": "Overweging (62)",
+   "sha256": "6f218f1c81d10ce01d1da34b9c7ec00b690ebbdebcdbfe2ee3593c05c18bee3a"
+  },
+  {
+   "id": "overweging-63",
+   "soort": "overweging",
+   "vindplaats": "Overweging (63)",
+   "sha256": "2790a9361825303d09b2a6ea677e2cf0a6076212710b28c20db1cac7fb284232"
+  },
+  {
+   "id": "overweging-64",
+   "soort": "overweging",
+   "vindplaats": "Overweging (64)",
+   "sha256": "1cae6cd364ca76c1f5110646f9a5c70b293c8263d42f3291397b4e34309b8d92"
+  },
+  {
+   "id": "overweging-65",
+   "soort": "overweging",
+   "vindplaats": "Overweging (65)",
+   "sha256": "2c812a3ea7931e3b8fe075329abb226a3af1d0716a350f82e6d4db7bb9b6ce2f"
+  },
+  {
+   "id": "overweging-66",
+   "soort": "overweging",
+   "vindplaats": "Overweging (66)",
+   "sha256": "0b55e366866569d264652e3f66edc34cc9128cd1c9e497332dbce167b486be96"
+  },
+  {
+   "id": "overweging-67",
+   "soort": "overweging",
+   "vindplaats": "Overweging (67)",
+   "sha256": "e010cbcd3a822fa45df6bedc20ddebe70838560629c051bc537394fefa4c5910"
+  },
+  {
+   "id": "overweging-68",
+   "soort": "overweging",
+   "vindplaats": "Overweging (68)",
+   "sha256": "19a0fd712b8273b2f274664521b6b0ebd566907410ba5dd56c705d5be1d71131"
+  },
+  {
+   "id": "overweging-69",
+   "soort": "overweging",
+   "vindplaats": "Overweging (69)",
+   "sha256": "cc976bee991c6bda8e1109988694198348ea8268a02df84c5aed34ca9a1ef650"
+  },
+  {
+   "id": "overweging-70",
+   "soort": "overweging",
+   "vindplaats": "Overweging (70)",
+   "sha256": "7e40a14987f2367454849f2e304f718b9bdaa18a56df45277854a2fbf8dcbf6f"
+  },
+  {
+   "id": "overweging-71",
+   "soort": "overweging",
+   "vindplaats": "Overweging (71)",
+   "sha256": "e2c2a667bd0964b4fb4547cdd17fafba1ac8940b0ac79300abb27eef97ef9191"
+  },
+  {
+   "id": "overweging-72",
+   "soort": "overweging",
+   "vindplaats": "Overweging (72)",
+   "sha256": "ba797ff7fcb2b0590c01195624903d0ad8b557817f5b828bcbe2265d9a7cff72"
+  },
+  {
+   "id": "overweging-73",
+   "soort": "overweging",
+   "vindplaats": "Overweging (73)",
+   "sha256": "aefbe84399791b8dc6b79c4dcc634ff9064283ce80a2a196c460002645bb0606"
+  },
+  {
+   "id": "overweging-74",
+   "soort": "overweging",
+   "vindplaats": "Overweging (74)",
+   "sha256": "443e97a4ecd7694139782252ecd5a39f3dee31a54ec80f78395fba4c9da597a7"
+  },
+  {
+   "id": "overweging-75",
+   "soort": "overweging",
+   "vindplaats": "Overweging (75)",
+   "sha256": "69b3d78656488c7f02e4612a967476c1b547f556940b33776c3fb7457b5b6458"
+  },
+  {
+   "id": "overweging-76",
+   "soort": "overweging",
+   "vindplaats": "Overweging (76)",
+   "sha256": "7db99dd5c5505e748345a637cb8b855efbd64b559678cba26b93ba4364542af9"
+  },
+  {
+   "id": "overweging-77",
+   "soort": "overweging",
+   "vindplaats": "Overweging (77)",
+   "sha256": "1c59eb6e4b29d9650bd2d8fb2e260eb7188c4e94064d68e3eb402c4d21c215f0"
+  },
+  {
+   "id": "overweging-78",
+   "soort": "overweging",
+   "vindplaats": "Overweging (78)",
+   "sha256": "86f0c83fec2e6dd53806b1a120b04c9ad5256bce4a83927cbdd5c2d7b66ba5ce"
+  },
+  {
+   "id": "overweging-79",
+   "soort": "overweging",
+   "vindplaats": "Overweging (79)",
+   "sha256": "452604a4ed24dcef8888824e58a27bb0d1753a714381bb073d34e07044aea325"
+  },
+  {
+   "id": "overweging-80",
+   "soort": "overweging",
+   "vindplaats": "Overweging (80)",
+   "sha256": "7be1a71e953dc28c68f2671ca240bf2949070e1e07eb2a67b973900f3e074504"
+  },
+  {
+   "id": "overweging-81",
+   "soort": "overweging",
+   "vindplaats": "Overweging (81)",
+   "sha256": "481478a88bb37cb3a41411d422116608b4926ff7704f9b1f5656d78c035575ef"
+  },
+  {
+   "id": "overweging-82",
+   "soort": "overweging",
+   "vindplaats": "Overweging (82)",
+   "sha256": "8b6764e63958315369cac30337238132222fcc56d1ced0a0aa1e458fd9f76c27"
+  },
+  {
+   "id": "overweging-83",
+   "soort": "overweging",
+   "vindplaats": "Overweging (83)",
+   "sha256": "fcef214cc211318bd011e6f3ad501005e36b30bf0af03b905dfce172eb8657b6"
+  },
+  {
+   "id": "overweging-84",
+   "soort": "overweging",
+   "vindplaats": "Overweging (84)",
+   "sha256": "f1ae3a2a5ecd5c3833208582e86fa42d08182958475bcfe44d25c4e8e0017e79"
+  },
+  {
+   "id": "overweging-85",
+   "soort": "overweging",
+   "vindplaats": "Overweging (85)",
+   "sha256": "f8fa8007c0bd02a266d6c3989ce29cef1fa211f284eca6a16be4ea8b9d00de64"
+  },
+  {
+   "id": "overweging-86",
+   "soort": "overweging",
+   "vindplaats": "Overweging (86)",
+   "sha256": "7938787d05cc586ffd10803510944ac3508cc212634d0ad0e047570d7c85d52d"
+  },
+  {
+   "id": "overweging-87",
+   "soort": "overweging",
+   "vindplaats": "Overweging (87)",
+   "sha256": "e094b8e1f149717f4b00cf7e5cc12b31e4f64635697bcddb87efa343ac3e3b98"
+  },
+  {
+   "id": "overweging-88",
+   "soort": "overweging",
+   "vindplaats": "Overweging (88)",
+   "sha256": "0fb5a95f8d8d4ebdd46cdcfeec4dd2ca8472a613ce53e26f803cb9ed8be2be65"
+  },
+  {
+   "id": "overweging-89",
+   "soort": "overweging",
+   "vindplaats": "Overweging (89)",
+   "sha256": "eaf4a82a06387dcff41614934eb6cdeec73777d84741068585d6bb9aed20e75c"
+  },
+  {
+   "id": "overweging-90",
+   "soort": "overweging",
+   "vindplaats": "Overweging (90)",
+   "sha256": "ff7d94cdd6c8335e7785e9a1d92df1409f491b0dc379dd846fd37a7b325a8195"
+  },
+  {
+   "id": "overweging-91",
+   "soort": "overweging",
+   "vindplaats": "Overweging (91)",
+   "sha256": "72a9b72d6762caf719578ebaa738f9db53ef9cd6382339051ce66c81c6b70fba"
+  },
+  {
+   "id": "overweging-92",
+   "soort": "overweging",
+   "vindplaats": "Overweging (92)",
+   "sha256": "086e9052b7cbe0de57b86ee08815e70f81a7a62d43165ab749bbb85ea7010d55"
+  },
+  {
+   "id": "overweging-93",
+   "soort": "overweging",
+   "vindplaats": "Overweging (93)",
+   "sha256": "972630c7857524136f163d6cf81c3d014759e7b45f6800d24e2d1c7ab0a2d875"
+  },
+  {
+   "id": "overweging-94",
+   "soort": "overweging",
+   "vindplaats": "Overweging (94)",
+   "sha256": "77c69a0637c64674e978160bd0482e8722e99628dad78962215e4222865fd94c"
+  },
+  {
+   "id": "overweging-95",
+   "soort": "overweging",
+   "vindplaats": "Overweging (95)",
+   "sha256": "ba6e15a95b43ce1caa58acf5ff31a123097421a6ec1dcc45e9aca12a721bbb5f"
+  },
+  {
+   "id": "overweging-96",
+   "soort": "overweging",
+   "vindplaats": "Overweging (96)",
+   "sha256": "ed5b771c4f06c5f02400b49d97c4ca30a47e1b5d926846212002308810319a08"
+  },
+  {
+   "id": "overweging-97",
+   "soort": "overweging",
+   "vindplaats": "Overweging (97)",
+   "sha256": "057c5fb0952d3cfb65ab18202c7f1aa43e80609d25825fc79685377ebfcb8fc4"
+  },
+  {
+   "id": "overweging-98",
+   "soort": "overweging",
+   "vindplaats": "Overweging (98)",
+   "sha256": "c9057d3b56bafe82e90c4098f83f7b8a5e3511e3b2a87635f4f08eb7b642bcbb"
+  },
+  {
+   "id": "overweging-99",
+   "soort": "overweging",
+   "vindplaats": "Overweging (99)",
+   "sha256": "c678bca3a9d40e7154689656aa0397eee0444beb5778abf43b41677878bb1b44"
+  },
+  {
+   "id": "overweging-100",
+   "soort": "overweging",
+   "vindplaats": "Overweging (100)",
+   "sha256": "6355f00be23caceebb5f3606b1c19fd84dcf78377ebb56dbee9a0268214358fd"
+  },
+  {
+   "id": "overweging-101",
+   "soort": "overweging",
+   "vindplaats": "Overweging (101)",
+   "sha256": "b1c237b1ee5fa0f301e8e0349493cd07d70d66820fa279313e689c1127b151d7"
+  },
+  {
+   "id": "overweging-102",
+   "soort": "overweging",
+   "vindplaats": "Overweging (102)",
+   "sha256": "a9e65d087d823f9573321edf7db554ebeea3d838cb8b7dc13f3d3e6c0d2b4026"
+  },
+  {
+   "id": "overweging-103",
+   "soort": "overweging",
+   "vindplaats": "Overweging (103)",
+   "sha256": "44a9e3bb227a5c1c7210027516da9934a27f914075dfa4a0b071c869018aee58"
+  },
+  {
+   "id": "overweging-104",
+   "soort": "overweging",
+   "vindplaats": "Overweging (104)",
+   "sha256": "b927da93b53d425f27186d68fd763ba9e6eea30efdb7ea8c0999469b6f34c1e8"
+  },
+  {
+   "id": "overweging-105",
+   "soort": "overweging",
+   "vindplaats": "Overweging (105)",
+   "sha256": "ccfba14cb3a5a564d4d7c95b1a0987c9b3997005cb3b55b3b8285746b11a00db"
+  },
+  {
+   "id": "overweging-106",
+   "soort": "overweging",
+   "vindplaats": "Overweging (106)",
+   "sha256": "eb62ffb05c5e231363d008e3aa770f6fa967d4c4c6042009a34bcb6c5b6e99c6"
+  },
+  {
+   "id": "overweging-107",
+   "soort": "overweging",
+   "vindplaats": "Overweging (107)",
+   "sha256": "8f207b8318744ad87a36a35a3e2a92eb76205dfad2b8ca2844d8e2263e4c8be6"
+  },
+  {
+   "id": "overweging-108",
+   "soort": "overweging",
+   "vindplaats": "Overweging (108)",
+   "sha256": "2f3ab301ec0cfd30d8c991706ddb6183e0856087cd8f78a56a72c48ca98813b9"
+  },
+  {
+   "id": "overweging-109",
+   "soort": "overweging",
+   "vindplaats": "Overweging (109)",
+   "sha256": "8961d1f505fe3733840e34a2a18f03654e5b06928b9c11f238e7e1d6ef12513f"
+  },
+  {
+   "id": "overweging-110",
+   "soort": "overweging",
+   "vindplaats": "Overweging (110)",
+   "sha256": "179f52da80563a2376ae07323a6fbad201712a0e3fd1fcc412bce063e6b7e24c"
+  },
+  {
+   "id": "overweging-111",
+   "soort": "overweging",
+   "vindplaats": "Overweging (111)",
+   "sha256": "da68bdb9fa26eca0e6d0a0a4355a678d8e90a7899316ba63148844b127c310e6"
+  },
+  {
+   "id": "overweging-112",
+   "soort": "overweging",
+   "vindplaats": "Overweging (112)",
+   "sha256": "cfe45f274e92050cdb919c716ca73290ef2375c4c7db6c7568c42087b2bf3e26"
+  },
+  {
+   "id": "overweging-113",
+   "soort": "overweging",
+   "vindplaats": "Overweging (113)",
+   "sha256": "741ff029e4bbffbf9c65de2426680b0d50d6132c60f3ebd45dc61302ca11811b"
+  },
+  {
+   "id": "overweging-114",
+   "soort": "overweging",
+   "vindplaats": "Overweging (114)",
+   "sha256": "c62da1811ae9451341f28b5ff5a7234f8143731bf7bf378ec996327c5b2256be"
+  },
+  {
+   "id": "overweging-115",
+   "soort": "overweging",
+   "vindplaats": "Overweging (115)",
+   "sha256": "f4ef67cf34f2c78343507bb9076b8c4075ef47051d4a0306be4aaa460d762838"
+  },
+  {
+   "id": "vaststellingsformule",
+   "soort": "slotformule",
+   "vindplaats": "Vaststellingsformule",
+   "tekst": "HEBBEN DE VOLGENDE VERORDENING VASTGESTELD:",
+   "sha256": "b0b0b5c203b6686dd2be2aba9cb8de1b4df6e0f3de5b1270bedc1981900bb6c2"
+  },
+  {
+   "id": "hoofdstuk-i",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk I (opschrift)",
+   "tekst": "HOOFDSTUK I ALGEMENE BEPALINGEN",
+   "sha256": "b972ca7858d8b46dcf3c25185b31dac571c7160feed5e5b9e7400cd47c4e74b7"
+  },
+  {
+   "id": "art1",
+   "soort": "artikel",
+   "vindplaats": "Artikel 1",
+   "plaats": "hoofdstuk-i",
+   "opschrift": "Onderwerp en toepassingsgebied",
+   "fijnmazig": true,
+   "sha256": "3be7fb902e7d73aee9d22574d1fe96c786e80ed97a462f9ec1d7ddb821a6b12e"
+  },
+  {
+   "id": "art1-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 1",
+   "ouder": "art1",
+   "tekst": "1. Bij deze verordening wordt de Europese ruimte voor gezondheidsgegevens (European Health Data Space — EHDS) vastgesteld door te voorzien in gemeenschappelijke regels, normen en infrastructuren en een governancekader, teneinde de toegang tot elektronische gezondheidsgegevens te vergemakkelijken met het oog op het primaire gebruik van elektronische gezondheidsgegevens en secundaire gebruik van die gegevens.",
+   "sha256": "1e32acf381d34b23ab25bfbb9e736680e132814fa8d2bf9d95d9f97edff0ddac"
+  },
+  {
+   "id": "art1-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 2",
+   "ouder": "art1",
+   "tekst": "2. Deze verordening:",
+   "sha256": "26da4148608386e689c7986f26747dc948843b7c0237ed43aba28667bc466848"
+  },
+  {
+   "id": "art1-lid2-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 2, punt a)",
+   "ouder": "art1-lid2",
+   "tekst": "a) specificeert de in Verordening (EU) 2016/679 vastgestelde rechten van natuurlijke personen met betrekking tot het primaire gebruik en secundaire gebruik van hen betreffende persoonlijke elektronische gezondheidsgegevens en vult die rechten aan;",
+   "sha256": "f78903a041db5cc52df710fa72bc8a554710a2cc3ecc6a7f09bc8c165480bc22"
+  },
+  {
+   "id": "art1-lid2-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 2, punt b)",
+   "ouder": "art1-lid2",
+   "tekst": "b) bevat gemeenschappelijke voorschriften voor systemen voor elektronische patiëntendossiers (“EPD-systemen”) met betrekking tot twee verplichte geharmoniseerde softwarecomponenten, namelijk de “Europese interoperabiliteitssoftwarecomponent voor EPD-systemen” en de “Europese logsoftwarecomponent voor EPD-systemen” zoals gedefinieerd in artikel 2, lid 2, punt n), respectievelijk punt o), en voor wellnessapps waarvan wordt geclaimd dat zij interoperabel zijn met EPD-systemen met betrekking tot die twee geharmoniseerde softwarecomponenten, wat primair gebruik van elektronische gezondheidsgegevens betreft;",
+   "sha256": "faf2664dc0d6d71148235c7584a0f1d695c3d3268c9d1ea72a34fcda21051fa6"
+  },
+  {
+   "id": "art1-lid2-onderdeel-c",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 2, punt c)",
+   "ouder": "art1-lid2",
+   "tekst": "c) stelt gemeenschappelijke regels en mechanismen vast voor het primaire gebruik van elektronische gezondheidsgegevens en het secundaire gebruik van elektronische gezondheidsgegevens;",
+   "sha256": "e6677dcac65aa5c1e58a2dc0cc6a2e48dcabd28d692b41ea7570ffec0e54cdc6"
+  },
+  {
+   "id": "art1-lid2-onderdeel-d",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 2, punt d)",
+   "ouder": "art1-lid2",
+   "tekst": "d) brengt een grensoverschrijdende infrastructuur tot stand die het primaire gebruik van persoonlijke elektronische gezondheidsgegevens in de hele Unie mogelijk maakt;",
+   "sha256": "84f06b69d1f1c06d517996fb68cc47f758116a0de793c7086ff3fde10d1f45c4"
+  },
+  {
+   "id": "art1-lid2-onderdeel-e",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 2, punt e)",
+   "ouder": "art1-lid2",
+   "tekst": "e) brengt een grensoverschrijdende infrastructuur tot stand voor het secundaire gebruik van elektronische gezondheidsgegevens;",
+   "sha256": "8a81e1aa3a8eda3d90054afa9d75d29fb8117ebd2b049bef7a5892b26011f390"
+  },
+  {
+   "id": "art1-lid2-onderdeel-f",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 2, punt f)",
+   "ouder": "art1-lid2",
+   "tekst": "f) stelt governance- en coördinatiemechanismen vast op Unie- en nationaal niveau voor zowel het primaire gebruik van elektronische gezondheidsgegevens als het secundaire gebruik van elektronische gezondheidsgegevens.",
+   "sha256": "59d0c8586f26b11e6d547a0ef1cb01365b54c0ec0d81c325b8072f07e0e2c965"
+  },
+  {
+   "id": "art1-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 3",
+   "ouder": "art1",
+   "tekst": "3. Deze verordening doet geen afbreuk aan andere rechtshandelingen van de Unie betreffende de toegang tot, en het delen van of het secundaire gebruik van, elektronische gezondheidsgegevens, noch aan vereisten van de Unie voor de verwerking van gegevens in verband met elektronische gezondheidsgegevens, met name Verordeningen (EG) nr. 223/2009, (EU) nr. 536/2014, (EU) 2016/679, (EU) 2018/1725, (EU) 2022/868 en (EU) 2023/2854 van het Europees Parlement en d Raad, en Richtlijnen 2002/58/EG en (EU) 2016/943 van het Europees Parlement en de Raad.",
+   "sha256": "5cee99830f7cc98920fae237ffc66ebd276c9b15079b17c30ce4b3faa9785065"
+  },
+  {
+   "id": "art1-lid4",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 4",
+   "ouder": "art1",
+   "tekst": "4. Verwijzingen in deze verordening naar de bepalingen van Verordening (EU) 2016/679 worden in voorkomend geval ook gelezen als verwijzingen naar de overeenkomstige bepalingen van Verordening (EU) 2018/1725, wat de instellingen, organen en instanties van de Unie betreft.",
+   "sha256": "fd0436efbdf2cf4d23add471ebef0f61396aa02ff7ad7f901f707ea294c27856"
+  },
+  {
+   "id": "art1-lid5",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 5",
+   "ouder": "art1",
+   "tekst": "5. Deze verordening doet geen afbreuk aan de Verordeningen (EU) 2017/745, (EU) 2017/746 en (EU) 2024/1689 wat betreft de veiligheid van medische hulpmiddelen, medische hulpmiddelen voor in-vitrodiagnostiek en systemen met artificiële intelligentie (AI) die interageren met EPD-systemen.",
+   "sha256": "4613f3f2597059ba9c09fc61067e78421405e3ff24508231fdadf98ce3ef2919"
+  },
+  {
+   "id": "art1-lid6",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 6",
+   "ouder": "art1",
+   "tekst": "6. Deze verordening doet geen afbreuk aan het Unierecht of het nationale recht inzake de elektronische verwerking van gezondheidsgegevens met het oog op rapportage, het voldoen aan verzoeken om toegang tot informatie of het aantonen of verifiëren van de naleving van wettelijke verplichtingen, of aan het Unierecht of het nationale recht wat betreft het verlenen van toegang tot en de openbaarmaking van officiële documenten.",
+   "sha256": "032c10fcf5625d4eb666e2bedc3477a9bfaa288c4dac8a1570f47f0d9219b408"
+  },
+  {
+   "id": "art1-lid7",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 7",
+   "ouder": "art1",
+   "tekst": "7. Deze verordening doet geen afbreuk aan specifieke bepalingen in het Unierecht of het nationale recht die voorzien in toegang tot elektronische gezondheidsgegevens voor verdere verwerking door openbare lichamen van de lidstaten, door instellingen, organen en instanties van de Unie, of door particuliere entiteiten waaraan krachtens het Unierecht of het nationale recht een taak van algemeen belang is toevertrouwd, met het oog op de uitvoering van die taak.",
+   "sha256": "af5f164990a9dd4538ca6e579aed4ff6f1c4361f968fe30ea1a8885265c0fa7f"
+  },
+  {
+   "id": "art1-lid8",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 8",
+   "ouder": "art1",
+   "tekst": "8. Deze verordening doet geen afbreuk aan de toegang tot elektronische gezondheidsgegevens voor secundair gebruik dat is overeengekomen in het kader van contractuele of administratieve regelingen tussen publieke of particuliere entiteiten.",
+   "sha256": "be324511eecf1ba2a18430513b1f3eea42bbddee74248302636f496a9f8b5022"
+  },
+  {
+   "id": "art1-lid9",
+   "soort": "lid",
+   "vindplaats": "Artikel 1, lid 9",
+   "ouder": "art1",
+   "tekst": "9. Deze verordening is niet van toepassing op de verwerking van persoonsgegevens in de volgende gevallen:",
+   "sha256": "36ef05bed1cd1379265ce9c8dafc50476e9415feed1c268414b8110762be0807"
+  },
+  {
+   "id": "art1-lid9-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 9, punt a)",
+   "ouder": "art1-lid9",
+   "tekst": "a) wanneer de verwerking wordt uitgevoerd in het kader van activiteiten die buiten de werkingssfeer van het Unierecht vallen;",
+   "sha256": "e033219f3fb8aea593024fe4307e4a0316315a5148a17d54c91b0fd1caca9734"
+  },
+  {
+   "id": "art1-lid9-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 1, lid 9, punt b)",
+   "ouder": "art1-lid9",
+   "tekst": "b) wanneer de verwerking wordt uitgevoerd door bevoegde autoriteiten met het oog op de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid.",
+   "sha256": "6b38d95f244605df73dd5fd73d009eaa5560b0e6b27c24892c2e2d7d09530a48"
+  },
+  {
+   "id": "art2",
+   "soort": "artikel",
+   "vindplaats": "Artikel 2",
+   "plaats": "hoofdstuk-i",
+   "opschrift": "Definities",
+   "fijnmazig": true,
+   "sha256": "53e927b74a1ca7592b942bab97c73503ff86447a0bc3af9d29a1a60120615522"
+  },
+  {
+   "id": "art2-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 2, lid 1",
+   "ouder": "art2",
+   "tekst": "1. Voor de toepassing van deze verordening gelden de volgende definities:",
+   "sha256": "1ec1a45f1a5cdf5e1ec6c1ef77e313b775cab55417c808e481ea8a9997bf6456"
+  },
+  {
+   "id": "art2-lid1-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt a)",
+   "ouder": "art2-lid1",
+   "tekst": "a) de definities van “persoonsgegevens”, “verwerking”, “pseudonimisering”, “verwerkingsverantwoordelijke”, “verwerker”, “derde”, “toestemming”, “genetische gegevens”, “gegevens over gezondheid” en “internationale organisatie” die zijn neergelegd in artikel 4, respectievelijk leden 1, 2, 5, 7, 8, 10, 11, 13, 15 en 26, van Verordening (EU) 2016/679;",
+   "sha256": "447a14b7c6e00e512f60e07bf651c461e3dacd3529dc3cdd8d3c0b49fd817a20"
+  },
+  {
+   "id": "art2-lid1-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt b)",
+   "ouder": "art2-lid1",
+   "tekst": "b) de definities van “gezondheidszorg”, “lidstaat van aansluiting”, “lidstaat waar de behandeling plaatsvindt”, “gezondheidswerker”, “zorgaanbieder”, “geneesmiddel” en “recept” die zijn neergelegd in artikel 3, respectievelijk punten a), c), d), f), g), i) en k), van Richtlijn 2011/24/EU;",
+   "sha256": "6a3178191b97b915e51798f3daa0607aa3ad3d4424eafcbe674c057d093a02b7"
+  },
+  {
+   "id": "art2-lid1-onderdeel-c",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt c)",
+   "ouder": "art2-lid1",
+   "tekst": "c) de definities van “gegevens”, “toegang”, “data-altruïsme”, “openbaar lichaam” en “beveiligde verwerkingsomgeving” die zijn neergelegd in artikel 2, respectievelijk punten 1), 13), 16), 17) en 20), van Verordening (EU) 2022/868;",
+   "sha256": "829866fdbe5b69d5d548350e2021b02ebf241bb436b54467d11d431493a4a4e8"
+  },
+  {
+   "id": "art2-lid1-onderdeel-d",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt d)",
+   "ouder": "art2-lid1",
+   "tekst": "d) de definities van “op de markt aanbieden”, “in de handel brengen”, “markttoezicht”, “markttoezichtautoriteit”, “non-conformiteit”, “fabrikant”, “importeur”, “distributeur”, “marktdeelnemer”, “corrigerende maatregel”, “terugroepen” en “uit de handel nemen” die zijn neergelegd in artikel 3, respectievelijk punten 1), 2), 3), 4), 7), 8), 9), 10), 13), 16), 22) en 23), van Verordening (EU) 2019/1020;",
+   "sha256": "b4463bccd4a413196df4cbe6b83fecd0841d372d7976573fc49b0694a52e56f4"
+  },
+  {
+   "id": "art2-lid1-onderdeel-e",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt e)",
+   "ouder": "art2-lid1",
+   "tekst": "e) de definities van “medisch hulpmiddel”, “beoogd doeleind”, “gebruiksaanwijzing”, “prestaties”, “zorginstelling” en “gemeenschappelijke specificaties” die zijn neergelegd in artikel 2, respectievelijk punten 1), 12), 14), 22), 36) en 71), van Verordening (EU) 2017/745;",
+   "sha256": "f4d60575111e4e5db75bcf9a5b28007867287132bd5e8123970ac9c1338e183b"
+  },
+  {
+   "id": "art2-lid1-onderdeel-f",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt f)",
+   "ouder": "art2-lid1",
+   "tekst": "f) de definities van “elektronische identificatie” en “elektronisch identificatiemiddel” die zijn neergelegd in artikel 3, punt 1) respectievelijk punt 2), van Verordening (EU) nr. 910/2014;",
+   "sha256": "94e942381fc371ae05303be2e60f9ac815404c130b074c09e3fbdd447333172b"
+  },
+  {
+   "id": "art2-lid1-onderdeel-g",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt g)",
+   "ouder": "art2-lid1",
+   "tekst": "g) de definitie van “aanbestedende diensten” die is neergelegd in artikel 2, lid 1, punt 1, van Richtlijn 2014/24/EU van het Europees Parlement en de Raad;",
+   "sha256": "f58376a50abfc5b381698b5d2f472af70d5effb09a5ab43ac57da226b23ba2ad"
+  },
+  {
+   "id": "art2-lid1-onderdeel-h",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 1, punt h)",
+   "ouder": "art2-lid1",
+   "tekst": "h) de definitie van “volksgezondheid” die is neergelegd in artikel 3, punt c), van Verordening (EG) nr. 1338/2008 van het Europees Parlement en de Raad.",
+   "sha256": "562962f465ab7b8f5af61a2e676098bcfce55e2813bf0d444d10b6cc35fceb8f"
+  },
+  {
+   "id": "art2-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 2, lid 2",
+   "ouder": "art2",
+   "tekst": "2. Voorts gelden voor de toepassing van deze verordening de volgende definities:",
+   "sha256": "e09787eda4fd97f42816ad4437d866f65373149ecb4d96aa7d7fa8913801d8ed"
+  },
+  {
+   "id": "art2-lid2-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt a)",
+   "ouder": "art2-lid2",
+   "tekst": "a) “persoonlijke elektronische gezondheidsgegevens”: gegevens over gezondheid en genetische gegevens die in elektronische vorm worden verwerkt;",
+   "sha256": "74ef8fe0e195e8310d699e7bcebd0ffba2a12fcf3ddf6f0bef18ce2d6fe48830"
+  },
+  {
+   "id": "art2-lid2-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt b)",
+   "ouder": "art2-lid2",
+   "tekst": "b) “niet-persoonsgebonden elektronische gezondheidsgegevens”: andere elektronische gezondheidsgegevens dan persoonlijke elektronische gezondheidsgegevens, met inbegrip van zowel gegevens die geanonimiseerd zijn zodat zij niet langer betrekking hebben op een geïdentificeerde of identificeerbare natuurlijke persoon (de “betrokkene”) als gegevens die nooit betrekking hebben gehad op een betrokkene;",
+   "sha256": "c999d29c7547ff6bac2d8267f54ed29073708d25718b07d8b38f79aaec14360e"
+  },
+  {
+   "id": "art2-lid2-onderdeel-c",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt c)",
+   "ouder": "art2-lid2",
+   "tekst": "c) “elektronische gezondheidsgegevens”: persoonlijke of niet-persoonsgebonden elektronische gezondheidsgegevens;",
+   "sha256": "ec3693118efce86002f4163777408406d4b0e24c12cd3ba9d40793b93b626e90"
+  },
+  {
+   "id": "art2-lid2-onderdeel-d",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt d)",
+   "ouder": "art2-lid2",
+   "tekst": "d) “primair gebruik”: de verwerking van elektronische gezondheidsgegevens voor de verlening van gezondheidszorg om de gezondheidstoestand van de natuurlijke persoon op wie die gegevens betrekking hebben te beoordelen, te behouden of te herstellen, waaronder het voorschrijven en het verstrekken van geneesmiddelen en medische hulpmiddelen, alsmede voor relevante sociale, administratieve of vergoedingsdiensten;",
+   "sha256": "c62e2dbf0bf7b71c147a3611d9f52f3d6b3a6f21a062f295383fd3f40a84a994"
+  },
+  {
+   "id": "art2-lid2-onderdeel-e",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt e)",
+   "ouder": "art2-lid2",
+   "tekst": "e) “secundair gebruik”: de verwerking van elektronische gezondheidsgegevens voor de in hoofdstuk IV van deze verordening vermelde doeleinden, anders dan de oorspronkelijke doeleinden waarvoor zij zijn verzameld of gegenereerd;",
+   "sha256": "60a49ea9814952bc2a67b3d2968c84fca7b6e010f122d108eccc353636d37469"
+  },
+  {
+   "id": "art2-lid2-onderdeel-f",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt f)",
+   "ouder": "art2-lid2",
+   "tekst": "f) “interoperabiliteit”: het vermogen van organisaties, alsook van softwaretoepassingen of apparaten van dezelfde fabrikant of van verschillende fabrikanten, om via de processen die zij ondersteunen te interageren, met inbegrip van de uitwisseling van informatie en kennis — zonder de inhoud van de gegevens te wijzigen — tussen die organisaties, softwaretoepassingen of apparaten;",
+   "sha256": "5df82dbc18b8af7a6809c0ea0b1ee7d8810dbb38d927c4e925455c5c42afe7bc"
+  },
+  {
+   "id": "art2-lid2-onderdeel-g",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt g)",
+   "ouder": "art2-lid2",
+   "tekst": "g) “registratie van elektronische gezondheidsgegevens”: het registreren van gezondheidsgegevens in elektronisch format, door het handmatig invoeren van dergelijke gegevens, door het verzamelen van dergelijke gegevens door middel van een apparaat, of door het omzetten in een elektronisch format van niet-elektronische gezondheidsgegevens, die moeten worden verwerkt in een EPD-systeem of een wellnessapp;",
+   "sha256": "ce39eb7fd57b2d42b801186cb5df9adc51dd21bf263d3e76108e789cf088ec27"
+  },
+  {
+   "id": "art2-lid2-onderdeel-h",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt h)",
+   "ouder": "art2-lid2",
+   "tekst": "h) “dienst voor toegang tot elektronische gezondheidsgegevens”: een onlinedienst, zoals een portaal of een applicatie voor mobiele apparaten waar natuurlijke personen die niet beroepshalve handelen, toegang kunnen krijgen tot hun eigen elektronische gezondheidsgegevens of tot de elektronische gezondheidsgegevens van andere natuurlijke personen, voor zover zij daartoe wettelijk bevoegd zijn;",
+   "sha256": "78aa593b79d0b2a417571e06550f4e4b0be788f1ab4efda93f359a6e23ee04cb"
+  },
+  {
+   "id": "art2-lid2-onderdeel-i",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt i)",
+   "ouder": "art2-lid2",
+   "tekst": "i) “toegangsdienst voor gezondheidswerkers”: een door een EPD-systeem ondersteunde dienst die gezondheidswerkers toegang geeft tot gegevens van natuurlijke personen die onder hun behandeling staan;",
+   "sha256": "3a68487cd756adacbf64d84d904e82387101f5a1fcd6bffd85e7af5d1bd5650b"
+  },
+  {
+   "id": "art2-lid2-onderdeel-j",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt j)",
+   "ouder": "art2-lid2",
+   "tekst": "j) “elektronisch patiëntendossier” of “EPD”: een verzameling elektronische gezondheidsgegevens van een natuurlijke persoon die in het gezondheidszorgstelsel worden verzameld en voor het verlenen van gezondheidszorg worden verwerkt;",
+   "sha256": "5ce6df7448d8386f113399a597bc3d7d960edd936967ae22d92ff0321946bf29"
+  },
+  {
+   "id": "art2-lid2-onderdeel-k",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt k)",
+   "ouder": "art2-lid2",
+   "tekst": "k) “systeem voor elektronische patiëntendossiers” of “EPD-systeem”: elk systeem waarin de software, of een combinatie van de hardware en de software van dat systeem, het mogelijk maakt persoonlijke elektronische gezondheidsgegevens die behoren tot de in het kader van deze verordening vastgestelde prioritaire categorieën van persoonlijke elektronische gezondheidsgegevens op te slaan, te bemiddelen, te exporteren, in te voeren, om te zetten, te bewerken of te bekijken, en dat door de fabrikant bedoeld is om door zorgaanbieders te worden gebruikt bij het verlenen van patiëntenzorg of door patiënten om toegang te krijgen tot hun elektronische gezondheidsgegevens;",
+   "sha256": "feb5e87e7b7c6b88ece2ff892df4e14353cf22d91299ccbee37384ac710f3684"
+  },
+  {
+   "id": "art2-lid2-onderdeel-l",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt l)",
+   "ouder": "art2-lid2",
+   "tekst": "l) “ingebruikneming”: eerste gebruik in de Unie van een onder deze verordening vallend EPD-systeem overeenkomstig het beoogde doeleind;",
+   "sha256": "21dd3c74acf101a6607b2afa5aab21679bcac661458865f961f3e701d7fa8037"
+  },
+  {
+   "id": "art2-lid2-onderdeel-m",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt m)",
+   "ouder": "art2-lid2",
+   "tekst": "m) “softwarecomponent”: een afzonderlijk softwareonderdeel dat een specifieke functionaliteit biedt of specifieke functies of procedures uitvoert en dat onafhankelijk of in combinatie met andere componenten kan functioneren;",
+   "sha256": "aa5581ca13d23647bb7d6a19b09d5f43c1956b794de5f136bbe9acf2d5b231c6"
+  },
+  {
+   "id": "art2-lid2-onderdeel-n",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt n)",
+   "ouder": "art2-lid2",
+   "tekst": "n) “Europese interoperabiliteitssoftwarecomponent voor EPD-systemen”: een softwarecomponent van het EPD-systeem die persoonlijke elektronische gezondheidsgegevens verstrekt en ontvangt in een bij deze verordening vastgestelde prioritaire categorie voor primair gebruik in het Europees uitwisselingsformat voor elektronische patiëntendossiers waarin deze verordening voorziet, en die losstaat van de Europese logsoftwarecomponent voor EPD-systemen;",
+   "sha256": "da2e519bd23dd949f6e4f3ed59b09e3cbe6cdaf0298ec81b330cefa563f9cda1"
+  },
+  {
+   "id": "art2-lid2-onderdeel-o",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt o)",
+   "ouder": "art2-lid2",
+   "tekst": "o) “Europese logsoftwarecomponent voor EPD-systemen”: een softwarecomponent van het EPD-systeem die loginformatie verstrekt in verband met de toegang van gezondheidswerkers of andere personen tot in het kader van deze verordening vastgestelde prioritaire categorieën persoonlijke elektronische gezondheidsgegevens, in het in punt 3.2 van bijlage II beschreven format en die losstaat van de Europese interoperabiliteitssoftwarecomponent voor EPD-systemen;",
+   "sha256": "70c9c18f2c8589eb08a30542081a1e243cfb6ca3012cb25c2882440ed76407db"
+  },
+  {
+   "id": "art2-lid2-onderdeel-p",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt p)",
+   "ouder": "art2-lid2",
+   "tekst": "p) “CE-conformiteitsmarkering”: een markering waarmee de fabrikant aangeeft dat het EPD-systeem in overeenstemming is met de toepasselijke voorschriften van deze verordening en ander toepasselijk Unierecht dat in het aanbrengen ervan voorziet krachtens Verordening (EG) nr. 765/2008 van het Europees Parlement en de Raad;",
+   "sha256": "9f1cfa372c25c4f126093f1d8c58c05e4693a8d09fd657fc273430cc9de5e62c"
+  },
+  {
+   "id": "art2-lid2-onderdeel-q",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt q)",
+   "ouder": "art2-lid2",
+   "tekst": "q) “risico”: de combinatie van de waarschijnlijkheid dat zich een gevaar voordoet dat schade toebrengt aan de gezondheid, de veiligheid of de informatiebeveiliging en de ernst van dergelijke schade;",
+   "sha256": "540102577c806d100a7f05a069a4711158ff1146c58a8befdb594a4bc60a7bdd"
+  },
+  {
+   "id": "art2-lid2-onderdeel-r",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt r)",
+   "ouder": "art2-lid2",
+   "tekst": "r) “ernstig incident”: een storing of verslechtering van de kenmerken of prestaties van een EPD-systeem dat op de markt wordt aangeboden en dat direct of indirect leidt, had kunnen leiden of kan leiden tot:",
+   "sha256": "0fc2c5e805d73e8795b4c2643091b125e5a69d40f7dfcd3274d967ec1b3c9447"
+  },
+  {
+   "id": "art2-lid2-onderdeel-r-i",
+   "soort": "subonderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt r), subonderdeel i)",
+   "ouder": "art2-lid2-onderdeel-r",
+   "tekst": "i) het overlijden van een natuurlijk persoon of ernstige schade aan de gezondheid van een natuurlijk persoon;",
+   "sha256": "74883f5f1773cddc4eee8296e2d23166c04a745602563540a9eb76d6d8e862a6"
+  },
+  {
+   "id": "art2-lid2-onderdeel-r-ii",
+   "soort": "subonderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt r), subonderdeel ii)",
+   "ouder": "art2-lid2-onderdeel-r",
+   "tekst": "ii) een ernstige inbreuk op de rechten van een natuurlijke persoon;",
+   "sha256": "e4e06b0857f2f4328cc3ac6d94985406d27d34de8a92b13a7b60eaa76ae1c1b3"
+  },
+  {
+   "id": "art2-lid2-onderdeel-r-iii",
+   "soort": "subonderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt r), subonderdeel iii)",
+   "ouder": "art2-lid2-onderdeel-r",
+   "tekst": "iii) ernstige verstoring van het beheer en de exploitatie van kritieke infrastructuur in de gezondheidssector;",
+   "sha256": "24c74559eb0c553d0bf69519ce1ab524e5fb705e86806c1e73676c7dfdb90d2f"
+  },
+  {
+   "id": "art2-lid2-onderdeel-s",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt s)",
+   "ouder": "art2-lid2",
+   "tekst": "s) “zorg”: een professionele dienst die bedoeld is om te voorzien in de specifieke behoeften van natuurlijke personen die wegens een handicap of andere lichamelijke of geestelijke aandoeningen bijstand, met inbegrip van preventieve en ondersteunende maatregelen, nodig hebben om essentiële activiteiten in het dagelijks leven uit te kunnen voeren ter ondersteuning van hen betreffende persoonlijke autonomie;",
+   "sha256": "bc126eaeed6a84a13e1c779a1e9e4e140fe8b8c54698aadbdf39b34a206d257f"
+  },
+  {
+   "id": "art2-lid2-onderdeel-t",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt t)",
+   "ouder": "art2-lid2",
+   "tekst": "t) “houder van gezondheidsgegevens”: een natuurlijke of rechtspersoon, overheidsinstantie, agentschap of ander orgaan in de gezondheidszorg- of de zorgsector, met inbegrip van, indien noodzakelijk, vergoedingsdiensten, alsook elke natuurlijke of rechtspersoon die producten of diensten ontwikkelt die bestemd zijn voor de gezondheids-, de gezondheidszorg- of de zorgsector, die wellnessapps ontwikkelt of vervaardigt, die wetenschappelijk onderzoek verricht in verband met de gezondheidszorg- of de zorgsector of optreedt als sterfteregister, alsook instellingen, organen of instanties van de Unie die:",
+   "sha256": "638ecf9e6aac27c2f0cc9f9963b290403d171c9de4c9b63b01c727b892a1e4da"
+  },
+  {
+   "id": "art2-lid2-onderdeel-t-i",
+   "soort": "subonderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt t), subonderdeel i)",
+   "ouder": "art2-lid2-onderdeel-t",
+   "tekst": "i) het recht of de verplichting hebben om overeenkomstig het toepasselijke Unierecht of nationaal recht en in hun hoedanigheid van verwerkingsverantwoordelijke of medeverwerkingsverantwoordelijke persoonlijke elektronische gezondheidsgegevens te verwerken voor de verstrekking van gezondheidszorg of zorg of voor doelstellingen op het gebied van volksgezondheid, vergoedingen, onderzoek, innovatie, beleidsvorming, officiële statistieken of patiëntveiligheid of voor regelgevingsdoeleinden; ofwel",
+   "sha256": "402f3af79e3c0789faf986c4030ba68cbc18e22d40dc202f64780c9d701336f6"
+  },
+  {
+   "id": "art2-lid2-onderdeel-t-ii",
+   "soort": "subonderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt t), subonderdeel ii)",
+   "ouder": "art2-lid2-onderdeel-t",
+   "tekst": "ii) in staat zijn om niet-persoonsgebonden elektronische gezondheidsgegevens ter beschikking te stellen door controle op het technische ontwerp van een product en aanverwante diensten, met inbegrip van het registreren, verstrekken, beperken of uitwisselen van die gegevens;",
+   "sha256": "3686cd4c48687631e70f0d3025b17bade27de2e4022fa6aee23c16052bcc29e6"
+  },
+  {
+   "id": "art2-lid2-onderdeel-u",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt u)",
+   "ouder": "art2-lid2",
+   "tekst": "u) “gebruiker van gezondheidsgegevens”: een natuurlijke persoon of rechtspersoon, met inbegrip van instellingen, organen of instanties van de Unie waaraan rechtmatige toegang tot elektronische gezondheidsgegevens voor secundair gebruik is verleend op grond van een gegevensvergunning, een goedkeuring van een verzoek om gezondheidsgegevens of een toegangsgoedkeuring van een gemachtigde deelnemer in HealthData@EU;",
+   "sha256": "703ab0231ab32ea652f6e05e3f620fc2549a14b365e3db4a6de32bf0dae0a9c3"
+  },
+  {
+   "id": "art2-lid2-onderdeel-v",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt v)",
+   "ouder": "art2-lid2",
+   "tekst": "v) “gegevensvergunning”: een administratief besluit dat door een instantie voor toegang tot gezondheidsgegevens aan een gebruiker van gezondheidsgegevens wordt afgegeven om bepaalde in de gegevensvergunning gespecificeerde elektronische gezondheidsgegevens te verwerken voor specifieke secundaire gebruiksdoeleinden, op basis van de in hoofdstuk IV van deze verordening vastgestelde voorwaarden;",
+   "sha256": "d0945a969963a2a6e5fd15b2b049d2bb04e14e9e52538bb1232a0630c500d16b"
+  },
+  {
+   "id": "art2-lid2-onderdeel-w",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt w)",
+   "ouder": "art2-lid2",
+   "tekst": "w) “dataset”: een gestructureerde verzameling van elektronische gezondheidsgegevens;",
+   "sha256": "fe63d1eb497fed80f9f2c7d2ef6c77719371d9e65680b2c65f728855896a5244"
+  },
+  {
+   "id": "art2-lid2-onderdeel-x",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt x)",
+   "ouder": "art2-lid2",
+   "tekst": "x) “dataset met een grote impact bestemd voor secundair gebruik”: een dataset waarvan het hergebruik aanzienlijke voordelen met zich meebrengt vanwege de relevantie ervan voor gezondheidsonderzoek;",
+   "sha256": "e235e651e15a4e5309de44640f5a3380a7a091ad8fd87cb0fe2c699712180b9c"
+  },
+  {
+   "id": "art2-lid2-onderdeel-y",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt y)",
+   "ouder": "art2-lid2",
+   "tekst": "y) “catalogus van datasets”: een verzameling beschrijvingen van datasets die op systematische wijze is geordend en met inbegrip van een gebruikersgericht openbaar gedeelte, waarin informatie over de parameters van individuele datasets langs elektronische weg toegankelijk is via een onlineportaal;",
+   "sha256": "8ddfc02354e9c8337573599eb92d9da598fd7e4ab62b0d8c034230616bb8dbe6"
+  },
+  {
+   "id": "art2-lid2-onderdeel-z",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt z)",
+   "ouder": "art2-lid2",
+   "tekst": "z) “gegevenskwaliteit”: de mate waarin de elementen van elektronische gezondheidsgegevens geschikt zijn voor het beoogde primaire gebruik en secundaire gebruik ervan;",
+   "sha256": "f1da0cb914669da2918613a872b7deabf4fbc895cb3630c1dc3ed8236b99a309"
+  },
+  {
+   "id": "art2-lid2-onderdeel-aa",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt aa)",
+   "ouder": "art2-lid2",
+   "tekst": "aa) “gegevenskwaliteits- en gegevensbruikbaarheidslabel”: een grafisch diagram, met inbegrip van een schaal, waarin de gegevenskwaliteit en de gebruiksvoorwaarden van een dataset worden beschreven;",
+   "sha256": "daa3b9132a89846face380ea64d6740a0498e1f8df4c7e6c7f88e480da63606d"
+  },
+  {
+   "id": "art2-lid2-onderdeel-ab",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 2, lid 2, punt ab)",
+   "ouder": "art2-lid2",
+   "tekst": "ab) “wellnessapp”: elke software, of elke combinatie van hardware en software, die door de fabrikant is bedoeld om door een natuurlijke persoon te worden gebruikt, voor de verwerking van elektronische gezondheidsgegevens, specifiek voor de verstrekking van informatie over de gezondheid van natuurlijke personen of voor zorgverlening voor andere doeleinden dan de verstrekking van gezondheidszorg.",
+   "sha256": "44f78ca2753d9b2bfc57f46fc2f4cbfa9b3fd9b825190216f75d0b43f621b1ad"
+  },
+  {
+   "id": "hoofdstuk-ii",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk II (opschrift)",
+   "tekst": "HOOFDSTUK II PRIMAIR GEBRUIK",
+   "sha256": "e126dbf2b3d680c4cc1d9ed0cf865d6d77c7b5fc6677afc166195060f9bf6d30"
+  },
+  {
+   "id": "hoofdstuk-ii-afdeling-1",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk II, afdeling 1 (opschrift)",
+   "tekst": "AFDELING 1 Rechten van natuurlijke personen met betrekking tot het primaire gebruik van hen betreffende persoonlijke elektronische gezondheidsgegevens, en daarmee verband houdende bepalingen",
+   "sha256": "37da934dabc6590b8d151db83feb5ca561c7df44c8e10fc2c34905ea6862ff08"
+  },
+  {
+   "id": "art3",
+   "soort": "artikel",
+   "vindplaats": "Artikel 3",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Recht van natuurlijke personen om toegang te hebben tot hen betreffende persoonlijke elektronische gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "9f2800d4e204133165c66850330682afee93a847d80cd2bc960b96187461398e"
+  },
+  {
+   "id": "art4",
+   "soort": "artikel",
+   "vindplaats": "Artikel 4",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Diensten voor toegang tot elektronische gezondheidsgegevens voor natuurlijke personen en hun vertegenwoordigers",
+   "fijnmazig": false,
+   "sha256": "d94ec021448f015a16d657789093c33e5137fdc25694a473e2854465e3a77c48"
+  },
+  {
+   "id": "art5",
+   "soort": "artikel",
+   "vindplaats": "Artikel 5",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Recht van natuurlijke personen om informatie in hun eigen EPD op te nemen",
+   "fijnmazig": false,
+   "sha256": "de195756d1cfbbb2fbe84403b5403b273cce7b02b5684ba088c3d971af438a64"
+  },
+  {
+   "id": "art6",
+   "soort": "artikel",
+   "vindplaats": "Artikel 6",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Recht van natuurlijke personen op rectificatie",
+   "fijnmazig": false,
+   "sha256": "bb4bc7754f154e0a786d00d4369101c5a7ced9a79c01746c9b60e02b24ea9ff8"
+  },
+  {
+   "id": "art7",
+   "soort": "artikel",
+   "vindplaats": "Artikel 7",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Recht op overdraagbaarheid van gegevens voor natuurlijke personen",
+   "fijnmazig": false,
+   "sha256": "27b5c99a58a76389c939a6b971748b9a6171106bd1eb478c623c3832f81ce591"
+  },
+  {
+   "id": "art8",
+   "soort": "artikel",
+   "vindplaats": "Artikel 8",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Recht om de toegang te beperken",
+   "fijnmazig": false,
+   "sha256": "25e6bce0b085d6bc9128cea5f10e7627c4530cd14a45c85ff96eeb822ec5783b"
+  },
+  {
+   "id": "art9",
+   "soort": "artikel",
+   "vindplaats": "Artikel 9",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Recht om informatie te krijgen over de toegang tot gegevens",
+   "fijnmazig": false,
+   "sha256": "e4311503c36f349d7c481727200f0ad2ac051a4451b54b6c3a16f33c9dad6044"
+  },
+  {
+   "id": "art10",
+   "soort": "artikel",
+   "vindplaats": "Artikel 10",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Opt-out-recht van natuurlijke personen in primair gebruik",
+   "fijnmazig": false,
+   "sha256": "c6be33580fa0f85dda076869a87b4116f9e69d934a41d0b380b1ecd8f281f78b"
+  },
+  {
+   "id": "art11",
+   "soort": "artikel",
+   "vindplaats": "Artikel 11",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Toegang van gezondheidswerkers tot persoonlijke elektronische gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "763b966c662b1248ee7a2ed4b4bad0a7ce68fc439829bfc9bdff50c77dd949b3"
+  },
+  {
+   "id": "art12",
+   "soort": "artikel",
+   "vindplaats": "Artikel 12",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Toegangsdiensten voor gezondheidswerkers",
+   "fijnmazig": false,
+   "sha256": "1436655f9b3c5a7565c3ef0ace04802cf193df17d270c44ba0e4916f933726fe"
+  },
+  {
+   "id": "art13",
+   "soort": "artikel",
+   "vindplaats": "Artikel 13",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Registratie van persoonlijke elektronische gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "9fcb83d210cccc64b1df6808638e45ab38b5277e923928cee5b520534385e2f3"
+  },
+  {
+   "id": "art14",
+   "soort": "artikel",
+   "vindplaats": "Artikel 14",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Prioritaire categorieën van persoonlijke elektronische gezondheidsgegevens voor primair gebruik",
+   "fijnmazig": false,
+   "sha256": "548ee7f7a81c1157f2ef2f51aa10ee66e28645d3e207f93558e13bb77f3fa4e2"
+  },
+  {
+   "id": "art15",
+   "soort": "artikel",
+   "vindplaats": "Artikel 15",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Europees uitwisselingsformat voor elektronische patiëntendossiers",
+   "fijnmazig": false,
+   "sha256": "cfc2e36c16fffe9fa7bca1164d4ee12e0ee2455edd5c89f42e43831ea32acda8"
+  },
+  {
+   "id": "art16",
+   "soort": "artikel",
+   "vindplaats": "Artikel 16",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Identificatiebeheer",
+   "fijnmazig": false,
+   "sha256": "d47f842f5450db206e748ac7064cbfb6d1f39f3c651bfae31c8617e2c351c174"
+  },
+  {
+   "id": "art17",
+   "soort": "artikel",
+   "vindplaats": "Artikel 17",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Voorschriften voor technische uitvoering",
+   "fijnmazig": false,
+   "sha256": "29c136d3bd9d2ec95737d3675cf512078a4a81b5d7c6b9f845ef344803194263"
+  },
+  {
+   "id": "art18",
+   "soort": "artikel",
+   "vindplaats": "Artikel 18",
+   "plaats": "hoofdstuk-ii-afdeling-1",
+   "opschrift": "Vergoeding voor het beschikbaar stellen van persoonlijke elektronische gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "eccb133391b4a437738aff711dfecbcd7309fa57a39e023df984709956c7dbfb"
+  },
+  {
+   "id": "hoofdstuk-ii-afdeling-2",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk II, afdeling 2 (opschrift)",
+   "tekst": "AFDELING 2 Governance voor primair gebruik",
+   "sha256": "dcff56705d7a0f5161ecfcfdca254cf4aa8665451ab0cc41ae9eec2c9f0fb973"
+  },
+  {
+   "id": "art19",
+   "soort": "artikel",
+   "vindplaats": "Artikel 19",
+   "plaats": "hoofdstuk-ii-afdeling-2",
+   "opschrift": "Autoriteiten voor digitale gezondheid",
+   "fijnmazig": false,
+   "sha256": "f964a04746ac11d28cf57699ddd8ffc775f93f8cbab9b98832ebb0d9357a3594"
+  },
+  {
+   "id": "art20",
+   "soort": "artikel",
+   "vindplaats": "Artikel 20",
+   "plaats": "hoofdstuk-ii-afdeling-2",
+   "opschrift": "Verslaglegging door autoriteiten voor digitale gezondheid",
+   "fijnmazig": false,
+   "sha256": "f3744a445696d9d136dab584d7e8ece6f3e1a3e7b48ab66cc627d1d07e952f61"
+  },
+  {
+   "id": "art21",
+   "soort": "artikel",
+   "vindplaats": "Artikel 21",
+   "plaats": "hoofdstuk-ii-afdeling-2",
+   "opschrift": "Recht om klachten in te dienen bij een autoriteit voor digitale gezondheid",
+   "fijnmazig": false,
+   "sha256": "637c141d4a42c102ccd9df25d623a7aaff06e6955ea7f7b16d0eb1945bebc4eb"
+  },
+  {
+   "id": "art22",
+   "soort": "artikel",
+   "vindplaats": "Artikel 22",
+   "plaats": "hoofdstuk-ii-afdeling-2",
+   "opschrift": "Verhouding tot toezichthoudende autoriteiten uit hoofde van Verordening (EU) 2016/679",
+   "fijnmazig": false,
+   "sha256": "93263935429c10920a409716a9819e533bbcdcc1d4ccfafc7dabcaa46fd70615"
+  },
+  {
+   "id": "hoofdstuk-ii-afdeling-3",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk II, afdeling 3 (opschrift)",
+   "tekst": "AFDELING 3 Grensoverschrijdende infrastructuur voor primair gebruik van persoonlijke elektronische gezondheidsgegevens",
+   "sha256": "63f9ac70c0cb038aeaef59a4bc9f2d56c3e7d66877e30e0f27992cefa2f9f728"
+  },
+  {
+   "id": "art23",
+   "soort": "artikel",
+   "vindplaats": "Artikel 23",
+   "plaats": "hoofdstuk-ii-afdeling-3",
+   "opschrift": "MyHealth@EU",
+   "fijnmazig": false,
+   "sha256": "0adff2a70a83b4947c04f5269c6aafdd075b97d0d862b0cd5d8461e2ffdea7e9"
+  },
+  {
+   "id": "art24",
+   "soort": "artikel",
+   "vindplaats": "Artikel 24",
+   "plaats": "hoofdstuk-ii-afdeling-3",
+   "opschrift": "Aanvullende grensoverschrijdende digitale gezondheidsdiensten en -infrastructuur",
+   "fijnmazig": false,
+   "sha256": "b7397a5ee7024cf28e635c4be65e372b081e19f4bd839bfc0cdb79d15dc60ff8"
+  },
+  {
+   "id": "hoofdstuk-iii",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III (opschrift)",
+   "tekst": "HOOFDSTUK III EPD-SYSTEMEN EN WELLNESSAPPS",
+   "sha256": "2ceb2aba54162c490f39a025c47c86aa77e5b53a1546fe9debcf95f58298e2de"
+  },
+  {
+   "id": "hoofdstuk-iii-afdeling-1",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III, afdeling 1 (opschrift)",
+   "tekst": "AFDELING 1 Toepassingsgebied van en algemene bepalingen voor EPD-systemen",
+   "sha256": "1111441d103b6019456e41592378a740b3717f329c528d36f91a7ac3b109e08d"
+  },
+  {
+   "id": "art25",
+   "soort": "artikel",
+   "vindplaats": "Artikel 25",
+   "plaats": "hoofdstuk-iii-afdeling-1",
+   "opschrift": "Geharmoniseerde softwarecomponenten van EPD-systemen",
+   "fijnmazig": false,
+   "sha256": "f6d5d5449aad1e0fca8aa1839563fe04e68ca682248d91861c33d4540377716e"
+  },
+  {
+   "id": "art26",
+   "soort": "artikel",
+   "vindplaats": "Artikel 26",
+   "plaats": "hoofdstuk-iii-afdeling-1",
+   "opschrift": "In de handel brengen en ingebruikneming",
+   "fijnmazig": false,
+   "sha256": "e098dc7041286a33e7f96630461b5787ff0745ecac44a65ea808d079a020c661"
+  },
+  {
+   "id": "art27",
+   "soort": "artikel",
+   "vindplaats": "Artikel 27",
+   "plaats": "hoofdstuk-iii-afdeling-1",
+   "opschrift": "Verhouding tot Unierecht inzake medische hulpmiddelen, medische hulpmiddelen voor in-vitrodiagnostiek en AI-systemen",
+   "fijnmazig": false,
+   "sha256": "713ade7ab11b65c3189b4e8c4837c66f26003ffcef820c725ea05efe67940c74"
+  },
+  {
+   "id": "art28",
+   "soort": "artikel",
+   "vindplaats": "Artikel 28",
+   "plaats": "hoofdstuk-iii-afdeling-1",
+   "opschrift": "Beweringen",
+   "fijnmazig": false,
+   "sha256": "517b138edcdaa7dcc4d2bec4e8915df9dbdc75b3048a42c3cc9f7f18d5f844a9"
+  },
+  {
+   "id": "art29",
+   "soort": "artikel",
+   "vindplaats": "Artikel 29",
+   "plaats": "hoofdstuk-iii-afdeling-1",
+   "opschrift": "Aanbesteding, vergoeding en financiering",
+   "fijnmazig": false,
+   "sha256": "ce2a61ae53f27f93ce61999b01968d6be762166e1c8573a40db6a4abcc142aa7"
+  },
+  {
+   "id": "hoofdstuk-iii-afdeling-2",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III, afdeling 2 (opschrift)",
+   "tekst": "AFDELING 2 Verplichtingen van marktdeelnemers met betrekking tot EPD-systemen",
+   "sha256": "a86b7ebd0f4a788ef39feaf9a0f1dc569bcb35aae5afdbc358669f9761cc20f0"
+  },
+  {
+   "id": "art30",
+   "soort": "artikel",
+   "vindplaats": "Artikel 30",
+   "plaats": "hoofdstuk-iii-afdeling-2",
+   "opschrift": "Verplichtingen van fabrikanten van EPD-systemen",
+   "fijnmazig": false,
+   "sha256": "05ba0f6c005f9d2e0cb76e5698e9b530d84808b67e7c96699b7ca794786de2f9"
+  },
+  {
+   "id": "art31",
+   "soort": "artikel",
+   "vindplaats": "Artikel 31",
+   "plaats": "hoofdstuk-iii-afdeling-2",
+   "opschrift": "Gemachtigde vertegenwoordigers",
+   "fijnmazig": false,
+   "sha256": "5951fb0866a5302fef497cb0b1abf26814964bd31b08160fbcc530db836e31f1"
+  },
+  {
+   "id": "art32",
+   "soort": "artikel",
+   "vindplaats": "Artikel 32",
+   "plaats": "hoofdstuk-iii-afdeling-2",
+   "opschrift": "Verplichtingen van importeurs",
+   "fijnmazig": false,
+   "sha256": "efa5a1ea1f99a0fae51d59e7cdf6bf692e205988c2033eb2410ec83e473969a7"
+  },
+  {
+   "id": "art33",
+   "soort": "artikel",
+   "vindplaats": "Artikel 33",
+   "plaats": "hoofdstuk-iii-afdeling-2",
+   "opschrift": "Verplichtingen van distributeurs",
+   "fijnmazig": false,
+   "sha256": "e5369fc16051c6126be69706d713b4a012d7f59d8fa5ac6960c86b0d99c49fcf"
+  },
+  {
+   "id": "art34",
+   "soort": "artikel",
+   "vindplaats": "Artikel 34",
+   "plaats": "hoofdstuk-iii-afdeling-2",
+   "opschrift": "Gevallen waarin de verplichtingen van fabrikanten van een EPD-systeem van toepassing zijn op entiteiten of individuen",
+   "fijnmazig": false,
+   "sha256": "ecca6f9069fa686823bff14cdde2bac1eaa559e86d6fcbdae24c5bdfe126c5a6"
+  },
+  {
+   "id": "art35",
+   "soort": "artikel",
+   "vindplaats": "Artikel 35",
+   "plaats": "hoofdstuk-iii-afdeling-2",
+   "opschrift": "Identificatie van marktdeelnemers",
+   "fijnmazig": false,
+   "sha256": "9a540a9a81c2d3b2322341675ec98d484bef9e00688929ad5c201a78af9744cb"
+  },
+  {
+   "id": "hoofdstuk-iii-afdeling-3",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III, afdeling 3 (opschrift)",
+   "tekst": "AFDELING 3 Conformiteit van de geharmoniseerde softwarecomponenten van EPD-systemen",
+   "sha256": "09076a929b4eb424210acab544d580652c7e254ff82caada12ae0fde2da8ba2a"
+  },
+  {
+   "id": "art36",
+   "soort": "artikel",
+   "vindplaats": "Artikel 36",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "Gemeenschappelijke specificaties",
+   "fijnmazig": false,
+   "sha256": "57222ce1f5bb28c69b4d67ddbfb1205a4b8e413313a41d6ecb1fdee7fb0981f6"
+  },
+  {
+   "id": "art37",
+   "soort": "artikel",
+   "vindplaats": "Artikel 37",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "Technische documentatie",
+   "fijnmazig": false,
+   "sha256": "327b21cd6bc63267afae03c70361c5aafc26add0d4078b1495840a011dac8ef7"
+  },
+  {
+   "id": "art38",
+   "soort": "artikel",
+   "vindplaats": "Artikel 38",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "Informatieblad bij het EPD-systeem",
+   "fijnmazig": false,
+   "sha256": "7c95f817dbf2a29ad2e82f2489b88206a6d7b3424de7ab85b27abfbcb7cff57e"
+  },
+  {
+   "id": "art39",
+   "soort": "artikel",
+   "vindplaats": "Artikel 39",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "EU-conformiteitsverklaring",
+   "fijnmazig": false,
+   "sha256": "b0dcdda95b11f5c2ba26b8bd598f03503b28c048a59a0278a5abaa4344d13c72"
+  },
+  {
+   "id": "art40",
+   "soort": "artikel",
+   "vindplaats": "Artikel 40",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "Europese digitale testomgeving",
+   "fijnmazig": false,
+   "sha256": "5f287120742698e56d6ebd9866df09ec0f6eb39809db0178564965648f226167"
+  },
+  {
+   "id": "art41",
+   "soort": "artikel",
+   "vindplaats": "Artikel 41",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "CE-conformiteitsmarkering",
+   "fijnmazig": false,
+   "sha256": "883bacb3691e3df2a21abde2a2ca707cedc7d86baa3622fbac8bea39a0fb302c"
+  },
+  {
+   "id": "art42",
+   "soort": "artikel",
+   "vindplaats": "Artikel 42",
+   "plaats": "hoofdstuk-iii-afdeling-3",
+   "opschrift": "Nationale vereisten en rapportage aan de Commissie",
+   "fijnmazig": false,
+   "sha256": "246b8cfc0acc6bfe27c7ffe42427cb46bf141a3444afa8845e429d871976a650"
+  },
+  {
+   "id": "hoofdstuk-iii-afdeling-4",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III, afdeling 4 (opschrift)",
+   "tekst": "AFDELING 4 Markttoezicht op EPD-systemen",
+   "sha256": "2a8d00c751431b301a67246337e0edf3ee0f2e73b85ca4e991dee72344556773"
+  },
+  {
+   "id": "art43",
+   "soort": "artikel",
+   "vindplaats": "Artikel 43",
+   "plaats": "hoofdstuk-iii-afdeling-4",
+   "opschrift": "Markttoezichtautoriteiten",
+   "fijnmazig": false,
+   "sha256": "636f54c9f3e7e07672c9d200d438d41da922519845e0d6a5ceee5a689bfe4a09"
+  },
+  {
+   "id": "art44",
+   "soort": "artikel",
+   "vindplaats": "Artikel 44",
+   "plaats": "hoofdstuk-iii-afdeling-4",
+   "opschrift": "Omgaan met risico’s van EPD-systemen en met ernstige incidenten",
+   "fijnmazig": false,
+   "sha256": "618f97c96a242fe1f0e29e25b63ff3d0d1c06c578c8f12f26dfb59654d083c3e"
+  },
+  {
+   "id": "art45",
+   "soort": "artikel",
+   "vindplaats": "Artikel 45",
+   "plaats": "hoofdstuk-iii-afdeling-4",
+   "opschrift": "Behandeling van niet-naleving",
+   "fijnmazig": false,
+   "sha256": "cbbf8e7004f7d6d2f9d436bf84f2f2966bd096a9138380fe3c30a8e23a54fe55"
+  },
+  {
+   "id": "art46",
+   "soort": "artikel",
+   "vindplaats": "Artikel 46",
+   "plaats": "hoofdstuk-iii-afdeling-4",
+   "opschrift": "Vrijwaringsprocedure van de Unie",
+   "fijnmazig": false,
+   "sha256": "37206190e5ed1a9fba9b16f5d5cd3435dfb3f684ef805f2ffd553fd784e9a202"
+  },
+  {
+   "id": "hoofdstuk-iii-afdeling-5",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III, afdeling 5 (opschrift)",
+   "tekst": "AFDELING 5 Andere bepalingen inzake interoperabiliteit",
+   "sha256": "ba173ade5387a22188365441c7f0dd8d7e3807a5b9253a8e2991776280aa035b"
+  },
+  {
+   "id": "art47",
+   "soort": "artikel",
+   "vindplaats": "Artikel 47",
+   "plaats": "hoofdstuk-iii-afdeling-5",
+   "opschrift": "Labeling van wellnessapps",
+   "fijnmazig": false,
+   "sha256": "9d8846efc1d1da2c7acb5468264e99c34bda231ee0e3eb3135e9fd6dc7cc2da3"
+  },
+  {
+   "id": "art48",
+   "soort": "artikel",
+   "vindplaats": "Artikel 48",
+   "plaats": "hoofdstuk-iii-afdeling-5",
+   "opschrift": "Interoperabiliteit van wellnessapps met EPD-systemen",
+   "fijnmazig": false,
+   "sha256": "ff7d629ace5a6eeba054600994c260a3fbd8990fe27027cac8e7877646d1f3b2"
+  },
+  {
+   "id": "hoofdstuk-iii-afdeling-6",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk III, afdeling 6 (opschrift)",
+   "tekst": "AFDELING 6 Registratie van EPD-systemen en wellnessapps",
+   "sha256": "d2ea1258f33dfcd6b0c75c3aee9961db8c25f1b2b80351f2359a680a58487d14"
+  },
+  {
+   "id": "art49",
+   "soort": "artikel",
+   "vindplaats": "Artikel 49",
+   "plaats": "hoofdstuk-iii-afdeling-6",
+   "opschrift": "EU-databank voor de registratie van EPD-systemen en wellnessapps",
+   "fijnmazig": false,
+   "sha256": "e4e291448598bb49ba8f209a15348ac0407814deca72fd0bb1b42e976790c735"
+  },
+  {
+   "id": "hoofdstuk-iv",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV (opschrift)",
+   "tekst": "HOOFDSTUK IV SECUNDAIR GEBRUIK",
+   "sha256": "65d6cd87dcb4b7d24e06932d63672ad1f7f92f41e56d03200035bf7589c792b2"
+  },
+  {
+   "id": "hoofdstuk-iv-afdeling-1",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV, afdeling 1 (opschrift)",
+   "tekst": "AFDELING 1 Algemene voorwaarden met betrekking tot secundair gebruik",
+   "sha256": "620b952cc29408f1a5ed00b8d6f44e106ccd8aaae80ada0147ff5cfc87dede3d"
+  },
+  {
+   "id": "art50",
+   "soort": "artikel",
+   "vindplaats": "Artikel 50",
+   "plaats": "hoofdstuk-iv-afdeling-1",
+   "opschrift": "Toepasselijkheid op houders van gezondheidsgegevens",
+   "fijnmazig": true,
+   "sha256": "bc6d5ffac7df616f68f18d7b370758f99f15ec99889bcce34f66c59af1441119"
+  },
+  {
+   "id": "art50-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 50, lid 1",
+   "ouder": "art50",
+   "tekst": "1. De volgende categorieën houders van gezondheidsgegevens worden vrijgesteld van de in dit hoofdstuk vastgelegde verplichtingen voor houders van gezondheidsgegevens:",
+   "sha256": "dc10202a1035935b8c4b99267c761e43c0fad0d0bbb42ae8e623197f95bacf53"
+  },
+  {
+   "id": "art50-lid1-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 50, lid 1, punt a)",
+   "ouder": "art50-lid1",
+   "tekst": "a) natuurlijke personen, met inbegrip van individuele onderzoekers;",
+   "sha256": "43c9e60e0e84f71584ec06a1f386137c7ff7028150396a90d14e79ed5946378e"
+  },
+  {
+   "id": "art50-lid1-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 50, lid 1, punt b)",
+   "ouder": "art50-lid1",
+   "tekst": "b) rechtspersonen die een micro-onderneming zijn zoals gedefinieerd in artikel 2, lid 3, van de bijlage bij Aanbeveling 2003/361/EG van de Commissie.",
+   "sha256": "4b87846c16c63fad9bef833e2f748ef80fb0832ce8dca12c8cc4036838277fe8"
+  },
+  {
+   "id": "art50-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 50, lid 2",
+   "ouder": "art50",
+   "tekst": "2. De lidstaten kunnen in hun nationale recht echter bepalen dat de in dit hoofdstuk vastgelegde verplichtingen voor houders van gezondheidsgegevens van toepassing zijn op de in lid 1 bedoelde houders van gezondheidsgegevens die onder hun jurisdictie vallen.",
+   "sha256": "e70bbc031b7af845c469b4e1837557190642f878e23dc8cb5062f809731478ee"
+  },
+  {
+   "id": "art50-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 50, lid 3",
+   "ouder": "art50",
+   "tekst": "3. De lidstaten kunnen in hun nationale recht bepalen dat de verplichtingen van bepaalde categorieën houders van gezondheidsgegevens moeten worden vervuld door bemiddelingsentiteiten voor gezondheidsgegevens. In dat geval worden de gegevens niettemin beschouwd als beschikbaar gesteld door meerdere houders van gezondheidsgegevens.",
+   "sha256": "42493e330123e9d6d09179f2ef93a8d7abbbe948ed342cbd2ee00064d8ea14db"
+  },
+  {
+   "id": "art50-lid4",
+   "soort": "lid",
+   "vindplaats": "Artikel 50, lid 4",
+   "ouder": "art50",
+   "tekst": "4. De lidstaten stellen de Commissie uiterlijk op 26 maart 2029 in kennis van het in de leden 2 en 3 bedoelde nationale recht. Eventueel later vastgesteld recht of wijzigingen van dat recht worden onverwijld aan de Commissie meegedeeld.",
+   "sha256": "616a4eff1e5f8464834200895d654768a01e15241209b866b959e4e604fb2fc6"
+  },
+  {
+   "id": "art51",
+   "soort": "artikel",
+   "vindplaats": "Artikel 51",
+   "plaats": "hoofdstuk-iv-afdeling-1",
+   "opschrift": "Minimumcategorieën van elektronische gezondheidsgegevens voor secundair gebruik",
+   "fijnmazig": true,
+   "sha256": "f1a962da93c8395b060078f30e9c9c5f0444c9a4bf17c24e0369a6a7909a3118"
+  },
+  {
+   "id": "art51-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 51, lid 1",
+   "ouder": "art51",
+   "tekst": "1. Houders van gezondheidsgegevens stellen de volgende categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik overeenkomstig dit hoofdstuk:",
+   "sha256": "227bbdaee4525036e889b0d5a0ddd456520aceee7eb86a8516c9107e784077f5"
+  },
+  {
+   "id": "art51-lid1-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt a)",
+   "ouder": "art51-lid1",
+   "tekst": "a) elektronische gezondheidsgegevens afkomstig van EPD’s;",
+   "sha256": "964adda5edb4a2ea6872950a7efe9f0b4871748d8f81ae31998f08f95006e59d"
+  },
+  {
+   "id": "art51-lid1-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt b)",
+   "ouder": "art51-lid1",
+   "tekst": "b) gegevens over factoren die van invloed zijn op de gezondheid, met inbegrip van sociaal-economische, milieu- en gedragsdeterminanten van gezondheid;",
+   "sha256": "1d6e85a4f0c112a26cd1aa0fb63eeb0a89ff75ccec20e1ce4b98cdc72cd4e325"
+  },
+  {
+   "id": "art51-lid1-onderdeel-c",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt c)",
+   "ouder": "art51-lid1",
+   "tekst": "c) geaggregeerde gegevens over behoeften op het gebied van gezondheidszorg, de aan gezondheidszorg toegewezen middelen, de verstrekking van en toegang tot gezondheidszorg, uitgaven voor gezondheidszorg en financiering van gezondheidszorg;",
+   "sha256": "66bcbddbe19b9e99742c9cb4ce3ab0a09de4a1771b8421a5e83134a8b920b8ab"
+  },
+  {
+   "id": "art51-lid1-onderdeel-d",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt d)",
+   "ouder": "art51-lid1",
+   "tekst": "d) gegevens over pathogenen die van invloed zijn op de menselijke gezondheid;",
+   "sha256": "7c62788d1e39e798fcb4981543f204a0812a3bbfd5b0eb3d9cb20f5281762d82"
+  },
+  {
+   "id": "art51-lid1-onderdeel-e",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt e)",
+   "ouder": "art51-lid1",
+   "tekst": "e) administratieve gegevens op het gebied van gezondheidszorg, onder meer over verstrekkingen, claims inzake vergoedingen en vergoedingen;",
+   "sha256": "8f8f9298a1be8d2f9cc88e4be25a1ba9342a4bc345187a558097a4e0246e5527"
+  },
+  {
+   "id": "art51-lid1-onderdeel-f",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt f)",
+   "ouder": "art51-lid1",
+   "tekst": "f) humaan-genetische, epigenomische en genomische gegevens;",
+   "sha256": "98be627b310fa8678011aa7ca24f63c1d563d1cced99f0c56772a95f231d4511"
+  },
+  {
+   "id": "art51-lid1-onderdeel-g",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt g)",
+   "ouder": "art51-lid1",
+   "tekst": "g) andere humaan-moleculaire gegevens, zoals proteomische, transcriptomische, metabolomische, lipidomische en andere “-omische” gegevens;",
+   "sha256": "988539e3b801458b452d0bea35274cc3ccdfb102d30713447b93e12ca4652142"
+  },
+  {
+   "id": "art51-lid1-onderdeel-h",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt h)",
+   "ouder": "art51-lid1",
+   "tekst": "h) via medische hulpmiddelen automatisch gegenereerde persoonlijke elektronische gezondheidsgegevens;",
+   "sha256": "ca912e0f0e6da0b5a1d24ea0f582dfc37004cccdb4d8c35f87fe7a35db5f72c3"
+  },
+  {
+   "id": "art51-lid1-onderdeel-i",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt i)",
+   "ouder": "art51-lid1",
+   "tekst": "i) gegevens afkomstig van wellnessapps;",
+   "sha256": "556fee4a0d00526e2d8fb9e7c7cd2dbb8a1c0c54957f104130077647be8eb58f"
+  },
+  {
+   "id": "art51-lid1-onderdeel-j",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt j)",
+   "ouder": "art51-lid1",
+   "tekst": "j) gegevens met betrekking tot de beroepsstatus, en met betrekking tot de specialisatie en instelling van gezondheidswerkers die betrokken zijn bij de behandeling van een natuurlijke persoon;",
+   "sha256": "9374f017f21eec0d8e9f3e65e57b81ff6d0fa04af3bb2c637c8737e0ad2258e6"
+  },
+  {
+   "id": "art51-lid1-onderdeel-k",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt k)",
+   "ouder": "art51-lid1",
+   "tekst": "k) gegevens uit registers van gezondheidsgegevens op bevolkingsniveau zoals volksgezondheidsregisters;",
+   "sha256": "133f8229ce6fb126bb2d9989988d5f5b433d231318683e47e76d96bc9d4495df"
+  },
+  {
+   "id": "art51-lid1-onderdeel-l",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt l)",
+   "ouder": "art51-lid1",
+   "tekst": "l) gegevens afkomstig van medische registers en registers over sterfte;",
+   "sha256": "6b2a826511d832cf04c16581d1d8e4f064f7023195eb1ca3bda49464de20f031"
+  },
+  {
+   "id": "art51-lid1-onderdeel-m",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt m)",
+   "ouder": "art51-lid1",
+   "tekst": "m) gegevens afkomstig van klinische proeven, klinische studies, klinische onderzoeken en prestatiestudies waarop Verordening (EU) nr. 536/2014, Verordening (EU) 2024/1938 van het Europees Parlement en de Raad, Verordening (EU) 2017/745 en Verordening (EU) 2017/746 van toepassing zijn;",
+   "sha256": "d06a6e01c80e2d36fccc0940c7e286072885b4bdd6776b8714c1e201562a3b13"
+  },
+  {
+   "id": "art51-lid1-onderdeel-n",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt n)",
+   "ouder": "art51-lid1",
+   "tekst": "n) overige gezondheidsgegevens afkomstig van medische hulpmiddelen;",
+   "sha256": "2bf930b7d36bd3272b1c14984495be02c7ab271449fe181ded9cec90b1fa4b15"
+  },
+  {
+   "id": "art51-lid1-onderdeel-o",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt o)",
+   "ouder": "art51-lid1",
+   "tekst": "o) gegevens afkomstig van registers voor geneesmiddelen en medische hulpmiddelen;",
+   "sha256": "f01ddb1d5007e74ba9d4bcabf60ad70a9038cf935f45073ead8b621df34e9fb3"
+  },
+  {
+   "id": "art51-lid1-onderdeel-p",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt p)",
+   "ouder": "art51-lid1",
+   "tekst": "p) gegevens afkomstig van onderzoekscohorten, vragenlijsten en enquêtes in verband met gezondheid, zodra de daarmee verband houdende resultaten gepubliceerd zijn;",
+   "sha256": "9a74ee5ce417cc4dfebcfa7c58baae2ec18d84f0f92c68147cf8f386f4789c01"
+  },
+  {
+   "id": "art51-lid1-onderdeel-q",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 51, lid 1, punt q)",
+   "ouder": "art51-lid1",
+   "tekst": "q) gezondheidsgegevens afkomstig van biobanken en bijbehorende databanken.",
+   "sha256": "d20ae45e494dd4077093d48b14ac8bc7432e320bc3238cb2738c4aebd4ac4acd"
+  },
+  {
+   "id": "art51-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 51, lid 2",
+   "ouder": "art51",
+   "tekst": "2. De lidstaten kunnen in hun nationale recht bepalen dat aanvullende categorieën van elektronische gezondheidsgegevens op grond van deze verordening beschikbaar moeten worden gesteld voor secundair gebruik.",
+   "sha256": "4d06d7f44edae233cc1a9c6b94af1cfaf807a23b4d0e5b4d046307b7b39b0bdb"
+  },
+  {
+   "id": "art51-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 51, lid 3",
+   "ouder": "art51",
+   "tekst": "3. De lidstaten kunnen regels vaststellen voor de verwerking en het gebruik van elektronische gezondheidsgegevens die verbeteringen bevatten in verband met de verwerking van die gegevens, zoals correctie, annotatie of verrijking, op basis van een gegevensvergunning uit hoofde van artikel 68.",
+   "sha256": "0dd345f3fb6b104ce68859a1311cfdd92bf611b91b52614cf9ef1027eae0e493"
+  },
+  {
+   "id": "art51-lid4",
+   "soort": "lid",
+   "vindplaats": "Artikel 51, lid 4",
+   "ouder": "art51",
+   "tekst": "4. De lidstaten kunnen strengere maatregelen en aanvullende waarborgen op nationaal niveau invoeren om de gevoeligheid en waarde van de gegevens die onder lid 1, punten f), g), i) en q), vallen te waarborgen. De lidstaten stellen de Commissie in kennis van die maatregelen en waarborgen en delen haar onverwijld alle latere wijzigingen daarvan mee.",
+   "sha256": "3d4daaf60fd8627fbd0d7b47579156b37851056ccf9d55b9a548a3e84ca1d5f7"
+  },
+  {
+   "id": "art52",
+   "soort": "artikel",
+   "vindplaats": "Artikel 52",
+   "plaats": "hoofdstuk-iv-afdeling-1",
+   "opschrift": "Intellectuele-eigendomsrechten en bedrijfsgeheimen",
+   "fijnmazig": true,
+   "sha256": "ae9681e1edd7d1ab315941013854207b001875b9d3c60151e68793658c24dde7"
+  },
+  {
+   "id": "art52-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 52, lid 1",
+   "ouder": "art52",
+   "tekst": "1. Elektronische gezondheidsgegevens die worden beschermd door intellectuele-eigendomsrechten of bedrijfsgeheimen of die vallen onder het wettelijk recht op gegevensbescherming dat is neergelegd in artikel 10, lid 1, van Richtlijn 2001/83/EG van het Europees Parlement en de Raad of artikel 14, lid 11, van Verordening (EG) nr. 726/2004 van het Europees Parlement en de Raad, worden overeenkomstig de regels van deze verordening beschikbaar gesteld voor secundair gebruik.",
+   "sha256": "09c5f8e631207a72bf6f2a358c319ca57b0cbbc46b92a55a309b8999fc86f057"
+  },
+  {
+   "id": "art52-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 52, lid 2",
+   "ouder": "art52",
+   "tekst": "2. De houders van gezondheidsgegevens stellen de instantie voor toegang tot gezondheidsgegevens in kennis van elektronische gezondheidsgegevens die inhoud of informatie bevatten die wordt beschermd door intellectuele-eigendomsrechten of bedrijfsgeheimen of die vallen onder het wettelijk recht op gegevensbescherming dat is neergelegd in artikel 10, lid 1, van Richtlijn 2001/83/EG of artikel 14, lid 11, van Verordening (EG) nr. 726/2004. De houders van gezondheidsgegevens geven aan om welke delen van de datasets het gaat en motiveren waarom het nodig is om voor die gegevens te voorzien in de specifieke bescherming. De houders van gezondheidsgegevens verstrekken die informatie wanneer zij aan de instantie voor toegang tot gezondheidsgegevens de beschrijvingen meedelen van de datasets waarover zij krachtens artikel 60, lid 3, van deze verordening beschikken of uiterlijk naar aanleiding van een verzoek van de instantie voor toegang tot gezondheidsgegevens.",
+   "sha256": "83111a49af1cd64060074ae768ac46634dbae8eab852b109f06344831209ffa8"
+  },
+  {
+   "id": "art52-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 52, lid 3",
+   "ouder": "art52",
+   "tekst": "3. De instanties voor toegang tot gezondheidsgegevens nemen alle specifieke passende en evenredige maatregelen, ook van juridische, organisatorische en technische aard, die zij noodzakelijk achten om de bescherming van intellectuele-eigendomsrechten, bedrijfsgeheimen of het wettelijk recht op gegevensbescherming dat is neergelegd in artikel 10, lid 1, van Richtlijn 2001/83/EG of artikel 14, lid 11, van Verordening (EG) nr. 726/2004 te waarborgen. De instanties voor toegang tot gezondheidsgegevens blijven ervoor verantwoordelijk te bepalen of dergelijke maatregelen noodzakelijk en passend zijn.",
+   "sha256": "d5f7d26c3886cac11fa9a58854dd4d1b337253c83a28ad62683b7e787b6bdd05"
+  },
+  {
+   "id": "art52-lid4",
+   "soort": "lid",
+   "vindplaats": "Artikel 52, lid 4",
+   "ouder": "art52",
+   "tekst": "4. Bij de afgifte van gegevensvergunningen overeenkomstig artikel 68 kunnen de instanties voor toegang tot gezondheidsgegevens de toegang tot bepaalde elektronische gezondheidsgegevens afhankelijk stellen van juridische, organisatorische en technische maatregelen, die contractuele regelingen tussen houders van gezondheidsgegevens en gebruikers van gezondheidsgegevens kunnen omvatten voor het delen van gegevens die informatie of inhoud bevatten die wordt beschermd door intellectuele-eigendomsrechten of bedrijfsgeheimen. De Commissie ontwikkelt niet-bindende modelcontractvoorwaarden voor dergelijke regelingen en beveelt het gebruik ervan aan.",
+   "sha256": "4bc4d27ed81acac70e3353d9a7fb9aa5cfead2a0aee426f4371b9fd0b1f61bf2"
+  },
+  {
+   "id": "art52-lid5",
+   "soort": "lid",
+   "vindplaats": "Artikel 52, lid 5",
+   "ouder": "art52",
+   "tekst": "5. Indien het verlenen van toegang tot elektronische gezondheidsgegevens voor secundair gebruik zorgt voor een ernstig risico van inbreuken op intellectuele-eigendomsrechten, bedrijfsgeheimen of het wettelijk recht op gegevensbescherming neergelegd in artikel 10, lid 1, van Richtlijn 2001/83/EG of artikel 14, lid 11, van Verordening (EG) nr. 726/2004, dat niet op een bevredigende manier kan worden aangepakt, weigert de instantie voor toegang tot gezondheidsgegevens de aanvrager van gezondheidsgegevens toegang tot die gegevens. De instantie voor toegang tot gezondheidsgegevens stelt de aanvrager van gezondheidsgegevens in kennis van die weigering en legt hem uit waarom het niet mogelijk is toegang te verlenen. Houders van gezondheidsgegevens en aanvragers van gezondheidsgegevens hebben het recht om overeenkomstig artikel 81 van deze verordening een klacht in te dienen.",
+   "sha256": "e151bfcb6686f47a12c28ba76d734eff91009452674ac4a8bec3d8ba4eef43f5"
+  },
+  {
+   "id": "art53",
+   "soort": "artikel",
+   "vindplaats": "Artikel 53",
+   "plaats": "hoofdstuk-iv-afdeling-1",
+   "opschrift": "Doeleinden waarvoor elektronische gezondheidsgegevens kunnen worden verwerkt voor secundair gebruik",
+   "fijnmazig": false,
+   "sha256": "e877c47d6f9321dbbe91da97dc77eed847b4eafa35c827f999128d3d39d2f784"
+  },
+  {
+   "id": "art54",
+   "soort": "artikel",
+   "vindplaats": "Artikel 54",
+   "plaats": "hoofdstuk-iv-afdeling-1",
+   "opschrift": "Verboden secundair gebruik",
+   "fijnmazig": false,
+   "sha256": "d8df12b5eb12286a84b7f0c40ef8c0135dc7b80b8cfcc5a65f34549e4422b7f4"
+  },
+  {
+   "id": "hoofdstuk-iv-afdeling-2",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV, afdeling 2 (opschrift)",
+   "tekst": "AFDELING 2 Governance en mechanismen voor secundair gebruik",
+   "sha256": "c8ecec10cd61eb9f9ef2c2d9e446f5f2c7ef7df941b3aec2ff0635612ccd0955"
+  },
+  {
+   "id": "art55",
+   "soort": "artikel",
+   "vindplaats": "Artikel 55",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Instanties voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "28a15f665316200210dfdcc9456b05f2769d91091d94eb6ce1feb4406a5347d3"
+  },
+  {
+   "id": "art56",
+   "soort": "artikel",
+   "vindplaats": "Artikel 56",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Dienst van de Unie voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "284415d88a17c68fa7ae1b4a4ea7ab346300238ece8aed01c64f3410a320d1e8"
+  },
+  {
+   "id": "art57",
+   "soort": "artikel",
+   "vindplaats": "Artikel 57",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Taken van de instanties voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "f93c97afbba6b7b7f23df16f5e6796a1178b7958c24fb39926179db759419732"
+  },
+  {
+   "id": "art58",
+   "soort": "artikel",
+   "vindplaats": "Artikel 58",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Verplichtingen van instanties voor toegang tot gezondheidsgegevens ten aanzien van natuurlijke personen",
+   "fijnmazig": false,
+   "sha256": "6ff4703e7eab46a59166297423adb87b1b99efc3422022870d4a4841bc698186"
+  },
+  {
+   "id": "art59",
+   "soort": "artikel",
+   "vindplaats": "Artikel 59",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Rapportage door instanties voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "99df20c666fc893a9d0a88b8c17b2456f8c28d3648fdabfb39fa3b26e0c96f72"
+  },
+  {
+   "id": "art60",
+   "soort": "artikel",
+   "vindplaats": "Artikel 60",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Verplichtingen van houders van gezondheidsgegevens",
+   "fijnmazig": true,
+   "sha256": "1a83a782c38534f3bd679796f75103a6e7bd2306b614acad52fca302f8fdba29"
+  },
+  {
+   "id": "art60-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 60, lid 1",
+   "ouder": "art60",
+   "tekst": "1. De houders van gezondheidsgegevens stellen de in artikel 51 bedoelde relevante elektronische gezondheidsgegevens op verzoek beschikbaar aan de instantie voor toegang tot gezondheidsgegevens overeenkomstig een gegevensvergunning die is afgegeven op grond van artikel 68 of naar aanleiding van een verzoek om gegevens dat is goedgekeurd op grond van artikel 69.",
+   "sha256": "077569885388a17221ef6183c8c66cff138c0668e500a0f31465540e02f6a216"
+  },
+  {
+   "id": "art60-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 60, lid 2",
+   "ouder": "art60",
+   "tekst": "2. De houders van gezondheidsgegevens stellen de gevraagde elektronische gezondheidsgegevens als bedoeld in lid 1 ter beschikking van de instantie voor toegang tot gezondheidsgegevens binnen een redelijke termijn en uiterlijk binnen drie maanden na ontvangst van het verzoek van de instantie voor toegang tot gezondheidsgegevens. In gerechtvaardigde gevallen kan de instantie voor toegang tot gezondheidsgegevens die termijn met maximaal drie maanden verlengen.",
+   "sha256": "ec5eeca607acc5bf1708624081382b53476924db5fb7293c27c80279b24c5e07"
+  },
+  {
+   "id": "art60-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 60, lid 3",
+   "ouder": "art60",
+   "tekst": "3. De houders van gezondheidsgegevens verstrekken de instantie voor toegang tot gezondheidsgegevens een beschrijving van de dataset waarover zij beschikken overeenkomstig artikel 77. De houders van gezondheidsgegevens controleren ten minste elk jaar of de beschrijving van de dataset in de nationale catalogus van datasets nauwkeurig en actueel is.",
+   "sha256": "e5d9e06a72d835bd660abb29bb748b4262c3d65c8eb15def18283af216f35e94"
+  },
+  {
+   "id": "art60-lid4",
+   "soort": "lid",
+   "vindplaats": "Artikel 60, lid 4",
+   "ouder": "art60",
+   "tekst": "4. Wanneer de dataset overeenkomstig artikel 78 vergezeld gaat van een gegevenskwaliteits- en gegevensbruikbaarheidslabel, verstrekken de houders van gezondheidsgegevens de instantie voor toegang tot gezondheidsgegevens voldoende documentatie om de juistheid van het label te verifiëren.",
+   "sha256": "67eefb9b86a319ec2678be74327a1f7aa1f78c377cedd6fb7f84212f3295e01c"
+  },
+  {
+   "id": "art60-lid5",
+   "soort": "lid",
+   "vindplaats": "Artikel 60, lid 5",
+   "ouder": "art60",
+   "tekst": "5. De houders van niet-persoonsgebonden elektronische gezondheidsgegevens zorgen voor toegang tot gegevens via betrouwbare open databanken om onbeperkte toegang voor alle gebruikers en de opslag en bewaring van gegevens te waarborgen. Betrouwbare open openbare databanken moeten beschikken over een robuust, transparant en duurzaam bestuur en een transparant model voor gebruikerstoegang.",
+   "sha256": "00d8d7b0cefb8816de78f41cae36928eb6c509703bb621eb5fa64e0cdb27b1d5"
+  },
+  {
+   "id": "art61",
+   "soort": "artikel",
+   "vindplaats": "Artikel 61",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Verplichtingen van gebruikers van gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "526ea97d1190eb2780887757c0aa5693d35b5876722ee215e560dfbf8fbf90c0"
+  },
+  {
+   "id": "art62",
+   "soort": "artikel",
+   "vindplaats": "Artikel 62",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Vergoedingen",
+   "fijnmazig": false,
+   "sha256": "f9e6178776be2f34a17d1750156bc550d55bf7b6fe1fe7333df14f47b0169757"
+  },
+  {
+   "id": "art63",
+   "soort": "artikel",
+   "vindplaats": "Artikel 63",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Handhaving door de instanties voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "90be4e4fd06ded487347f8e5eeede995b3c323b269538f77cface55d34f90760"
+  },
+  {
+   "id": "art64",
+   "soort": "artikel",
+   "vindplaats": "Artikel 64",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Algemene voorwaarden voor het opleggen van administratieve boeten door instanties voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "16574693ce44d1eba3a9884193eb6cfccce065309a13093346b467e8eb91f2ab"
+  },
+  {
+   "id": "art65",
+   "soort": "artikel",
+   "vindplaats": "Artikel 65",
+   "plaats": "hoofdstuk-iv-afdeling-2",
+   "opschrift": "Verhouding tot toezichthoudende autoriteiten uit hoofde van Verordening (EU) 2016/679",
+   "fijnmazig": false,
+   "sha256": "d454e6294fff37694927f1d6095d6da2488e669c0458167fc49faea96374b32a"
+  },
+  {
+   "id": "hoofdstuk-iv-afdeling-3",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV, afdeling 3 (opschrift)",
+   "tekst": "AFDELING 3 Toegang tot elektronische gezondheidsgegevens voor secundair gebruik",
+   "sha256": "c418046e185545a1d3576a380a20da71bdea9385245f011c00b89a5912b98563"
+  },
+  {
+   "id": "art66",
+   "soort": "artikel",
+   "vindplaats": "Artikel 66",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Minimale gegevensverwerking en doelbinding",
+   "fijnmazig": false,
+   "sha256": "8b26c53873d32ef186ccc1feb3f3beb1cc45ecd5cf7ff5a95996d45bc7df0330"
+  },
+  {
+   "id": "art67",
+   "soort": "artikel",
+   "vindplaats": "Artikel 67",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Aanvragen voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "e568f130f1cd52b93391d8ba4ca943bb51b66979b5cb39faab69149c59eaaee7"
+  },
+  {
+   "id": "art68",
+   "soort": "artikel",
+   "vindplaats": "Artikel 68",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Gegevensvergunning",
+   "fijnmazig": false,
+   "sha256": "644bbdf88a6df722d9d276ec99ee54c164a29adffa6789f6de8ea3ba7e597bac"
+  },
+  {
+   "id": "art69",
+   "soort": "artikel",
+   "vindplaats": "Artikel 69",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Verzoek om gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "6ec04130ce058e0caf6442a5e7c2ce502be2f48a467994820e383355e851c277"
+  },
+  {
+   "id": "art70",
+   "soort": "artikel",
+   "vindplaats": "Artikel 70",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Modellen ter ondersteuning van de toegang tot elektronische gezondheidsgegevens voor secundair gebruik",
+   "fijnmazig": false,
+   "sha256": "22de0e4735bf19ac975d5655362c9f4ea8dc4be314c1c8c605a79174366cbecc"
+  },
+  {
+   "id": "art71",
+   "soort": "artikel",
+   "vindplaats": "Artikel 71",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Opt-out-recht ten aanzien van de verwerking van persoonlijke elektronische gezondheidsgegevens voor secundair gebruik",
+   "fijnmazig": false,
+   "sha256": "e9b16e5a952242c99544416d5148432cb9fb7420a6140e9ea694d0da50d8622f"
+  },
+  {
+   "id": "art72",
+   "soort": "artikel",
+   "vindplaats": "Artikel 72",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Vereenvoudigde procedure voor toegang tot elektronische gezondheidsgegevens van een betrouwbare houder van gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "469accba2fdc6085fa7f680d5a82274cb4867e0f274b6515921ae57f304035ec"
+  },
+  {
+   "id": "art73",
+   "soort": "artikel",
+   "vindplaats": "Artikel 73",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Beveiligde verwerkingsomgeving",
+   "fijnmazig": false,
+   "sha256": "c44ada2aae146ee85026811311eecf782c04dde384f1005388165a08f95bce9f"
+  },
+  {
+   "id": "art74",
+   "soort": "artikel",
+   "vindplaats": "Artikel 74",
+   "plaats": "hoofdstuk-iv-afdeling-3",
+   "opschrift": "Verantwoordelijkheid voor de verwerking",
+   "fijnmazig": true,
+   "sha256": "bcd5ac7dd75f9159bc085e48f2bdc8576e9be0214c654c4e0b332c5df6af3a89"
+  },
+  {
+   "id": "art74-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 74, lid 1",
+   "ouder": "art74",
+   "tekst": "1.",
+   "sha256": "d3fcb2281d4789ea8e0e6de3117f58a8478cb7f4cfdc46033349dc38dc0c5a02"
+  },
+  {
+   "id": "art74-lid1-alinea1",
+   "soort": "alinea",
+   "vindplaats": "Artikel 74, lid 1, alinea 1",
+   "ouder": "art74-lid1",
+   "tekst": "De houder van gezondheidsgegevens wordt beschouwd als verwerkingsverantwoordelijke voor de beschikbaarstelling van persoonlijke elektronische gezondheidsgegevens waarom is verzocht op grond van artikel 60, lid 1, aan de instantie voor toegang tot gezondheidsgegevens.",
+   "sha256": "99013d56ca603123d8668e2cc6976ec8de03781a75491adb02d415f0936a3b6e"
+  },
+  {
+   "id": "art74-lid1-alinea2",
+   "soort": "alinea",
+   "vindplaats": "Artikel 74, lid 1, alinea 2",
+   "ouder": "art74-lid1",
+   "tekst": "De instantie voor toegang tot gezondheidsgegevens wordt bij de uitvoering van haar taken uit hoofde van deze verordening beschouwd als verwerkingsverantwoordelijke voor de verwerking van de persoonlijke elektronische gezondheidsgegevens.",
+   "sha256": "c3b4369331b800c9bd4c1d01c7367ea8cffbdb9427a271844b9cd42775b386d6"
+  },
+  {
+   "id": "art74-lid1-alinea3",
+   "soort": "alinea",
+   "vindplaats": "Artikel 74, lid 1, alinea 3",
+   "ouder": "art74-lid1",
+   "tekst": "Niettegenstaande de tweede alinea van dit lid wordt de instantie voor toegang tot gezondheidsgegevens geacht als verwerker op te treden namens de gebruiker van gezondheidsgegevens die optreedt als verwerkingsverantwoordelijke voor de verwerking van de persoonlijke elektronische gezondheidsgegevens op grond van een gegevensvergunning die is afgegeven uit hoofde van artikel 68 in de beveiligde verwerkingsomgeving wanneer zij gegevens via die omgeving verstrekt of voor de verwerking van dergelijke gegevens op grond van een verzoek om gezondheidsgegevens dat is goedgekeurd uit hoofde van artikel 69 zodat de verwerking een antwoord genereert.",
+   "sha256": "62ab8030cef0f6a6aca3d4eafe5a279ab00fd503b2c419863242b6522d15ec94"
+  },
+  {
+   "id": "art74-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 74, lid 2",
+   "ouder": "art74",
+   "tekst": "2. In de in artikel 72, lid 6, bedoelde situaties wordt de betrouwbare houder van gezondheidsgegevens beschouwd als verwerkingsverantwoordelijke voor de verwerking van persoonlijke elektronische gezondheidsgegevens in het kader van de verstrekking van elektronische gezondheidsgegevens aan de gebruiker van gezondheidsgegevens op grond van een gegevensvergunning of een verzoek om gezondheidsgegevens. De betrouwbare houder van gezondheidsgegevens wordt geacht op te treden als verwerker namens de gebruiker van gezondheidsgegevens wanneer hij of zij gegevens verstrekt via een beveiligde verwerkingsomgeving.",
+   "sha256": "c801063ffe9e89a218b0f9816492fc5acfd0e5f2a065b03341a8dbd727b9f8b5"
+  },
+  {
+   "id": "art74-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 74, lid 3",
+   "ouder": "art74",
+   "tekst": "3. De Commissie kan door middel van uitvoeringshandelingen een model vaststellen voor overeenkomsten tussen de verwerkingsverantwoordelijken en de verwerkers op grond van de leden 1 en 2 van dit artikel. Die uitvoeringshandelingen worden volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure vastgesteld.",
+   "sha256": "8196502ec9e05b68229b27d7d0f10d4349c51b9ed1b017e96fa592eb2c86bd73"
+  },
+  {
+   "id": "hoofdstuk-iv-afdeling-4",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV, afdeling 4 (opschrift)",
+   "tekst": "AFDELING 4 Grensoverschrijdende infrastructuur voor secundair gebruik",
+   "sha256": "bfd5da84a9e202bfdb65098c39ae45cf6984712364d658326dbdb19b017d0789"
+  },
+  {
+   "id": "art75",
+   "soort": "artikel",
+   "vindplaats": "Artikel 75",
+   "plaats": "hoofdstuk-iv-afdeling-4",
+   "opschrift": "HealthData@EU",
+   "fijnmazig": false,
+   "sha256": "8c242ecfabc09732b3ee437b8b33e6d9c0a4d0a89757d84f4394de6165d25269"
+  },
+  {
+   "id": "art76",
+   "soort": "artikel",
+   "vindplaats": "Artikel 76",
+   "plaats": "hoofdstuk-iv-afdeling-4",
+   "opschrift": "Toegang tot grensoverschrijdende registers of databanken van elektronische gezondheidsgegevens voor secundair gebruik",
+   "fijnmazig": false,
+   "sha256": "5a4251ea83f80e4414c96f3ab97e4ec34953ed29c4504d1a14b2a875d0eac0d3"
+  },
+  {
+   "id": "hoofdstuk-iv-afdeling-5",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV, afdeling 5 (opschrift)",
+   "tekst": "AFDELING 5 Kwaliteit en bruikbaarheid van gezondheidsgegevens voor secundair gebruik",
+   "sha256": "d7568178894d850cc5fb41a6dbf1f522ccaa3fe2942b23ad6bdd3ee564dce723"
+  },
+  {
+   "id": "art77",
+   "soort": "artikel",
+   "vindplaats": "Artikel 77",
+   "plaats": "hoofdstuk-iv-afdeling-5",
+   "opschrift": "Beschrijving van de dataset en de catalogus van datasets",
+   "fijnmazig": true,
+   "sha256": "7abff4a374f736e13b9a719e96aaa8c24db9b6ff3c4a27183b2e74dc63cd6629"
+  },
+  {
+   "id": "art77-lid1",
+   "soort": "lid",
+   "vindplaats": "Artikel 77, lid 1",
+   "ouder": "art77",
+   "tekst": "1. De instanties voor toegang tot gezondheidsgegevens verstrekken, door middel van een openbaar toegankelijke, gestandaardiseerde, machineleesbare catalogus van datasets, een beschrijving, in de vorm van metagegevens, van de beschikbare datasets en hun kenmerken. De beschrijving van elke dataset bevat informatie over de bron, de reikwijdte, de belangrijkste kenmerken en de aard van de elektronische gezondheidsgegevens in de dataset alsook de voorwaarden voor het beschikbaar stellen ervan.",
+   "sha256": "0d5fae632f83391ec25c9f64ba654d15c8cc825c12cf2f97b21bdaaa54552bf1"
+  },
+  {
+   "id": "art77-lid2",
+   "soort": "lid",
+   "vindplaats": "Artikel 77, lid 2",
+   "ouder": "art77",
+   "tekst": "2. De beschrijvingen van de datasets in de nationale catalogus van datasets zijn in ten minste één officiële taal van de Unie beschikbaar. De catalogus van datasets voor instellingen, organen en instanties van de Unie die door de dienst van de Unie voor toegang tot gezondheidsgegevens wordt verstrekt, is in alle officiële talen van de Unie beschikbaar.",
+   "sha256": "5989d9ff60f7c5c3875f100974553ba6c2aa3892ac6558811fb68160f77b2ccc"
+  },
+  {
+   "id": "art77-lid3",
+   "soort": "lid",
+   "vindplaats": "Artikel 77, lid 3",
+   "ouder": "art77",
+   "tekst": "3. De catalogus van datasets wordt ter beschikking gesteld van de uit hoofde van artikel 8 van Verordening (EU) 2022/868 opgerichte of aangewezen centrale informatiepunten.",
+   "sha256": "ade5833dabe829b727d338024c1b63abc879e45775e7c17f735645232aa478a3"
+  },
+  {
+   "id": "art77-lid4",
+   "soort": "lid",
+   "vindplaats": "Artikel 77, lid 4",
+   "ouder": "art77",
+   "tekst": "4. Uiterlijk op 26 maart 2027 stelt de Commissie door middel van uitvoeringshandelingen vast wat de elementen zijn die houders van gezondheidsgegevens op zijn minst voor de datasets moeten verstrekken, alsook de kenmerken van die elementen. Die uitvoeringshandelingen worden volgens de in artikel 98, lid 2, bedoelde onderzoeksprocedure vastgesteld.",
+   "sha256": "a32b7e35625169a3c70fa9e845d2635800bdb25a37f68a7047c78a307d505e10"
+  },
+  {
+   "id": "art78",
+   "soort": "artikel",
+   "vindplaats": "Artikel 78",
+   "plaats": "hoofdstuk-iv-afdeling-5",
+   "opschrift": "Gegevenskwaliteits- en gegevensbruikbaarheidslabel",
+   "fijnmazig": false,
+   "sha256": "cbee9d14050ac61f0819a86bee8fca2f8cd720a07933f17e5fe93f6104d08eda"
+  },
+  {
+   "id": "art79",
+   "soort": "artikel",
+   "vindplaats": "Artikel 79",
+   "plaats": "hoofdstuk-iv-afdeling-5",
+   "opschrift": "EU-catalogus van datasets",
+   "fijnmazig": false,
+   "sha256": "db441d04d47b0726f28299803931392c38855f7a17c26e6aba339db0103facb4"
+  },
+  {
+   "id": "art80",
+   "soort": "artikel",
+   "vindplaats": "Artikel 80",
+   "plaats": "hoofdstuk-iv-afdeling-5",
+   "opschrift": "Minimumspecificaties voor datasets met een grote impact",
+   "fijnmazig": false,
+   "sha256": "652a66e58a3646d8b594c1d7ec47be309e3b9edc2ef98126b438b6ca102b8ac3"
+  },
+  {
+   "id": "hoofdstuk-iv-afdeling-6",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IV, afdeling 6 (opschrift)",
+   "tekst": "AFDELING 6 Klachten",
+   "sha256": "e602c5400ece105f0a422d47c9019d9f914f9ef1052d11258c0b8dc21f46e31b"
+  },
+  {
+   "id": "art81",
+   "soort": "artikel",
+   "vindplaats": "Artikel 81",
+   "plaats": "hoofdstuk-iv-afdeling-6",
+   "opschrift": "Recht om een klacht in te dienen bij een instantie voor toegang tot gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "ac7ef4b4700d120b287078c77795d6b7caaf7b16e8157eea05a52c24c6f07b5b"
+  },
+  {
+   "id": "hoofdstuk-v",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk V (opschrift)",
+   "tekst": "HOOFDSTUK V AANVULLENDE MAATREGELEN",
+   "sha256": "f0c401e94eb82863d21839135d01b35b3b9fe7528099282f17e4dd3389d646fc"
+  },
+  {
+   "id": "art82",
+   "soort": "artikel",
+   "vindplaats": "Artikel 82",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Capaciteitsopbouw",
+   "fijnmazig": false,
+   "sha256": "dcf027172e5c8f6b3086b06b890442604725bb60257591abfd4219e98251ad2c"
+  },
+  {
+   "id": "art83",
+   "soort": "artikel",
+   "vindplaats": "Artikel 83",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Opleidingsprogramma’s en voorlichting voor gezondheidswerkers",
+   "fijnmazig": false,
+   "sha256": "82451070ceec07dbbfc3d65c907e14b79ab6a88d174bb801d4f9f8cc309b7a47"
+  },
+  {
+   "id": "art84",
+   "soort": "artikel",
+   "vindplaats": "Artikel 84",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Geletterdheid op het gebied van digitale gezondheid en toegang tot digitale gezondheid",
+   "fijnmazig": false,
+   "sha256": "01cbe174b1e42e25253566c70bae351f7e889c11ef266e83932b55ac356df9c9"
+  },
+  {
+   "id": "art85",
+   "soort": "artikel",
+   "vindplaats": "Artikel 85",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Aanvullende vereisten voor overheidsopdrachten en financiering door de Unie",
+   "fijnmazig": false,
+   "sha256": "dc2d90b42fd71992df4b3054c750851196efd52dae7b7e45357dee33195f180c"
+  },
+  {
+   "id": "art86",
+   "soort": "artikel",
+   "vindplaats": "Artikel 86",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Opslag van persoonlijke elektronische gezondheidsgegevens voor primair gebruik",
+   "fijnmazig": false,
+   "sha256": "bca37b01d58325b60d1f70008f109a3eb35192fa1c5b5fb4bce5b1855967010d"
+  },
+  {
+   "id": "art87",
+   "soort": "artikel",
+   "vindplaats": "Artikel 87",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Opslag van persoonlijke elektronische gezondheidsgegevens door instanties voor toegang tot gezondheidsgegevens en beveiligde verwerkingsomgevingen",
+   "fijnmazig": false,
+   "sha256": "debd2e1c1b7fc57ab9bf205babbff259fb94a1db5a8451374608c3015b8a9c75"
+  },
+  {
+   "id": "art88",
+   "soort": "artikel",
+   "vindplaats": "Artikel 88",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Doorgifte aan derde landen van niet-persoonsgebonden elektronische gegevens",
+   "fijnmazig": false,
+   "sha256": "aec966e9547d44775d10c0ffb0c78fc09d7f2be5113efd9fd16f743c186aca8b"
+  },
+  {
+   "id": "art89",
+   "soort": "artikel",
+   "vindplaats": "Artikel 89",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Internationale toegang van overheden tot niet-persoonsgebonden elektronische gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "0ffb59951d04ea138170ce61a38fd1c85e9ad997a164d4f785763c0b9f56abd4"
+  },
+  {
+   "id": "art90",
+   "soort": "artikel",
+   "vindplaats": "Artikel 90",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Aanvullende voorwaarden voor doorgifte van persoonlijke elektronische gezondheidsgegevens aan een derde land of een internationale organisatie",
+   "fijnmazig": false,
+   "sha256": "f7ae882ef700fbe31a74ca2719436e7455788d3e0a9104330edddd751546ddb6"
+  },
+  {
+   "id": "art91",
+   "soort": "artikel",
+   "vindplaats": "Artikel 91",
+   "plaats": "hoofdstuk-v",
+   "opschrift": "Aanvragen voor toegang tot gezondheidsgegevens en verzoeken om gezondheidsgegevens uit derde landen",
+   "fijnmazig": false,
+   "sha256": "449dea562f22cb3a7cef939dd4009f7e66e70391e7048e5be4e9e451df5f45c1"
+  },
+  {
+   "id": "hoofdstuk-vi",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk VI (opschrift)",
+   "tekst": "HOOFDSTUK VI EUROPESE GOVERNANCE EN COÖRDINATIE",
+   "sha256": "521455903b425c059aeb625c02fbc0b25dc9c20149cf28d95ddff71b3c2e48a9"
+  },
+  {
+   "id": "art92",
+   "soort": "artikel",
+   "vindplaats": "Artikel 92",
+   "plaats": "hoofdstuk-vi",
+   "opschrift": "Raad voor de Europese ruimte voor gezondheidsgegevens",
+   "fijnmazig": false,
+   "sha256": "a267e13206b55e0729388e40549133fae8b9910a58eff404f18c103628002276"
+  },
+  {
+   "id": "art93",
+   "soort": "artikel",
+   "vindplaats": "Artikel 93",
+   "plaats": "hoofdstuk-vi",
+   "opschrift": "Forum van belanghebbenden",
+   "fijnmazig": false,
+   "sha256": "6c761fabdee1675b3ace7a91f59a73f3ba26ad719352caa42dbe44a2092e1949"
+  },
+  {
+   "id": "art94",
+   "soort": "artikel",
+   "vindplaats": "Artikel 94",
+   "plaats": "hoofdstuk-vi",
+   "opschrift": "Taken van de EHDS-raad",
+   "fijnmazig": false,
+   "sha256": "7d364d6bcf99a8868fdadb01b4f1929392ab9c150fadc04638e4fcca8f20abee"
+  },
+  {
+   "id": "art95",
+   "soort": "artikel",
+   "vindplaats": "Artikel 95",
+   "plaats": "hoofdstuk-vi",
+   "opschrift": "Stuurgroepen voor MyHealth@EU en HealthData@EU",
+   "fijnmazig": false,
+   "sha256": "83319b27231c4d9588c5860df76bdabc14f18c2522bf298de98df86e664b6223"
+  },
+  {
+   "id": "art96",
+   "soort": "artikel",
+   "vindplaats": "Artikel 96",
+   "plaats": "hoofdstuk-vi",
+   "opschrift": "Taken en verantwoordelijkheden van de Commissie met betrekking tot de werking van de EHDS",
+   "fijnmazig": false,
+   "sha256": "15a3cd789030fa7a39f3bd56dd4113db8196922ff0f0c8f8fd71847743bb7c54"
+  },
+  {
+   "id": "hoofdstuk-vii",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk VII (opschrift)",
+   "tekst": "HOOFDSTUK VII BEVOEGDHEIDSDELEGATIE EN, COMITÉPROCEDURE",
+   "sha256": "a5ad8c83c55b985ce7b7f1c872f93e4b8b882a1264dc3ffb8f8a36cc44542e44"
+  },
+  {
+   "id": "art97",
+   "soort": "artikel",
+   "vindplaats": "Artikel 97",
+   "plaats": "hoofdstuk-vii",
+   "opschrift": "Uitoefening van de bevoegdheidsdelegatie",
+   "fijnmazig": false,
+   "sha256": "fa3fe6b5c2f71e15f7d2ec42eccd874c85edce3dbb615372a31c009b29a5511b"
+  },
+  {
+   "id": "art98",
+   "soort": "artikel",
+   "vindplaats": "Artikel 98",
+   "plaats": "hoofdstuk-vii",
+   "opschrift": "Comitéprocedure",
+   "fijnmazig": false,
+   "sha256": "d90295d8c43b3050e035459aa6baf6bb437c660640f12d8d7f8c9c6a1c69c149"
+  },
+  {
+   "id": "hoofdstuk-viii",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk VIII (opschrift)",
+   "tekst": "HOOFDSTUK VIII DIVERSEN",
+   "sha256": "1383ba57a56eb34489586e696160b392405b8614e66d9a028156a425fee0eba3"
+  },
+  {
+   "id": "art99",
+   "soort": "artikel",
+   "vindplaats": "Artikel 99",
+   "plaats": "hoofdstuk-viii",
+   "opschrift": "Sancties",
+   "fijnmazig": false,
+   "sha256": "b98a60437a7173d494d0641d33e0a1861ed342313d5c79a3c22ecca45d399090"
+  },
+  {
+   "id": "art100",
+   "soort": "artikel",
+   "vindplaats": "Artikel 100",
+   "plaats": "hoofdstuk-viii",
+   "opschrift": "Recht op schadevergoeding",
+   "fijnmazig": false,
+   "sha256": "c3ca41d87eead5532495c0c0285a2f355f43b00927aff3cd62681f3f1d17252d"
+  },
+  {
+   "id": "art101",
+   "soort": "artikel",
+   "vindplaats": "Artikel 101",
+   "plaats": "hoofdstuk-viii",
+   "opschrift": "Vertegenwoordiging van een natuurlijke persoon",
+   "fijnmazig": false,
+   "sha256": "002d7d7b63fa447c01412d057ce1d80fdbcd3abd4379c306dd0c95f4896f96f1"
+  },
+  {
+   "id": "art102",
+   "soort": "artikel",
+   "vindplaats": "Artikel 102",
+   "plaats": "hoofdstuk-viii",
+   "opschrift": "Evaluatie, toetsing en voortgangsverslag",
+   "fijnmazig": false,
+   "sha256": "b7d2f270dedfc722e3d99cc28628e8c6f996a1b77f6633d9ca944f4d48ac9440"
+  },
+  {
+   "id": "art103",
+   "soort": "artikel",
+   "vindplaats": "Artikel 103",
+   "plaats": "hoofdstuk-viii",
+   "opschrift": "Wijziging van Richtlijn 2011/24/EU",
+   "fijnmazig": false,
+   "sha256": "9b870ed703a98705de3bed1b5c33baaab27af3c55f60f84c63b7f3338368a6ab"
+  },
+  {
+   "id": "art104",
+   "soort": "artikel",
+   "vindplaats": "Artikel 104",
+   "plaats": "hoofdstuk-viii",
+   "opschrift": "Wijziging van Verordening (EU) 2024/2847",
+   "fijnmazig": false,
+   "sha256": "59c46af7568e7213ae6c027f4d40263fe9a35e5d5be871554731ad049b0957ec"
+  },
+  {
+   "id": "hoofdstuk-ix",
+   "soort": "opschrift",
+   "vindplaats": "Hoofdstuk IX (opschrift)",
+   "tekst": "HOOFDSTUK IX UITGESTELDE TOEPASSING, OVERGANGS- EN SLOTBEPALINGEN",
+   "sha256": "b3002f50ea2e7fb8786f14516b3d2eeff1036eef6aea672b89046559d12a233a"
+  },
+  {
+   "id": "art105",
+   "soort": "artikel",
+   "vindplaats": "Artikel 105",
+   "plaats": "hoofdstuk-ix",
+   "opschrift": "Inwerkingtreding en toepassing",
+   "fijnmazig": true,
+   "sha256": "d948698f71e9c99835d3e521f7e9db0335a56cf0cae0cf47838c34a6f63097ac"
+  },
+  {
+   "id": "art105-alinea1",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 1",
+   "ouder": "art105",
+   "tekst": "Deze verordening treedt in werking op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad van de Europese Unie.",
+   "sha256": "ec821dd11a4a874ba3e4c9564f2979f59de314482a3aac6153fe2ad63c1f6efb"
+  },
+  {
+   "id": "art105-alinea2",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 2",
+   "ouder": "art105",
+   "tekst": "Deze verordening is van toepassing met ingang van 26 maart 2027.",
+   "sha256": "00bb27c7a9e54fd0853753b8dddc49fd38a64e3b871fa0e99a77a9a3518fe7ec"
+  },
+  {
+   "id": "art105-alinea3",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 3",
+   "ouder": "art105",
+   "tekst": "De artikelen 3 tot en met 15, artikel 23, leden 2 tot en met 6, en de artikelen 25, 26, 27, 47, 48 en 49 zijn evenwel als volgt van toepassing:",
+   "sha256": "7460c806a7654a8feeb72549bc210edf5d2a5dcafb0a60fbcaa26ed63c18faf8"
+  },
+  {
+   "id": "art105-alinea3-onderdeel-a",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 105, alinea 3, punt a)",
+   "ouder": "art105-alinea3",
+   "tekst": "a) met ingang van 26 maart 2029 op de in artikel 14, lid 1, punten a), b) en c), bedoelde prioritaire categorieën persoonlijke elektronische gezondheidsgegevens en op EPD-systemen die door de fabrikant zijn bedoeld om gegevens uit die categorieën te verwerken;",
+   "sha256": "638ca83ec68a1a2464c318b251c1465f0500df8d84185474918450d56d231c5e"
+  },
+  {
+   "id": "art105-alinea3-onderdeel-b",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 105, alinea 3, punt b)",
+   "ouder": "art105-alinea3",
+   "tekst": "b) met ingang van 26 maart 2031 op de in artikel 14, lid 1, punten d), e) en f), bedoelde prioritaire categorieën persoonlijke elektronische gezondheidsgegevens en op EPD-systemen die door de fabrikant zijn bedoeld om gegevens uit die categorieën te verwerken;",
+   "sha256": "36c568d175ff85b445c7bc7558c600b1c33c0919f116dd56fd52603768268c61"
+  },
+  {
+   "id": "art105-alinea3-onderdeel-c",
+   "soort": "onderdeel",
+   "vindplaats": "Artikel 105, alinea 3, punt c)",
+   "ouder": "art105-alinea3",
+   "tekst": "c) met ingang van één jaar vanaf de datum zoals vastgelegd in een op grond van artikel 14, lid 2, vast te stellen gedelegeerde handeling voor elke wijziging van de belangrijkste kenmerken van de in bijlage I opgenomen persoonlijke elektronische gezondheidsgegevens, mits die datum na de in de punten a) en b) van deze alinea bedoelde toepassingsdatum valt voor de betrokken categorieën persoonlijke elektronische gezondheidsgegevens.",
+   "sha256": "ecc74be1557a552e80dc4a68865137e87be1a2144a87c061b9833e3ff92d834f"
+  },
+  {
+   "id": "art105-alinea4",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 4",
+   "ouder": "art105",
+   "tekst": "Hoofdstuk III is met ingang van 26 maart 2031 van toepassing op de in artikel 26, lid 2, bedoelde EPD-systemen die in de Unie in gebruik zijn genomen.",
+   "sha256": "245991bd748624497855172143151821762fc04d6101a9439ec6f2ef59745f70"
+  },
+  {
+   "id": "art105-alinea5",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 5",
+   "ouder": "art105",
+   "tekst": "Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing. Evenwel zijn artikel 55, lid 6, artikel 70, artikel 73, lid 5, artikel 75, leden 1 en 12, artikel 77, lid 4, en artikel 78, lid 6, van toepassing met ingang van 26 maart 2027, is artikel 51, lid 1, punten b), f), g), m) en p), van toepassing met ingang van 26 maart 2031, en is artikel 75, lid 5, van toepassing met ingang van 26 maart 2035.",
+   "sha256": "abf0ce9c3ffc57a1e92fa87a471695c010650108712d8b643640dd717c482299"
+  },
+  {
+   "id": "art105-alinea6",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 6",
+   "ouder": "art105",
+   "tekst": "De in artikel 13, lid 4, artikel 15, lid 1, artikel 23, lid 4, en artikel 36, lid 1, bedoelde uitvoeringshandelingen zijn van toepassing met ingang van de in de derde alinea van dit artikel bedoelde data, afhankelijk van de categorieën persoonlijke elektronische gezondheidsgegevens bedoeld in artikel 14, lid 1, punten a), b) en c), respectievelijk artikel 14, lid 1, punten d), e) en f).",
+   "sha256": "abeb0081e296dbb969e3e8a6f178f3948cfe4abf64761a7ed725b1fd1f7fa0d7"
+  },
+  {
+   "id": "art105-alinea7",
+   "soort": "alinea",
+   "vindplaats": "Artikel 105, alinea 7",
+   "ouder": "art105",
+   "tekst": "De in artikel 70, artikel 73, lid 5, artikel 75, lid 12, artikel 77, lid 4, en artikel 78, lid 6, bedoelde uitvoeringshandelingen zijn met ingang van 26 maart 2029 van toepassing.",
+   "sha256": "2c55cc01b4b6017b4b9d8aca4b1a07c5be369c1ac3aed65f33d7b328bb5d1cf0"
+  },
+  {
+   "id": "slot",
+   "soort": "slot",
+   "vindplaats": "Slotformule en ondertekening",
+   "sha256": "44208d63abce2e97ed5926f966f0931f23c5db4fcbf60f3faacdaefcbfe20f0a"
+  },
+  {
+   "id": "bijlage-i",
+   "soort": "bijlage",
+   "vindplaats": "Bijlage I",
+   "opschrift": "BIJLAGE I Belangrijkste kenmerken van prioritaire categorieën persoonlijke elektronische gezondheidsgegevens voor primair gebruik",
+   "sha256": "a4ee0db51adbd71f734d4dc662a4b10d147678bce6f75a11ac0f29ec2f304ba2"
+  },
+  {
+   "id": "bijlage-ii",
+   "soort": "bijlage",
+   "vindplaats": "Bijlage II",
+   "opschrift": "BIJLAGE II Essentiële vereisten voor de geharmoniseerde softwarecomponenten van EPD-systemen en voor producten waarvoor aanspraak is gemaakt op interoperabiliteit met EPD-systemen",
+   "sha256": "67533b96020d57e52aa172e34438aeecf009488ee984ac284963c0b974e48742"
+  },
+  {
+   "id": "bijlage-iii",
+   "soort": "bijlage",
+   "vindplaats": "Bijlage III",
+   "opschrift": "BIJLAGE III Technische documentatie",
+   "sha256": "10b275edbfb8e27ca03e6f1fed8aaabe93f561bf4e94323fb3a619cc53bc92a7"
+  },
+  {
+   "id": "bijlage-iv",
+   "soort": "bijlage",
+   "vindplaats": "Bijlage IV",
+   "opschrift": "BIJLAGE IV EU-conformiteitsverklaring",
+   "sha256": "b1524071467c6a33a9e6de39c7780cd5abd078c80e5136760134d70df24729b5"
+  }
+ ]
+}

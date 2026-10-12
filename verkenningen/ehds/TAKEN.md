@@ -1,55 +1,39 @@
 # TAKEN — selectiecriteria EHDS (Verordening (EU) 2025/327), secundair gebruik
 
-Status: **geblokkeerd bij stap 1**. De brontekst kon niet worden opgehaald (zie
-hieronder). Zonder authentieke brontekst worden stap 2 t/m 6 niet uitgevoerd;
-er staat bewust niets uit het geheugen in deze map.
-
 ## Checklist
 
-- [x] **Stap 0** — remote bijgewerkt naar `NederlandseDigitaleDienst/regelrecht`
-      (fetch; push gaat naar de fork `StephanMB/regelrecht`, de enige repo met
-      schrijfrechten in deze sessie), branch gebaseerd op `origin/main` 8d48bfb4,
-      repository verkend. Bevindingen hieronder.
-- [ ] **Stap 1** — brontekst ophalen. **Blokkade:** het netwerkbeleid van de
-      cloudomgeving weigert de CONNECT naar elk benodigd domein (HTTP 403 van de
-      egress-proxy, `connect_rejected`), getest op 2026-10-12:
-      `eur-lex.europa.eu`, `publications.europa.eu`, `op.europa.eu`,
-      `data.europa.eu`, `cellar-api.op.europa.eu`. Nodig in de allowlist:
-      `eur-lex.europa.eu` (HTML NL/EN en rectificaties) en
-      `publications.europa.eu` (Formex-XML via Cellar). Ook rectificaties zijn
-      daardoor niet te controleren.
-- [ ] **Stap 2** — inventaris, dekkingsmatrix, validatiescript. Geblokkeerd door stap 1
-      (de parser hangt af van het bronformaat: Formex of EUR-Lex-HTML).
-- [ ] **Stap 3** — specificatie. Geblokkeerd door stap 1.
-- [ ] **Stap 4** — concepttestgevallen. Geblokkeerd door stap 3.
-- [ ] **Stap 5** — interpretatielogboek en NL/EN-vergelijking. Geblokkeerd door stap 1.
-- [ ] **Stap 6** — verificatie. Geblokkeerd door stap 2–4.
-- [ ] **Stap 7** — draft-PR. Uitgesteld tot er inhoud is; deze checklist staat
-      wel op de branch `claude/blissful-lamport-vf4bbt`.
+- [x] **Stap 0** — remote: fetch van `NederlandseDigitaleDienst/regelrecht`, push naar de fork
+      `StephanMB/regelrecht` (de enige repo met schrijfrechten in deze sessie); branch op
+      `origin/main` 8d48bfb4. Repository verkend; bevindingen hieronder.
+- [x] **Stap 1** — brontekst NL en EN als Formex-4-ZIP via Cellar (`publications.europa.eu`), ruwe
+      bytes, URL/datum/sha256 in `bron/bronnen.yaml`. EUR-Lex gaf curl alleen een WAF-uitdaging.
+      Rectificaties: drie (FRA/HRV/LAV, HUN, HUN), geen NL of EN; wijzigingshandelingen: geen.
+- [x] **Stap 2** — `scripts/inventaris.py` → `inventaris.json` (369 bepalingen);
+      `dekking.yaml`; `scripts/valideer.py`, getest op de vereiste en extra faalgevallen (ontbrekende status,
+      onbekende ID, gewijzigde bron, niet-letterlijk citaat).
+- [x] **Stap 3** — regelwerk `regulation/nl/eu_verordening/…/2025-03-25.yaml` (art. 1, 2, 50, 51, 60, 105);
+      `just validate` OK. Gaten in het formaat: README.md.
+- [x] **Stap 4** — 13 conceptscenario's met @concept en @bepaling-tags, alle vijf randgevallen; 13/13
+      groen door de engine (`BDD_BUCKET=corpus REGULATION_PATH=…`).
+- [x] **Stap 5** — `interpretatielogboek.md`: K1–K19, NL/EN-verschillen N1–N5.
+- [x] **Stap 6** — inventaris twee keer gedraaid: byte-identiek (sha256 39350cb0…); valideer.py OK;
+      BDD 13/13; pre-commit hooks groen; elk element herlezen naast de brontekst (één correctie:
+      “leden” i.p.v. “punten” in de vraag over gezondheidsgegevens).
+- [x] **Stap 7** — gecommit en gepusht naar `claude/blissful-lamport-vf4bbt`; draft-PR: zie hieronder.
 
 ## Bevindingen stap 0
 
-- **Bronverwijzing.** Op documentniveau ondersteunt het schema (v0.7.1) een
-  EU-bron: `regulatory_layer: EU_VERORDENING` maakt `celex_nummer` verplicht,
-  `eli` is optioneel. Op elementniveau niet: `legal_basis` kent alleen
-  `bwb_id` (patroon `BWBR…`), `juriconnect` (alleen BWB) en `article` /
-  `paragraph` / `sentence` — geen `celex`, geen `onderdeel`, en
-  `additionalProperties: false`. `articles[].references` vereist `bwb_id`.
-  Een verwijzing naar art. 51, lid 1, onder a, past dus niet volledig; het
-  onderdeel en een inventaris-ID kunnen alleen in `explanation` (vrije tekst).
-- **Invoer en open normen.** Menselijk oordeel per geval: `parameters`
-  (met `required: false` geeft een ontbrekend antwoord een *unknown* dat de
-  parameter noemt, RFC-036). `open_terms` is voor normen die een lagere
-  regeling invult (hier: categorieën die een lidstaat toevoegt). `markings`
-  markeert wat het formaat niet kan uitdrukken. Een vraagtekst per parameter
-  heeft geen eigen veld; alleen `description`.
-- **Draaien.** `just validate <bestand>` (schema + typecheck);
-  `just bdd` (cucumber-rs); `BDD_BUCKET=corpus REGULATION_PATH=<map>` laat
-  bucket A een andere corpusmap draaien, met scenario's in
-  `<wet>/scenarios/*.feature`; `cargo run --bin evaluate` evalueert één wet via
-  JSON op stdin. Lokaal waren `mold`, `just` en `pre-commit` niet geïnstalleerd;
-  nu wel.
-- **Plek.** Corpusconventie: `corpus/regulation/<land>/<laag>/<id>/<datum>.yaml`.
-  Er is nog geen EU-tak, en een ongevalideerd concept hoort niet in de corpus.
-  Werkmap: `verkenningen/ehds/`, met daarin later dezelfde
-  `regulation/…/scenarios/`-indeling zodat `REGULATION_PATH` erop kan wijzen.
+- **Bronverwijzing.** Op documentniveau ondersteunt het schema (v0.7.1) een EU-bron
+  (`EU_VERORDENING` + `celex_nummer`, `eli`). Op elementniveau niet: `legal_basis` kent alleen BWB
+  (`bwb_id`, `juriconnect`) en `article`/`paragraph`/`sentence`, met `additionalProperties: false`.
+- **Invoer en open normen.** Oordeel per geval: `parameters` met `required: false` (onbeantwoord =
+  onbekend, RFC-036, Kleene-logica in EN/OF). `open_terms` is voor normen die een lagere regeling
+  invult; `markings` voor wat het formaat niet kan uitdrukken.
+- **Draaien.** `just validate <bestand>`; `just bdd`; met `BDD_BUCKET=corpus REGULATION_PATH=<map>`
+  draait bucket A een andere corpusmap, maar de loader leest alleen `<map>/nl/`.
+- **Plek.** Corpusconventie `corpus/regulation/<land>/<laag>/<id>/<datum>.yaml`; een
+  ongevalideerd EU-concept hoort daar niet. Werkmap: `verkenningen/ehds/`. Buiten de werkmap alleen
+  een regel in `REUSE.toml` voor de bronbestanden (.zip/.rq/.csv), die `reuse lint` vereist.
+- **Code review.** AGENTS.md vraagt een review door een subagent; de opdracht staat hooguit één
+  subagent toe en alleen als dat sneller is. Niet gedaan; in plaats daarvan elk element zelf
+  herlezen naast de bron en de validator met negatieve gevallen getest.

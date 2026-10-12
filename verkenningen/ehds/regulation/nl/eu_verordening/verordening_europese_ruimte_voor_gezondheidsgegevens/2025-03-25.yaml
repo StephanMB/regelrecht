@@ -1,0 +1,1958 @@
+---
+# CONCEPT — te valideren door een jurist. Dit regelwerk stelt de juridische uitleg niet vast.
+#
+# Verkenning: valt een databron onder de plicht om elektronische gezondheidsgegevens beschikbaar te
+# stellen voor secundair gebruik (Verordening (EU) 2025/327, EHDS), onder welke categorie(ën) van
+# art. 51, en vanaf welke datum? De engine combineert alleen antwoorden op de parameters volgens de
+# structuur van de tekst; elk menselijk oordeel is een parameter met `required: false`, zodat een
+# onbeantwoorde vraag tot een onbekende uitkomst leidt in plaats van tot een stilzwijgende keuze.
+#
+# Elke `legal_basis.explanation` begint met de inventaris-ID('s) tussen [ ] en citeert de brontekst
+# letterlijk tussen « »; `scripts/valideer.py` controleert beide tegen `inventaris.json`.
+# Gaten in het formaat: zie README.md in de werkmap.
+#
+# Bestandsplek: de BDD-loader leest alleen `<REGULATION_PATH>/nl/`, daarom staat deze EU-verordening
+# onder `regulation/nl/eu_verordening/`.
+#
+# valid_from: art. 105, eerste alinea (twintigste dag na bekendmaking; bekendmaking PB L van 5 maart
+# 2025 volgens de Formex-metadata) — berekend, zie interpretatielogboek.
+$schema: https://raw.githubusercontent.com/MinBZK/regelrecht/refs/tags/schema-v0.7.1/schema/v0.7.1/schema.json
+$id: verordening_europese_ruimte_voor_gezondheidsgegevens
+regulatory_layer: EU_VERORDENING
+publication_date: '2025-03-05'
+valid_from: '2025-03-25'
+celex_nummer: 32025R0327
+eli: http://data.europa.eu/eli/reg/2025/327/oj
+url: http://data.europa.eu/eli/reg/2025/327/oj
+name: >-
+  Verordening (EU) 2025/327 van het Europees Parlement en de Raad van 11 februari 2025 betreffende de Europese
+  ruimte voor gezondheidsgegevens en tot wijziging van Richtlijn 2011/24/EU en Verordening (EU) 2024/2847
+articles:
+  - number: '1'
+    text: |-
+      1. Bij deze verordening wordt de Europese ruimte voor gezondheidsgegevens (European Health Data Space — EHDS)
+      vastgesteld door te voorzien in gemeenschappelijke regels, normen en infrastructuren en een governancekader,
+      teneinde de toegang tot elektronische gezondheidsgegevens te vergemakkelijken met het oog op het primaire
+      gebruik van elektronische gezondheidsgegevens en secundaire gebruik van die gegevens.
+
+      2. Deze verordening:
+
+      a) specificeert de in Verordening (EU) 2016/679 vastgestelde rechten van natuurlijke personen met betrekking
+      tot het primaire gebruik en secundaire gebruik van hen betreffende persoonlijke elektronische
+      gezondheidsgegevens en vult die rechten aan;
+
+      b) bevat gemeenschappelijke voorschriften voor systemen voor elektronische patiëntendossiers (“EPD-systemen”)
+      met betrekking tot twee verplichte geharmoniseerde softwarecomponenten, namelijk de “Europese
+      interoperabiliteitssoftwarecomponent voor EPD-systemen” en de “Europese logsoftwarecomponent voor
+      EPD-systemen” zoals gedefinieerd in artikel 2, lid 2, punt n), respectievelijk punt o), en voor wellnessapps
+      waarvan wordt geclaimd dat zij interoperabel zijn met EPD-systemen met betrekking tot die twee geharmoniseerde
+      softwarecomponenten, wat primair gebruik van elektronische gezondheidsgegevens betreft;
+
+      c) stelt gemeenschappelijke regels en mechanismen vast voor het primaire gebruik van elektronische
+      gezondheidsgegevens en het secundaire gebruik van elektronische gezondheidsgegevens;
+
+      d) brengt een grensoverschrijdende infrastructuur tot stand die het primaire gebruik van persoonlijke
+      elektronische gezondheidsgegevens in de hele Unie mogelijk maakt;
+
+      e) brengt een grensoverschrijdende infrastructuur tot stand voor het secundaire gebruik van elektronische
+      gezondheidsgegevens;
+
+      f) stelt governance- en coördinatiemechanismen vast op Unie- en nationaal niveau voor zowel het primaire
+      gebruik van elektronische gezondheidsgegevens als het secundaire gebruik van elektronische
+      gezondheidsgegevens.
+
+      3. Deze verordening doet geen afbreuk aan andere rechtshandelingen van de Unie betreffende de toegang tot, en
+      het delen van of het secundaire gebruik van, elektronische gezondheidsgegevens, noch aan vereisten van de Unie
+      voor de verwerking van gegevens in verband met elektronische gezondheidsgegevens, met name Verordeningen (EG)
+      nr. 223/2009, (EU) nr. 536/2014, (EU) 2016/679, (EU) 2018/1725, (EU) 2022/868 en (EU) 2023/2854 van het
+      Europees Parlement en d Raad, en Richtlijnen 2002/58/EG en (EU) 2016/943 van het Europees Parlement en de
+      Raad.
+
+      4. Verwijzingen in deze verordening naar de bepalingen van Verordening (EU) 2016/679 worden in voorkomend
+      geval ook gelezen als verwijzingen naar de overeenkomstige bepalingen van Verordening (EU) 2018/1725, wat de
+      instellingen, organen en instanties van de Unie betreft.
+
+      5. Deze verordening doet geen afbreuk aan de Verordeningen (EU) 2017/745, (EU) 2017/746 en (EU) 2024/1689 wat
+      betreft de veiligheid van medische hulpmiddelen, medische hulpmiddelen voor in-vitrodiagnostiek en systemen
+      met artificiële intelligentie (AI) die interageren met EPD-systemen.
+
+      6. Deze verordening doet geen afbreuk aan het Unierecht of het nationale recht inzake de elektronische
+      verwerking van gezondheidsgegevens met het oog op rapportage, het voldoen aan verzoeken om toegang tot
+      informatie of het aantonen of verifiëren van de naleving van wettelijke verplichtingen, of aan het Unierecht
+      of het nationale recht wat betreft het verlenen van toegang tot en de openbaarmaking van officiële documenten.
+
+      7. Deze verordening doet geen afbreuk aan specifieke bepalingen in het Unierecht of het nationale recht die
+      voorzien in toegang tot elektronische gezondheidsgegevens voor verdere verwerking door openbare lichamen van
+      de lidstaten, door instellingen, organen en instanties van de Unie, of door particuliere entiteiten waaraan
+      krachtens het Unierecht of het nationale recht een taak van algemeen belang is toevertrouwd, met het oog op de
+      uitvoering van die taak.
+
+      8. Deze verordening doet geen afbreuk aan de toegang tot elektronische gezondheidsgegevens voor secundair
+      gebruik dat is overeengekomen in het kader van contractuele of administratieve regelingen tussen publieke of
+      particuliere entiteiten.
+
+      9. Deze verordening is niet van toepassing op de verwerking van persoonsgegevens in de volgende gevallen:
+
+      a) wanneer de verwerking wordt uitgevoerd in het kader van activiteiten die buiten de werkingssfeer van het
+      Unierecht vallen;
+
+      b) wanneer de verwerking wordt uitgevoerd door bevoegde autoriteiten met het oog op de voorkoming, het
+      onderzoek, de opsporing en de vervolging van strafbare feiten of de tenuitvoerlegging van straffen, met
+      inbegrip van de bescherming tegen en de voorkoming van gevaren voor de openbare veiligheid.
+    url: http://data.europa.eu/eli/reg/2025/327/oj
+    machine_readable:
+      execution:
+        parameters:
+          - name: verwerking_buiten_werkingssfeer_unierecht
+            type: boolean
+            required: false
+            description: >-
+              Wordt de verwerking van persoonsgegevens in deze databron uitgevoerd in het kader van activiteiten
+              die buiten de werkingssfeer van het Unierecht vallen?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '1'
+              paragraph: '9'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art1-lid9, art1-lid9-onderdeel-a] «Deze verordening is niet van toepassing op de verwerking van
+                persoonsgegevens in de volgende gevallen:» «wanneer de verwerking wordt uitgevoerd in het kader van
+                activiteiten die buiten de werkingssfeer van het Unierecht vallen;»
+          - name: verwerking_door_bevoegde_autoriteit_strafrecht
+            type: boolean
+            required: false
+            description: >-
+              Wordt de verwerking van persoonsgegevens in deze databron uitgevoerd door bevoegde autoriteiten met
+              het oog op de voorkoming, het onderzoek, de opsporing en de vervolging van strafbare feiten of de
+              tenuitvoerlegging van straffen, met inbegrip van de bescherming tegen en de voorkoming van gevaren
+              voor de openbare veiligheid?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '1'
+              paragraph: '9'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art1-lid9, art1-lid9-onderdeel-b] «Deze verordening is niet van toepassing op de verwerking van
+                persoonsgegevens in de volgende gevallen:» «wanneer de verwerking wordt uitgevoerd door bevoegde
+                autoriteiten met het oog op de voorkoming, het onderzoek, de opsporing en de vervolging van
+                strafbare feiten of de tenuitvoerlegging van straffen»
+        output:
+          - name: verordening_niet_van_toepassing_art1_lid9
+            type: boolean
+            description: >-
+              De verordening is niet van toepassing op de verwerking van persoonsgegevens in deze databron (art.
+              1, lid 9).
+        actions:
+          - output: verordening_niet_van_toepassing_art1_lid9
+            value:
+              operation: OR
+              conditions:
+                - $verwerking_buiten_werkingssfeer_unierecht
+                - $verwerking_door_bevoegde_autoriteit_strafrecht
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '1'
+              paragraph: '9'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art1-lid9] «Deze verordening is niet van toepassing op de verwerking van persoonsgegevens in de
+                volgende gevallen:»
+  - number: '2'
+    text: |-
+      1. Voor de toepassing van deze verordening gelden de volgende definities:
+
+      a) de definities van “persoonsgegevens”, “verwerking”, “pseudonimisering”, “verwerkingsverantwoordelijke”,
+      “verwerker”, “derde”, “toestemming”, “genetische gegevens”, “gegevens over gezondheid” en “internationale
+      organisatie” die zijn neergelegd in artikel 4, respectievelijk leden 1, 2, 5, 7, 8, 10, 11, 13, 15 en 26, van
+      Verordening (EU) 2016/679;
+
+      b) de definities van “gezondheidszorg”, “lidstaat van aansluiting”, “lidstaat waar de behandeling
+      plaatsvindt”, “gezondheidswerker”, “zorgaanbieder”, “geneesmiddel” en “recept” die zijn neergelegd in artikel
+      3, respectievelijk punten a), c), d), f), g), i) en k), van Richtlijn 2011/24/EU;
+
+      c) de definities van “gegevens”, “toegang”, “data-altruïsme”, “openbaar lichaam” en “beveiligde
+      verwerkingsomgeving” die zijn neergelegd in artikel 2, respectievelijk punten 1), 13), 16), 17) en 20), van
+      Verordening (EU) 2022/868;
+
+      d) de definities van “op de markt aanbieden”, “in de handel brengen”, “markttoezicht”,
+      “markttoezichtautoriteit”, “non-conformiteit”, “fabrikant”, “importeur”, “distributeur”, “marktdeelnemer”,
+      “corrigerende maatregel”, “terugroepen” en “uit de handel nemen” die zijn neergelegd in artikel 3,
+      respectievelijk punten 1), 2), 3), 4), 7), 8), 9), 10), 13), 16), 22) en 23), van Verordening (EU) 2019/1020;
+
+      e) de definities van “medisch hulpmiddel”, “beoogd doeleind”, “gebruiksaanwijzing”, “prestaties”,
+      “zorginstelling” en “gemeenschappelijke specificaties” die zijn neergelegd in artikel 2, respectievelijk
+      punten 1), 12), 14), 22), 36) en 71), van Verordening (EU) 2017/745;
+
+      f) de definities van “elektronische identificatie” en “elektronisch identificatiemiddel” die zijn neergelegd
+      in artikel 3, punt 1) respectievelijk punt 2), van Verordening (EU) nr. 910/2014;
+
+      g) de definitie van “aanbestedende diensten” die is neergelegd in artikel 2, lid 1, punt 1, van Richtlijn
+      2014/24/EU van het Europees Parlement en de Raad;
+
+      h) de definitie van “volksgezondheid” die is neergelegd in artikel 3, punt c), van Verordening (EG) nr.
+      1338/2008 van het Europees Parlement en de Raad.
+
+      2. Voorts gelden voor de toepassing van deze verordening de volgende definities:
+
+      a) “persoonlijke elektronische gezondheidsgegevens”: gegevens over gezondheid en genetische gegevens die in
+      elektronische vorm worden verwerkt;
+
+      b) “niet-persoonsgebonden elektronische gezondheidsgegevens”: andere elektronische gezondheidsgegevens dan
+      persoonlijke elektronische gezondheidsgegevens, met inbegrip van zowel gegevens die geanonimiseerd zijn zodat
+      zij niet langer betrekking hebben op een geïdentificeerde of identificeerbare natuurlijke persoon (de
+      “betrokkene”) als gegevens die nooit betrekking hebben gehad op een betrokkene;
+
+      c) “elektronische gezondheidsgegevens”: persoonlijke of niet-persoonsgebonden elektronische
+      gezondheidsgegevens;
+
+      d) “primair gebruik”: de verwerking van elektronische gezondheidsgegevens voor de verlening van
+      gezondheidszorg om de gezondheidstoestand van de natuurlijke persoon op wie die gegevens betrekking hebben te
+      beoordelen, te behouden of te herstellen, waaronder het voorschrijven en het verstrekken van geneesmiddelen en
+      medische hulpmiddelen, alsmede voor relevante sociale, administratieve of vergoedingsdiensten;
+
+      e) “secundair gebruik”: de verwerking van elektronische gezondheidsgegevens voor de in hoofdstuk IV van deze
+      verordening vermelde doeleinden, anders dan de oorspronkelijke doeleinden waarvoor zij zijn verzameld of
+      gegenereerd;
+
+      f) “interoperabiliteit”: het vermogen van organisaties, alsook van softwaretoepassingen of apparaten van
+      dezelfde fabrikant of van verschillende fabrikanten, om via de processen die zij ondersteunen te interageren,
+      met inbegrip van de uitwisseling van informatie en kennis — zonder de inhoud van de gegevens te wijzigen —
+      tussen die organisaties, softwaretoepassingen of apparaten;
+
+      g) “registratie van elektronische gezondheidsgegevens”: het registreren van gezondheidsgegevens in
+      elektronisch format, door het handmatig invoeren van dergelijke gegevens, door het verzamelen van dergelijke
+      gegevens door middel van een apparaat, of door het omzetten in een elektronisch format van niet-elektronische
+      gezondheidsgegevens, die moeten worden verwerkt in een EPD-systeem of een wellnessapp;
+
+      h) “dienst voor toegang tot elektronische gezondheidsgegevens”: een onlinedienst, zoals een portaal of een
+      applicatie voor mobiele apparaten waar natuurlijke personen die niet beroepshalve handelen, toegang kunnen
+      krijgen tot hun eigen elektronische gezondheidsgegevens of tot de elektronische gezondheidsgegevens van andere
+      natuurlijke personen, voor zover zij daartoe wettelijk bevoegd zijn;
+
+      i) “toegangsdienst voor gezondheidswerkers”: een door een EPD-systeem ondersteunde dienst die
+      gezondheidswerkers toegang geeft tot gegevens van natuurlijke personen die onder hun behandeling staan;
+
+      j) “elektronisch patiëntendossier” of “EPD”: een verzameling elektronische gezondheidsgegevens van een
+      natuurlijke persoon die in het gezondheidszorgstelsel worden verzameld en voor het verlenen van
+      gezondheidszorg worden verwerkt;
+
+      k) “systeem voor elektronische patiëntendossiers” of “EPD-systeem”: elk systeem waarin de software, of een
+      combinatie van de hardware en de software van dat systeem, het mogelijk maakt persoonlijke elektronische
+      gezondheidsgegevens die behoren tot de in het kader van deze verordening vastgestelde prioritaire categorieën
+      van persoonlijke elektronische gezondheidsgegevens op te slaan, te bemiddelen, te exporteren, in te voeren, om
+      te zetten, te bewerken of te bekijken, en dat door de fabrikant bedoeld is om door zorgaanbieders te worden
+      gebruikt bij het verlenen van patiëntenzorg of door patiënten om toegang te krijgen tot hun elektronische
+      gezondheidsgegevens;
+
+      l) “ingebruikneming”: eerste gebruik in de Unie van een onder deze verordening vallend EPD-systeem
+      overeenkomstig het beoogde doeleind;
+
+      m) “softwarecomponent”: een afzonderlijk softwareonderdeel dat een specifieke functionaliteit biedt of
+      specifieke functies of procedures uitvoert en dat onafhankelijk of in combinatie met andere componenten kan
+      functioneren;
+
+      n) “Europese interoperabiliteitssoftwarecomponent voor EPD-systemen”: een softwarecomponent van het
+      EPD-systeem die persoonlijke elektronische gezondheidsgegevens verstrekt en ontvangt in een bij deze
+      verordening vastgestelde prioritaire categorie voor primair gebruik in het Europees uitwisselingsformat voor
+      elektronische patiëntendossiers waarin deze verordening voorziet, en die losstaat van de Europese
+      logsoftwarecomponent voor EPD-systemen;
+
+      o) “Europese logsoftwarecomponent voor EPD-systemen”: een softwarecomponent van het EPD-systeem die
+      loginformatie verstrekt in verband met de toegang van gezondheidswerkers of andere personen tot in het kader
+      van deze verordening vastgestelde prioritaire categorieën persoonlijke elektronische gezondheidsgegevens, in
+      het in punt 3.2 van bijlage II beschreven format en die losstaat van de Europese
+      interoperabiliteitssoftwarecomponent voor EPD-systemen;
+
+      p) “CE-conformiteitsmarkering”: een markering waarmee de fabrikant aangeeft dat het EPD-systeem in
+      overeenstemming is met de toepasselijke voorschriften van deze verordening en ander toepasselijk Unierecht dat
+      in het aanbrengen ervan voorziet krachtens Verordening (EG) nr. 765/2008 van het Europees Parlement en de
+      Raad;
+
+      q) “risico”: de combinatie van de waarschijnlijkheid dat zich een gevaar voordoet dat schade toebrengt aan de
+      gezondheid, de veiligheid of de informatiebeveiliging en de ernst van dergelijke schade;
+
+      r) “ernstig incident”: een storing of verslechtering van de kenmerken of prestaties van een EPD-systeem dat op
+      de markt wordt aangeboden en dat direct of indirect leidt, had kunnen leiden of kan leiden tot:
+
+      i) het overlijden van een natuurlijk persoon of ernstige schade aan de gezondheid van een natuurlijk persoon;
+
+      ii) een ernstige inbreuk op de rechten van een natuurlijke persoon;
+
+      iii) ernstige verstoring van het beheer en de exploitatie van kritieke infrastructuur in de gezondheidssector;
+
+      s) “zorg”: een professionele dienst die bedoeld is om te voorzien in de specifieke behoeften van natuurlijke
+      personen die wegens een handicap of andere lichamelijke of geestelijke aandoeningen bijstand, met inbegrip van
+      preventieve en ondersteunende maatregelen, nodig hebben om essentiële activiteiten in het dagelijks leven uit
+      te kunnen voeren ter ondersteuning van hen betreffende persoonlijke autonomie;
+
+      t) “houder van gezondheidsgegevens”: een natuurlijke of rechtspersoon, overheidsinstantie, agentschap of ander
+      orgaan in de gezondheidszorg- of de zorgsector, met inbegrip van, indien noodzakelijk, vergoedingsdiensten,
+      alsook elke natuurlijke of rechtspersoon die producten of diensten ontwikkelt die bestemd zijn voor de
+      gezondheids-, de gezondheidszorg- of de zorgsector, die wellnessapps ontwikkelt of vervaardigt, die
+      wetenschappelijk onderzoek verricht in verband met de gezondheidszorg- of de zorgsector of optreedt als
+      sterfteregister, alsook instellingen, organen of instanties van de Unie die:
+
+      i) het recht of de verplichting hebben om overeenkomstig het toepasselijke Unierecht of nationaal recht en in
+      hun hoedanigheid van verwerkingsverantwoordelijke of medeverwerkingsverantwoordelijke persoonlijke
+      elektronische gezondheidsgegevens te verwerken voor de verstrekking van gezondheidszorg of zorg of voor
+      doelstellingen op het gebied van volksgezondheid, vergoedingen, onderzoek, innovatie, beleidsvorming,
+      officiële statistieken of patiëntveiligheid of voor regelgevingsdoeleinden; ofwel
+
+      ii) in staat zijn om niet-persoonsgebonden elektronische gezondheidsgegevens ter beschikking te stellen door
+      controle op het technische ontwerp van een product en aanverwante diensten, met inbegrip van het registreren,
+      verstrekken, beperken of uitwisselen van die gegevens;
+
+      u) “gebruiker van gezondheidsgegevens”: een natuurlijke persoon of rechtspersoon, met inbegrip van
+      instellingen, organen of instanties van de Unie waaraan rechtmatige toegang tot elektronische
+      gezondheidsgegevens voor secundair gebruik is verleend op grond van een gegevensvergunning, een goedkeuring
+      van een verzoek om gezondheidsgegevens of een toegangsgoedkeuring van een gemachtigde deelnemer in
+      HealthData@EU;
+
+      v) “gegevensvergunning”: een administratief besluit dat door een instantie voor toegang tot
+      gezondheidsgegevens aan een gebruiker van gezondheidsgegevens wordt afgegeven om bepaalde in de
+      gegevensvergunning gespecificeerde elektronische gezondheidsgegevens te verwerken voor specifieke secundaire
+      gebruiksdoeleinden, op basis van de in hoofdstuk IV van deze verordening vastgestelde voorwaarden;
+
+      w) “dataset”: een gestructureerde verzameling van elektronische gezondheidsgegevens;
+
+      x) “dataset met een grote impact bestemd voor secundair gebruik”: een dataset waarvan het hergebruik
+      aanzienlijke voordelen met zich meebrengt vanwege de relevantie ervan voor gezondheidsonderzoek;
+
+      y) “catalogus van datasets”: een verzameling beschrijvingen van datasets die op systematische wijze is
+      geordend en met inbegrip van een gebruikersgericht openbaar gedeelte, waarin informatie over de parameters van
+      individuele datasets langs elektronische weg toegankelijk is via een onlineportaal;
+
+      z) “gegevenskwaliteit”: de mate waarin de elementen van elektronische gezondheidsgegevens geschikt zijn voor
+      het beoogde primaire gebruik en secundaire gebruik ervan;
+
+      aa) “gegevenskwaliteits- en gegevensbruikbaarheidslabel”: een grafisch diagram, met inbegrip van een schaal,
+      waarin de gegevenskwaliteit en de gebruiksvoorwaarden van een dataset worden beschreven;
+
+      ab) “wellnessapp”: elke software, of elke combinatie van hardware en software, die door de fabrikant is
+      bedoeld om door een natuurlijke persoon te worden gebruikt, voor de verwerking van elektronische
+      gezondheidsgegevens, specifiek voor de verstrekking van informatie over de gezondheid van natuurlijke personen
+      of voor zorgverlening voor andere doeleinden dan de verstrekking van gezondheidszorg.
+    url: http://data.europa.eu/eli/reg/2025/327/oj
+    machine_readable:
+      execution:
+        parameters:
+          - name: in_gezondheidszorg_of_zorgsector
+            type: boolean
+            required: false
+            description: >-
+              Is de partij die de databron houdt een natuurlijke of rechtspersoon, overheidsinstantie, agentschap
+              of ander orgaan in de gezondheidszorg- of de zorgsector? (“zorg” is gedefinieerd in art. 2, lid 2,
+              punt s); “gezondheidszorg” via art. 2, lid 1, punt b).)
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t, art2-lid2-onderdeel-s, art2-lid1-onderdeel-b] «een natuurlijke of
+                rechtspersoon, overheidsinstantie, agentschap of ander orgaan in de gezondheidszorg- of de
+                zorgsector»
+          - name: is_vergoedingsdienst_waar_noodzakelijk
+            type: boolean
+            required: false
+            description: >-
+              Is de partij een vergoedingsdienst, en is het in dit geval “noodzakelijk” haar als houder aan te
+              merken? (Open norm: de tekst zegt niet wanneer dat noodzakelijk is.)
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «met inbegrip van, indien noodzakelijk, vergoedingsdiensten»
+          - name: ontwikkelt_producten_of_diensten_voor_gezondheidssector
+            type: boolean
+            required: false
+            description: >-
+              Is de partij een natuurlijke of rechtspersoon die producten of diensten ontwikkelt die bestemd zijn
+              voor de gezondheids-, de gezondheidszorg- of de zorgsector?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «elke natuurlijke of rechtspersoon die producten of diensten ontwikkelt die
+                bestemd zijn voor de gezondheids-, de gezondheidszorg- of de zorgsector»
+          - name: ontwikkelt_of_vervaardigt_wellnessapps
+            type: boolean
+            required: false
+            description: >-
+              Is de partij een natuurlijke of rechtspersoon die wellnessapps (art. 2, lid 2, punt ab)) ontwikkelt
+              of vervaardigt?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t, art2-lid2-onderdeel-ab] «die wellnessapps ontwikkelt of vervaardigt»
+          - name: verricht_onderzoek_gezondheidszorg_of_zorgsector
+            type: boolean
+            required: false
+            description: >-
+              Is de partij een natuurlijke of rechtspersoon die wetenschappelijk onderzoek verricht in verband met
+              de gezondheidszorg- of de zorgsector?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «die wetenschappelijk onderzoek verricht in verband met de gezondheidszorg-
+                of de zorgsector»
+          - name: treedt_op_als_sterfteregister
+            type: boolean
+            required: false
+            description: >-
+              Is de partij een natuurlijke of rechtspersoon die optreedt als sterfteregister?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «of optreedt als sterfteregister»
+          - name: is_instelling_orgaan_of_instantie_van_de_unie
+            type: boolean
+            required: false
+            description: >-
+              Is de partij een instelling, orgaan of instantie van de Unie?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «alsook instellingen, organen of instanties van de Unie die:»
+          - name: heeft_recht_of_plicht_tot_verwerking
+            type: boolean
+            required: false
+            description: >-
+              Heeft de partij het recht of de verplichting om overeenkomstig het toepasselijke Unierecht of
+              nationaal recht persoonlijke elektronische gezondheidsgegevens te verwerken?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t-i] «het recht of de verplichting hebben om overeenkomstig het toepasselijke
+                Unierecht of nationaal recht»
+          - name: verwerkt_als_verwerkingsverantwoordelijke
+            type: boolean
+            required: false
+            description: >-
+              Verwerkt de partij die gegevens in haar hoedanigheid van verwerkingsverantwoordelijke of
+              medeverwerkingsverantwoordelijke (begrippen uit Verordening (EU) 2016/679, via art. 2, lid 1, punt
+              a))? Een partij die uitsluitend als verwerker voor een ander optreedt, antwoordt nee.
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t-i, art2-lid1-onderdeel-a] «in hun hoedanigheid van
+                verwerkingsverantwoordelijke of medeverwerkingsverantwoordelijke»
+          - name: verwerkt_voor_doel_uit_punt_t_i
+            type: boolean
+            required: false
+            description: >-
+              Gebeurt die verwerking voor de verstrekking van gezondheidszorg of zorg of voor doelstellingen op
+              het gebied van volksgezondheid, vergoedingen, onderzoek, innovatie, beleidsvorming, officiële
+              statistieken of patiëntveiligheid of voor regelgevingsdoeleinden?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t-i, art2-lid1-onderdeel-h] «voor de verstrekking van gezondheidszorg of zorg
+                of voor doelstellingen op het gebied van volksgezondheid, vergoedingen, onderzoek, innovatie,
+                beleidsvorming, officiële statistieken of patiëntveiligheid of voor regelgevingsdoeleinden»
+          - name: kan_niet_persoonsgebonden_gegevens_beschikbaar_stellen_via_ontwerp
+            type: boolean
+            required: false
+            description: >-
+              Is de partij in staat om niet-persoonsgebonden elektronische gezondheidsgegevens ter beschikking te
+              stellen door controle op het technische ontwerp van een product en aanverwante diensten, met
+              inbegrip van het registreren, verstrekken, beperken of uitwisselen van die gegevens?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t-ii] «in staat zijn om niet-persoonsgebonden elektronische gezondheidsgegevens
+                ter beschikking te stellen door controle op het technische ontwerp van een product en aanverwante
+                diensten»
+          - name: lezing_punt_t_voorwaarden_gelden_voor_alle_partijen
+            type: boolean
+            required: false
+            description: >-
+              Leesvraag voor de jurist, geen feit over de databron: gelden de voorwaarden onder i) en ii) van art.
+              2, lid 2, punt t), voor alle daar genoemde partijen (ja), of alleen voor de instellingen, organen of
+              instanties van de Unie (nee)? De Nederlandse tekst (“alsook instellingen, organen of instanties van
+              de Unie die:”) en de Engelse (“..., as well as any Union institution, body, office or agency, that
+              has either:”) lezen hier verschillend. Zie het interpretatielogboek.
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «alsook instellingen, organen of instanties van de Unie die:»
+          - name: bevat_gegevens_over_gezondheid_of_genetische_gegevens
+            type: boolean
+            required: false
+            description: >-
+              Bevat de databron gegevens over gezondheid of genetische gegevens in de zin van Verordening (EU)
+              2016/679 (art. 2, lid 1, punt a), verwijst naar artikel 4, leden 15 en 13, van die verordening)?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-a, art2-lid1-onderdeel-a] «gegevens over gezondheid en genetische gegevens die
+                in elektronische vorm worden verwerkt»
+          - name: gegevens_in_elektronische_vorm_verwerkt
+            type: boolean
+            required: false
+            description: >-
+              Worden die gegevens in elektronische vorm verwerkt?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-a] «gegevens over gezondheid en genetische gegevens die in elektronische vorm
+                worden verwerkt»
+          - name: bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+            type: boolean
+            required: false
+            description: >-
+              Bevat de databron niet-persoonsgebonden elektronische gezondheidsgegevens: andere elektronische
+              gezondheidsgegevens dan persoonlijke, met inbegrip van geanonimiseerde gegevens en gegevens die
+              nooit op een betrokkene betrekking hebben gehad?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-b] «andere elektronische gezondheidsgegevens dan persoonlijke elektronische
+                gezondheidsgegevens, met inbegrip van zowel gegevens die geanonimiseerd zijn zodat zij niet langer
+                betrekking hebben op een geïdentificeerde of identificeerbare natuurlijke persoon (de “betrokkene”)
+                als gegevens die nooit betrekking hebben gehad op een betrokkene»
+        output:
+          - name: partij_uit_opsomming_punt_t
+            type: boolean
+            description: >-
+              De partij valt onder een van de opgesomde partijen in art. 2, lid 2, punt t), anders dan de
+              instellingen, organen of instanties van de Unie.
+          - name: voldoet_aan_punt_t_i
+            type: boolean
+            description: >-
+              De partij voldoet aan art. 2, lid 2, punt t), onder i).
+          - name: voldoet_aan_punt_t_i_of_ii
+            type: boolean
+            description: >-
+              De partij voldoet aan punt t), onder i) of onder ii).
+          - name: is_houder_van_gezondheidsgegevens
+            type: boolean
+            description: >-
+              De partij is houder van gezondheidsgegevens (art. 2, lid 2, punt t)). Onbekend zolang de leesvraag
+              over punt t) open is en de twee lezingen voor deze partij verschillen.
+          - name: bevat_persoonlijke_elektronische_gezondheidsgegevens
+            type: boolean
+            description: >-
+              Art. 2, lid 2, punt a).
+          - name: bevat_elektronische_gezondheidsgegevens
+            type: boolean
+            description: >-
+              Art. 2, lid 2, punt c).
+        actions:
+          - output: partij_uit_opsomming_punt_t
+            value:
+              operation: OR
+              conditions:
+                - $in_gezondheidszorg_of_zorgsector
+                - $is_vergoedingsdienst_waar_noodzakelijk
+                - $ontwikkelt_producten_of_diensten_voor_gezondheidssector
+                - $ontwikkelt_of_vervaardigt_wellnessapps
+                - $verricht_onderzoek_gezondheidszorg_of_zorgsector
+                - $treedt_op_als_sterfteregister
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «alsook elke natuurlijke of rechtspersoon die»
+          - output: voldoet_aan_punt_t_i
+            value:
+              operation: AND
+              conditions:
+                - $heeft_recht_of_plicht_tot_verwerking
+                - $verwerkt_als_verwerkingsverantwoordelijke
+                - $verwerkt_voor_doel_uit_punt_t_i
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t-i] «persoonlijke elektronische gezondheidsgegevens te verwerken»
+          - output: voldoet_aan_punt_t_i_of_ii
+            value:
+              operation: OR
+              conditions:
+                - $voldoet_aan_punt_t_i
+                - $kan_niet_persoonsgebonden_gegevens_beschikbaar_stellen_via_ontwerp
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t-i, art2-lid2-onderdeel-t-ii] «ofwel»
+          - output: is_houder_van_gezondheidsgegevens
+            value:
+              operation: OR
+              conditions:
+                - operation: AND
+                  conditions:
+                    - $partij_uit_opsomming_punt_t
+                    - $voldoet_aan_punt_t_i_of_ii
+                - operation: AND
+                  conditions:
+                    - $is_instelling_orgaan_of_instantie_van_de_unie
+                    - $voldoet_aan_punt_t_i_of_ii
+                - operation: AND
+                  conditions:
+                    - $partij_uit_opsomming_punt_t
+                    - operation: NOT
+                      value: $lezing_punt_t_voorwaarden_gelden_voor_alle_partijen
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-t] «“houder van gezondheidsgegevens”: een natuurlijke of rechtspersoon»
+          - output: bevat_persoonlijke_elektronische_gezondheidsgegevens
+            value:
+              operation: AND
+              conditions:
+                - $bevat_gegevens_over_gezondheid_of_genetische_gegevens
+                - $gegevens_in_elektronische_vorm_verwerkt
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-a] «“persoonlijke elektronische gezondheidsgegevens”»
+          - output: bevat_elektronische_gezondheidsgegevens
+            value:
+              operation: OR
+              conditions:
+                - $bevat_persoonlijke_elektronische_gezondheidsgegevens
+                - $bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-c] «persoonlijke of niet-persoonsgebonden elektronische gezondheidsgegevens»
+  - number: '50'
+    text: |-
+      1. De volgende categorieën houders van gezondheidsgegevens worden vrijgesteld van de in dit hoofdstuk
+      vastgelegde verplichtingen voor houders van gezondheidsgegevens:
+
+      a) natuurlijke personen, met inbegrip van individuele onderzoekers;
+
+      b) rechtspersonen die een micro-onderneming zijn zoals gedefinieerd in artikel 2, lid 3, van de bijlage bij
+      Aanbeveling 2003/361/EG van de Commissie.
+
+      2. De lidstaten kunnen in hun nationale recht echter bepalen dat de in dit hoofdstuk vastgelegde
+      verplichtingen voor houders van gezondheidsgegevens van toepassing zijn op de in lid 1 bedoelde houders van
+      gezondheidsgegevens die onder hun jurisdictie vallen.
+
+      3. De lidstaten kunnen in hun nationale recht bepalen dat de verplichtingen van bepaalde categorieën houders
+      van gezondheidsgegevens moeten worden vervuld door bemiddelingsentiteiten voor gezondheidsgegevens. In dat
+      geval worden de gegevens niettemin beschouwd als beschikbaar gesteld door meerdere houders van
+      gezondheidsgegevens.
+
+      4. De lidstaten stellen de Commissie uiterlijk op 26 maart 2029 in kennis van het in de leden 2 en 3 bedoelde
+      nationale recht. Eventueel later vastgesteld recht of wijzigingen van dat recht worden onverwijld aan de
+      Commissie meegedeeld.
+    url: http://data.europa.eu/eli/reg/2025/327/oj
+    machine_readable:
+      execution:
+        parameters:
+          - name: houder_is_natuurlijke_persoon
+            type: boolean
+            required: false
+            description: >-
+              Is de houder een natuurlijke persoon (met inbegrip van een individuele onderzoeker)?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid1, art50-lid1-onderdeel-a] «natuurlijke personen, met inbegrip van individuele
+                onderzoekers;»
+          - name: houder_is_micro_onderneming
+            type: boolean
+            required: false
+            description: >-
+              Is de houder een rechtspersoon die een micro-onderneming is zoals gedefinieerd in artikel 2, lid 3,
+              van de bijlage bij Aanbeveling 2003/361/EG van de Commissie?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid1, art50-lid1-onderdeel-b] «rechtspersonen die een micro-onderneming zijn zoals
+                gedefinieerd in artikel 2, lid 3, van de bijlage bij Aanbeveling 2003/361/EG van de Commissie.»
+          - name: nationaal_recht_past_plichten_toe_op_vrijgestelde_houder
+            type: boolean
+            required: false
+            description: >-
+              Bepaalt het nationale recht van de lidstaat onder wiens jurisdictie de houder valt dat de
+              verplichtingen van hoofdstuk IV toch op deze (natuurlijke persoon of micro-onderneming) van
+              toepassing zijn?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid2] «De lidstaten kunnen in hun nationale recht echter bepalen»
+          - name: nationaal_recht_wijst_bemiddelingsentiteit_aan
+            type: boolean
+            required: false
+            description: >-
+              Bepaalt het nationale recht dat de verplichtingen van de categorie houders waartoe deze houder
+              behoort, moeten worden vervuld door een bemiddelingsentiteit voor gezondheidsgegevens?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '3'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid3] «De lidstaten kunnen in hun nationale recht bepalen dat de verplichtingen van bepaalde
+                categorieën houders van gezondheidsgegevens moeten worden vervuld door bemiddelingsentiteiten voor
+                gezondheidsgegevens.»
+        input:
+          - name: is_houder_van_gezondheidsgegevens
+            type: boolean
+            source:
+              output: is_houder_van_gezondheidsgegevens
+          - name: verordening_niet_van_toepassing_art1_lid9
+            type: boolean
+            source:
+              output: verordening_niet_van_toepassing_art1_lid9
+        output:
+          - name: vrijgesteld_volgens_lid1
+            type: boolean
+            description: >-
+              De houder valt in een vrijgestelde categorie van art. 50, lid 1.
+          - name: vrijstelling_geldt
+            type: boolean
+            description: >-
+              De vrijstelling van lid 1 geldt, ook na lid 2.
+          - name: heeft_plichten_als_houder
+            type: boolean
+            description: >-
+              De partij is houder van gezondheidsgegevens, is niet vrijgesteld, en de verordening is niet op grond
+              van art. 1, lid 9, buiten toepassing.
+          - name: plichten_vervuld_door_bemiddelingsentiteit
+            type: boolean
+            description: >-
+              De plichten van deze houder worden op grond van nationaal recht door een bemiddelingsentiteit
+              vervuld (art. 50, lid 3).
+        actions:
+          - output: vrijgesteld_volgens_lid1
+            value:
+              operation: OR
+              conditions:
+                - $houder_is_natuurlijke_persoon
+                - $houder_is_micro_onderneming
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid1] «De volgende categorieën houders van gezondheidsgegevens worden vrijgesteld»
+          - output: vrijstelling_geldt
+            value:
+              operation: AND
+              conditions:
+                - $vrijgesteld_volgens_lid1
+                - operation: NOT
+                  value: $nationaal_recht_past_plichten_toe_op_vrijgestelde_houder
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid1, art50-lid2] «worden vrijgesteld» «echter»
+          - output: heeft_plichten_als_houder
+            value:
+              operation: AND
+              conditions:
+                - $is_houder_van_gezondheidsgegevens
+                - operation: NOT
+                  value: $vrijstelling_geldt
+                - operation: NOT
+                  value: $verordening_niet_van_toepassing_art1_lid9
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid1, art1-lid9] «vrijgesteld van de in dit hoofdstuk vastgelegde verplichtingen voor houders
+                van gezondheidsgegevens»
+          - output: plichten_vervuld_door_bemiddelingsentiteit
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $nationaal_recht_wijst_bemiddelingsentiteit_aan
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '50'
+              paragraph: '3'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art50-lid3] «In dat geval worden de gegevens niettemin beschouwd als beschikbaar gesteld door
+                meerdere houders van gezondheidsgegevens.»
+  - number: '51'
+    text: |-
+      1. Houders van gezondheidsgegevens stellen de volgende categorieën elektronische gezondheidsgegevens
+      beschikbaar voor secundair gebruik overeenkomstig dit hoofdstuk:
+
+      a) elektronische gezondheidsgegevens afkomstig van EPD’s;
+
+      b) gegevens over factoren die van invloed zijn op de gezondheid, met inbegrip van sociaal-economische, milieu-
+      en gedragsdeterminanten van gezondheid;
+
+      c) geaggregeerde gegevens over behoeften op het gebied van gezondheidszorg, de aan gezondheidszorg toegewezen
+      middelen, de verstrekking van en toegang tot gezondheidszorg, uitgaven voor gezondheidszorg en financiering
+      van gezondheidszorg;
+
+      d) gegevens over pathogenen die van invloed zijn op de menselijke gezondheid;
+
+      e) administratieve gegevens op het gebied van gezondheidszorg, onder meer over verstrekkingen, claims inzake
+      vergoedingen en vergoedingen;
+
+      f) humaan-genetische, epigenomische en genomische gegevens;
+
+      g) andere humaan-moleculaire gegevens, zoals proteomische, transcriptomische, metabolomische, lipidomische en
+      andere “-omische” gegevens;
+
+      h) via medische hulpmiddelen automatisch gegenereerde persoonlijke elektronische gezondheidsgegevens;
+
+      i) gegevens afkomstig van wellnessapps;
+
+      j) gegevens met betrekking tot de beroepsstatus, en met betrekking tot de specialisatie en instelling van
+      gezondheidswerkers die betrokken zijn bij de behandeling van een natuurlijke persoon;
+
+      k) gegevens uit registers van gezondheidsgegevens op bevolkingsniveau zoals volksgezondheidsregisters;
+
+      l) gegevens afkomstig van medische registers en registers over sterfte;
+
+      m) gegevens afkomstig van klinische proeven, klinische studies, klinische onderzoeken en prestatiestudies
+      waarop Verordening (EU) nr. 536/2014, Verordening (EU) 2024/1938 van het Europees Parlement en de Raad,
+      Verordening (EU) 2017/745 en Verordening (EU) 2017/746 van toepassing zijn;
+
+      n) overige gezondheidsgegevens afkomstig van medische hulpmiddelen;
+
+      o) gegevens afkomstig van registers voor geneesmiddelen en medische hulpmiddelen;
+
+      p) gegevens afkomstig van onderzoekscohorten, vragenlijsten en enquêtes in verband met gezondheid, zodra de
+      daarmee verband houdende resultaten gepubliceerd zijn;
+
+      q) gezondheidsgegevens afkomstig van biobanken en bijbehorende databanken.
+
+      2. De lidstaten kunnen in hun nationale recht bepalen dat aanvullende categorieën van elektronische
+      gezondheidsgegevens op grond van deze verordening beschikbaar moeten worden gesteld voor secundair gebruik.
+
+      3. De lidstaten kunnen regels vaststellen voor de verwerking en het gebruik van elektronische
+      gezondheidsgegevens die verbeteringen bevatten in verband met de verwerking van die gegevens, zoals correctie,
+      annotatie of verrijking, op basis van een gegevensvergunning uit hoofde van artikel 68.
+
+      4. De lidstaten kunnen strengere maatregelen en aanvullende waarborgen op nationaal niveau invoeren om de
+      gevoeligheid en waarde van de gegevens die onder lid 1, punten f), g), i) en q), vallen te waarborgen. De
+      lidstaten stellen de Commissie in kennis van die maatregelen en waarborgen en delen haar onverwijld alle
+      latere wijzigingen daarvan mee.
+    url: http://data.europa.eu/eli/reg/2025/327/oj
+    machine_readable:
+      execution:
+        parameters:
+          - name: valt_in_categorie_a
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt a): elektronische
+              gezondheidsgegevens afkomstig van EPD’s?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-a, art2-lid2-onderdeel-j] «elektronische gezondheidsgegevens afkomstig van
+                EPD’s»
+          - name: valt_in_categorie_b
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt b): gegevens over
+              factoren die van invloed zijn op de gezondheid, met inbegrip van sociaal-economische, milieu- en
+              gedragsdeterminanten van gezondheid?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-b] «gegevens over factoren die van invloed zijn op de gezondheid, met inbegrip
+                van sociaal-economische, milieu- en gedragsdeterminanten van gezondheid»
+          - name: valt_in_categorie_c
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt c): geaggregeerde
+              gegevens over behoeften op het gebied van gezondheidszorg, de aan gezondheidszorg toegewezen
+              middelen, de verstrekking van en toegang tot gezondheidszorg, uitgaven voor gezondheidszorg en
+              financiering van gezondheidszorg?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-c] «geaggregeerde gegevens over behoeften op het gebied van gezondheidszorg,
+                de aan gezondheidszorg toegewezen middelen, de verstrekking van en toegang tot gezondheidszorg,
+                uitgaven voor gezondheidszorg en financiering van gezondheidszorg»
+          - name: valt_in_categorie_d
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt d): gegevens over
+              pathogenen die van invloed zijn op de menselijke gezondheid?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-d] «gegevens over pathogenen die van invloed zijn op de menselijke gezondheid»
+          - name: valt_in_categorie_e
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt e): administratieve
+              gegevens op het gebied van gezondheidszorg, onder meer over verstrekkingen, claims inzake
+              vergoedingen en vergoedingen?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-e] «administratieve gegevens op het gebied van gezondheidszorg, onder meer
+                over verstrekkingen, claims inzake vergoedingen en vergoedingen»
+          - name: valt_in_categorie_f
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt f): humaan-genetische,
+              epigenomische en genomische gegevens?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-f] «humaan-genetische, epigenomische en genomische gegevens»
+          - name: valt_in_categorie_g
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt g): andere
+              humaan-moleculaire gegevens, zoals proteomische, transcriptomische, metabolomische, lipidomische en
+              andere “-omische” gegevens?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-g] «andere humaan-moleculaire gegevens, zoals proteomische, transcriptomische,
+                metabolomische, lipidomische en andere “-omische” gegevens»
+          - name: valt_in_categorie_h
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt h): via medische
+              hulpmiddelen automatisch gegenereerde persoonlijke elektronische gezondheidsgegevens?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-h, art2-lid1-onderdeel-e] «via medische hulpmiddelen automatisch gegenereerde
+                persoonlijke elektronische gezondheidsgegevens»
+          - name: valt_in_categorie_i
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt i): gegevens afkomstig
+              van wellnessapps?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-i, art2-lid2-onderdeel-ab] «gegevens afkomstig van wellnessapps»
+          - name: valt_in_categorie_j
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt j): gegevens met
+              betrekking tot de beroepsstatus, en met betrekking tot de specialisatie en instelling van
+              gezondheidswerkers die betrokken zijn bij de behandeling van een natuurlijke persoon?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-j, art2-lid1-onderdeel-b] «gegevens met betrekking tot de beroepsstatus, en
+                met betrekking tot de specialisatie en instelling van gezondheidswerkers die betrokken zijn bij de
+                behandeling van een natuurlijke persoon»
+          - name: valt_in_categorie_k
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt k): gegevens uit
+              registers van gezondheidsgegevens op bevolkingsniveau zoals volksgezondheidsregisters?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-k] «gegevens uit registers van gezondheidsgegevens op bevolkingsniveau zoals
+                volksgezondheidsregisters»
+          - name: valt_in_categorie_l
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt l): gegevens afkomstig
+              van medische registers en registers over sterfte?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-l] «gegevens afkomstig van medische registers en registers over sterfte»
+          - name: valt_in_categorie_m
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt m): gegevens afkomstig
+              van klinische proeven, klinische studies, klinische onderzoeken en prestatiestudies waarop
+              Verordening (EU) nr. 536/2014, Verordening (EU) 2024/1938 van het Europees Parlement en de Raad,
+              Verordening (EU) 2017/745 en Verordening (EU) 2017/746 van toepassing zijn?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-m] «gegevens afkomstig van klinische proeven, klinische studies, klinische
+                onderzoeken en prestatiestudies waarop Verordening (EU) nr. 536/2014, Verordening (EU) 2024/1938 van
+                het Europees Parlement en de Raad, Verordening (EU) 2017/745 en Verordening (EU) 2017/746 van
+                toepassing zijn»
+          - name: valt_in_categorie_n
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt n): overige
+              gezondheidsgegevens afkomstig van medische hulpmiddelen?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-n, art2-lid1-onderdeel-e] «overige gezondheidsgegevens afkomstig van medische
+                hulpmiddelen»
+          - name: valt_in_categorie_o
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt o): gegevens afkomstig
+              van registers voor geneesmiddelen en medische hulpmiddelen?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-o, art2-lid1-onderdeel-e] «gegevens afkomstig van registers voor
+                geneesmiddelen en medische hulpmiddelen»
+          - name: valt_in_categorie_p
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt p): gegevens afkomstig
+              van onderzoekscohorten, vragenlijsten en enquêtes in verband met gezondheid, zodra de daarmee
+              verband houdende resultaten gepubliceerd zijn?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-p] «gegevens afkomstig van onderzoekscohorten, vragenlijsten en enquêtes in
+                verband met gezondheid, zodra de daarmee verband houdende resultaten gepubliceerd zijn»
+          - name: valt_in_categorie_q
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder deze categorie van art. 51, lid 1, punt q):
+              gezondheidsgegevens afkomstig van biobanken en bijbehorende databanken?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1-onderdeel-q] «gezondheidsgegevens afkomstig van biobanken en bijbehorende databanken»
+          - name: valt_in_aanvullende_nationale_categorie
+            type: boolean
+            required: false
+            description: >-
+              Valt (een deel van) de databron onder een aanvullende categorie die het nationale recht op grond van
+              art. 51, lid 2, heeft aangewezen?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid2] «De lidstaten kunnen in hun nationale recht bepalen dat aanvullende categorieën van
+                elektronische gezondheidsgegevens op grond van deze verordening beschikbaar moeten worden gesteld
+                voor secundair gebruik.»
+        input:
+          - name: heeft_plichten_als_houder
+            type: boolean
+            source:
+              output: heeft_plichten_als_houder
+          - name: bevat_elektronische_gezondheidsgegevens
+            type: boolean
+            source:
+              output: bevat_elektronische_gezondheidsgegevens
+        output:
+          - name: categorie_a
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie a) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_b
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie b) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_c
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie c) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_d
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie d) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_e
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie e) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_f
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie f) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_g
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie g) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_h
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie h) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_i
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie i) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_j
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie j) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_k
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie k) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_l
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie l) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_m
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie m) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_n
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie n) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_o
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie o) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_p
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie p) beschikbaar stellen voor secundair gebruik.
+          - name: categorie_q
+            type: boolean
+            description: >-
+              De houder moet de gegevens in categorie q) beschikbaar stellen voor secundair gebruik.
+          - name: aanvullende_nationale_categorie
+            type: boolean
+            description: >-
+              De houder moet gegevens in een nationaal aangewezen aanvullende categorie beschikbaar stellen (art.
+              51, lid 2).
+          - name: valt_onder_beschikbaarstellingsplicht
+            type: boolean
+            description: >-
+              De databron valt onder de verplichting om elektronische gezondheidsgegevens beschikbaar te stellen
+              voor secundair gebruik, in ten minste één categorie (art. 51, lid 1 of lid 2, met art. 60, lid 1).
+        actions:
+          - output: categorie_a
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_a
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-a] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_b
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_b
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-b] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_c
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_c
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-c] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_d
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_d
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-d] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_e
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_e
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-e] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_f
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_f
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-f] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_g
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_g
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-g] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_h
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_h
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-h] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_i
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_i
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-i] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_j
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_j
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-j] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_k
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_k
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-k] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_l
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_l
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-l] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_m
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_m
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-m] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_n
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_n
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-n] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_o
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_o
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-o] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_p
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_p
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-p] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: categorie_q
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_categorie_q
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid1-onderdeel-q] «Houders van gezondheidsgegevens stellen de volgende
+                categorieën elektronische gezondheidsgegevens beschikbaar voor secundair gebruik»
+          - output: aanvullende_nationale_categorie
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $valt_in_aanvullende_nationale_categorie
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid2] «aanvullende categorieën van elektronische gezondheidsgegevens»
+          - output: valt_onder_beschikbaarstellingsplicht
+            value:
+              operation: OR
+              conditions:
+                - $categorie_a
+                - $categorie_b
+                - $categorie_c
+                - $categorie_d
+                - $categorie_e
+                - $categorie_f
+                - $categorie_g
+                - $categorie_h
+                - $categorie_i
+                - $categorie_j
+                - $categorie_k
+                - $categorie_l
+                - $categorie_m
+                - $categorie_n
+                - $categorie_o
+                - $categorie_p
+                - $categorie_q
+                - $aanvullende_nationale_categorie
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '51'
+              paragraph: '1'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art51-lid1, art51-lid2, art60-lid1] «De houders van gezondheidsgegevens stellen de in artikel 51
+                bedoelde relevante elektronische gezondheidsgegevens op verzoek beschikbaar aan de instantie voor
+                toegang tot gezondheidsgegevens»
+  - number: '60'
+    text: |-
+      1. De houders van gezondheidsgegevens stellen de in artikel 51 bedoelde relevante elektronische
+      gezondheidsgegevens op verzoek beschikbaar aan de instantie voor toegang tot gezondheidsgegevens
+      overeenkomstig een gegevensvergunning die is afgegeven op grond van artikel 68 of naar aanleiding van een
+      verzoek om gegevens dat is goedgekeurd op grond van artikel 69.
+
+      2. De houders van gezondheidsgegevens stellen de gevraagde elektronische gezondheidsgegevens als bedoeld in
+      lid 1 ter beschikking van de instantie voor toegang tot gezondheidsgegevens binnen een redelijke termijn en
+      uiterlijk binnen drie maanden na ontvangst van het verzoek van de instantie voor toegang tot
+      gezondheidsgegevens. In gerechtvaardigde gevallen kan de instantie voor toegang tot gezondheidsgegevens die
+      termijn met maximaal drie maanden verlengen.
+
+      3. De houders van gezondheidsgegevens verstrekken de instantie voor toegang tot gezondheidsgegevens een
+      beschrijving van de dataset waarover zij beschikken overeenkomstig artikel 77. De houders van
+      gezondheidsgegevens controleren ten minste elk jaar of de beschrijving van de dataset in de nationale
+      catalogus van datasets nauwkeurig en actueel is.
+
+      4. Wanneer de dataset overeenkomstig artikel 78 vergezeld gaat van een gegevenskwaliteits- en
+      gegevensbruikbaarheidslabel, verstrekken de houders van gezondheidsgegevens de instantie voor toegang tot
+      gezondheidsgegevens voldoende documentatie om de juistheid van het label te verifiëren.
+
+      5. De houders van niet-persoonsgebonden elektronische gezondheidsgegevens zorgen voor toegang tot gegevens via
+      betrouwbare open databanken om onbeperkte toegang voor alle gebruikers en de opslag en bewaring van gegevens
+      te waarborgen. Betrouwbare open openbare databanken moeten beschikken over een robuust, transparant en
+      duurzaam bestuur en een transparant model voor gebruikerstoegang.
+    url: http://data.europa.eu/eli/reg/2025/327/oj
+    machine_readable:
+      execution:
+        parameters:
+          - name: databron_is_gestructureerde_verzameling
+            type: boolean
+            required: false
+            description: >-
+              Is de databron (of een deel ervan) een dataset: een gestructureerde verzameling van elektronische
+              gezondheidsgegevens?
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '2'
+              paragraph: '2'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art2-lid2-onderdeel-w] «een gestructureerde verzameling van elektronische gezondheidsgegevens»
+        input:
+          - name: heeft_plichten_als_houder
+            type: boolean
+            source:
+              output: heeft_plichten_als_houder
+          - name: bevat_elektronische_gezondheidsgegevens
+            type: boolean
+            source:
+              output: bevat_elektronische_gezondheidsgegevens
+          - name: bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+            type: boolean
+            source:
+              output: bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+        output:
+          - name: beschrijvingsplicht_dataset
+            type: boolean
+            description: >-
+              De houder moet de toegangsinstantie een beschrijving van de dataset verstrekken en die jaarlijks
+              controleren (art. 60, lid 3). Niet beperkt tot de categorieën van art. 51; zie het
+              interpretatielogboek.
+          - name: toegang_via_betrouwbare_open_databanken
+            type: boolean
+            description: >-
+              De houder van niet-persoonsgebonden elektronische gezondheidsgegevens moet zorgen voor toegang via
+              betrouwbare open databanken (art. 60, lid 5).
+        actions:
+          - output: beschrijvingsplicht_dataset
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_elektronische_gezondheidsgegevens
+                - $databron_is_gestructureerde_verzameling
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '60'
+              paragraph: '3'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art60-lid3] «De houders van gezondheidsgegevens verstrekken de instantie voor toegang tot
+                gezondheidsgegevens een beschrijving van de dataset waarover zij beschikken overeenkomstig artikel
+                77.»
+          - output: toegang_via_betrouwbare_open_databanken
+            value:
+              operation: AND
+              conditions:
+                - $heeft_plichten_als_houder
+                - $bevat_niet_persoonsgebonden_elektronische_gezondheidsgegevens
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '60'
+              paragraph: '5'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art60-lid5] «De houders van niet-persoonsgebonden elektronische gezondheidsgegevens zorgen voor
+                toegang tot gegevens via betrouwbare open databanken»
+  - number: '105'
+    text: |-
+      Deze verordening treedt in werking op de twintigste dag na die van de bekendmaking ervan in het Publicatieblad
+      van de Europese Unie.
+
+      Deze verordening is van toepassing met ingang van 26 maart 2027.
+
+      De artikelen 3 tot en met 15, artikel 23, leden 2 tot en met 6, en de artikelen 25, 26, 27, 47, 48 en 49 zijn
+      evenwel als volgt van toepassing:
+
+      a) met ingang van 26 maart 2029 op de in artikel 14, lid 1, punten a), b) en c), bedoelde prioritaire
+      categorieën persoonlijke elektronische gezondheidsgegevens en op EPD-systemen die door de fabrikant zijn
+      bedoeld om gegevens uit die categorieën te verwerken;
+
+      b) met ingang van 26 maart 2031 op de in artikel 14, lid 1, punten d), e) en f), bedoelde prioritaire
+      categorieën persoonlijke elektronische gezondheidsgegevens en op EPD-systemen die door de fabrikant zijn
+      bedoeld om gegevens uit die categorieën te verwerken;
+
+      c) met ingang van één jaar vanaf de datum zoals vastgelegd in een op grond van artikel 14, lid 2, vast te
+      stellen gedelegeerde handeling voor elke wijziging van de belangrijkste kenmerken van de in bijlage I
+      opgenomen persoonlijke elektronische gezondheidsgegevens, mits die datum na de in de punten a) en b) van deze
+      alinea bedoelde toepassingsdatum valt voor de betrokken categorieën persoonlijke elektronische
+      gezondheidsgegevens.
+
+      Hoofdstuk III is met ingang van 26 maart 2031 van toepassing op de in artikel 26, lid 2, bedoelde EPD-systemen
+      die in de Unie in gebruik zijn genomen.
+
+      Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing. Evenwel zijn artikel 55, lid 6, artikel 70,
+      artikel 73, lid 5, artikel 75, leden 1 en 12, artikel 77, lid 4, en artikel 78, lid 6, van toepassing met
+      ingang van 26 maart 2027, is artikel 51, lid 1, punten b), f), g), m) en p), van toepassing met ingang van 26
+      maart 2031, en is artikel 75, lid 5, van toepassing met ingang van 26 maart 2035.
+
+      De in artikel 13, lid 4, artikel 15, lid 1, artikel 23, lid 4, en artikel 36, lid 1, bedoelde
+      uitvoeringshandelingen zijn van toepassing met ingang van de in de derde alinea van dit artikel bedoelde data,
+      afhankelijk van de categorieën persoonlijke elektronische gezondheidsgegevens bedoeld in artikel 14, lid 1,
+      punten a), b) en c), respectievelijk artikel 14, lid 1, punten d), e) en f).
+
+      De in artikel 70, artikel 73, lid 5, artikel 75, lid 12, artikel 77, lid 4, en artikel 78, lid 6, bedoelde
+      uitvoeringshandelingen zijn met ingang van 26 maart 2029 van toepassing.
+    url: http://data.europa.eu/eli/reg/2025/327/oj
+    machine_readable:
+      execution:
+        parameters:
+          - name: toepassingsdatum_aanvullende_nationale_categorie
+            type: date
+            required: false
+            description: >-
+              Met ingang van welke datum moet volgens het nationale recht de aanvullende categorie (art. 51, lid
+              2) beschikbaar worden gesteld? Art. 105 noemt voor lid 2 geen eigen datum.
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5, art51-lid2] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»
+        input:
+          - name: categorie_a
+            type: boolean
+            source:
+              output: categorie_a
+          - name: categorie_b
+            type: boolean
+            source:
+              output: categorie_b
+          - name: categorie_c
+            type: boolean
+            source:
+              output: categorie_c
+          - name: categorie_d
+            type: boolean
+            source:
+              output: categorie_d
+          - name: categorie_e
+            type: boolean
+            source:
+              output: categorie_e
+          - name: categorie_f
+            type: boolean
+            source:
+              output: categorie_f
+          - name: categorie_g
+            type: boolean
+            source:
+              output: categorie_g
+          - name: categorie_h
+            type: boolean
+            source:
+              output: categorie_h
+          - name: categorie_i
+            type: boolean
+            source:
+              output: categorie_i
+          - name: categorie_j
+            type: boolean
+            source:
+              output: categorie_j
+          - name: categorie_k
+            type: boolean
+            source:
+              output: categorie_k
+          - name: categorie_l
+            type: boolean
+            source:
+              output: categorie_l
+          - name: categorie_m
+            type: boolean
+            source:
+              output: categorie_m
+          - name: categorie_n
+            type: boolean
+            source:
+              output: categorie_n
+          - name: categorie_o
+            type: boolean
+            source:
+              output: categorie_o
+          - name: categorie_p
+            type: boolean
+            source:
+              output: categorie_p
+          - name: categorie_q
+            type: boolean
+            source:
+              output: categorie_q
+          - name: aanvullende_nationale_categorie
+            type: boolean
+            source:
+              output: aanvullende_nationale_categorie
+          - name: beschrijvingsplicht_dataset
+            type: boolean
+            source:
+              output: beschrijvingsplicht_dataset
+          - name: toegang_via_betrouwbare_open_databanken
+            type: boolean
+            source:
+              output: toegang_via_betrouwbare_open_databanken
+        output:
+          - name: datum_toepassing_hoofdstuk_iv
+            type: date
+            description: >-
+              Art. 105, vijfde alinea, eerste zin.
+          - name: datum_toepassing_art51_lid1_b_f_g_m_p
+            type: date
+            description: >-
+              Art. 105, vijfde alinea, tweede zin.
+          - name: plicht_in_categorie_zonder_uitstel
+            type: boolean
+            description: >-
+              De databron valt in ten minste één categorie van art. 51, lid 1, waarvoor hoofdstuk IV met ingang
+              van 26 maart 2029 geldt.
+          - name: plicht_in_categorie_met_uitstel
+            type: boolean
+            description: >-
+              De databron valt in ten minste één van de categorieën b), f), g), m) of p), die met ingang van 26
+              maart 2031 gelden.
+          - name: eerste_toepassingsdatum_beschikbaarstellingsplicht
+            type: date
+            nullable: true
+            description: >-
+              Vroegste datum waarop de beschikbaarstellingsplicht voor deze databron geldt; afwezig als er geen
+              plicht is.
+          - name: beschikbaarstellingsplicht_geldt_op_peildatum
+            type: boolean
+            description: >-
+              Op de rekendatum geldt de beschikbaarstellingsplicht voor ten minste één categorie van deze
+              databron.
+          - name: beschrijvingsplicht_geldt_op_peildatum
+            type: boolean
+            description: >-
+              Op de rekendatum geldt de beschrijvingsplicht van art. 60, lid 3.
+          - name: open_databank_plicht_geldt_op_peildatum
+            type: boolean
+            description: >-
+              Op de rekendatum geldt de plicht van art. 60, lid 5.
+        actions:
+          - output: datum_toepassing_hoofdstuk_iv
+            value: '2029-03-26'
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»
+          - output: datum_toepassing_art51_lid1_b_f_g_m_p
+            value: '2031-03-26'
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5] «is artikel 51, lid 1, punten b), f), g), m) en p), van toepassing met ingang van
+                26 maart 2031»
+          - output: plicht_in_categorie_zonder_uitstel
+            value:
+              operation: OR
+              conditions:
+                - $categorie_a
+                - $categorie_c
+                - $categorie_d
+                - $categorie_e
+                - $categorie_h
+                - $categorie_i
+                - $categorie_j
+                - $categorie_k
+                - $categorie_l
+                - $categorie_n
+                - $categorie_o
+                - $categorie_q
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»
+          - output: plicht_in_categorie_met_uitstel
+            value:
+              operation: OR
+              conditions:
+                - $categorie_b
+                - $categorie_f
+                - $categorie_g
+                - $categorie_m
+                - $categorie_p
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5] «is artikel 51, lid 1, punten b), f), g), m) en p), van toepassing met ingang van
+                26 maart 2031»
+          - output: eerste_toepassingsdatum_beschikbaarstellingsplicht
+            value:
+              operation: IF
+              cases:
+                - when: $plicht_in_categorie_zonder_uitstel
+                  then: $datum_toepassing_hoofdstuk_iv
+                - when: $plicht_in_categorie_met_uitstel
+                  then: $datum_toepassing_art51_lid1_b_f_g_m_p
+                - when: $aanvullende_nationale_categorie
+                  then: $toepassingsdatum_aanvullende_nationale_categorie
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5, art51-lid2] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»
+          - output: beschikbaarstellingsplicht_geldt_op_peildatum
+            value:
+              operation: OR
+              conditions:
+                - operation: AND
+                  conditions:
+                    - $plicht_in_categorie_zonder_uitstel
+                    - operation: GREATER_THAN_OR_EQUAL
+                      subject: $referencedate.iso
+                      value: $datum_toepassing_hoofdstuk_iv
+                - operation: AND
+                  conditions:
+                    - $plicht_in_categorie_met_uitstel
+                    - operation: GREATER_THAN_OR_EQUAL
+                      subject: $referencedate.iso
+                      value: $datum_toepassing_art51_lid1_b_f_g_m_p
+                - operation: AND
+                  conditions:
+                    - $aanvullende_nationale_categorie
+                    - operation: GREATER_THAN_OR_EQUAL
+                      subject: $referencedate.iso
+                      value: $toepassingsdatum_aanvullende_nationale_categorie
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5, art51-lid2] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»
+          - output: beschrijvingsplicht_geldt_op_peildatum
+            value:
+              operation: AND
+              conditions:
+                - $beschrijvingsplicht_dataset
+                - operation: GREATER_THAN_OR_EQUAL
+                  subject: $referencedate.iso
+                  value: $datum_toepassing_hoofdstuk_iv
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»
+          - output: open_databank_plicht_geldt_op_peildatum
+            value:
+              operation: AND
+              conditions:
+                - $toegang_via_betrouwbare_open_databanken
+                - operation: GREATER_THAN_OR_EQUAL
+                  subject: $referencedate.iso
+                  value: $datum_toepassing_hoofdstuk_iv
+            legal_basis:
+              law: Verordening (EU) 2025/327
+              article: '105'
+              url: http://data.europa.eu/eli/reg/2025/327/oj
+              explanation: >-
+                [art105-alinea5] «Hoofdstuk IV is met ingang van 26 maart 2029 van toepassing.»

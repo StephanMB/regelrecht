@@ -1,0 +1,12 @@
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+SELECT ?corrigendum ?celex ?datum (GROUP_CONCAT(DISTINCT STRAFTER(STR(?taal), "language/"); separator=",") AS ?talen)
+WHERE {
+  ?basis cdm:resource_legal_id_celex "32025R0327"^^<http://www.w3.org/2001/XMLSchema#string> .
+  ?corrigendum cdm:resource_legal_corrects_resource_legal ?basis .
+  ?corrigendum cdm:resource_legal_id_celex ?celex .
+  OPTIONAL { ?corrigendum cdm:work_date_document ?datum }
+  ?expressie cdm:expression_belongs_to_work ?corrigendum .
+  ?expressie cdm:expression_uses_language ?taal .
+}
+GROUP BY ?corrigendum ?celex ?datum
+ORDER BY ?celex
