@@ -36,10 +36,13 @@ function page(law, charts) {
     .map(
       (c) => `
   <section>
-    <h2>Artikel ${esc(c.article)}</h2>
+    <header>
+      <h2>Artikel ${esc(c.article)}</h2>
+      <button type="button" aria-expanded="false" aria-controls="tekst-${esc(c.article)}">Toon wettekst</button>
+    </header>
     <div class="row">
-      <pre class="mermaid">${esc(c.mermaid)}</pre>
-      <aside>
+      <div class="chart"><pre class="mermaid">${esc(c.mermaid)}</pre></div>
+      <aside id="tekst-${esc(c.article)}" hidden>
         <h3>Wettekst</h3>
         ${c.text.split(/\n\s*\n/).map((p) => `<p>${esc(p.trim())}</p>`).join('\n        ')}
         ${c.url ? `<p><a href="${esc(c.url)}">wetten.overheid.nl</a></p>` : ''}
@@ -61,11 +64,21 @@ function page(law, charts) {
   h1 { font-size: 1.6rem; margin: 0 0 4px; }
   .lead { color: var(--muted); margin: 0 0 24px; }
   section { border-top: 1px solid var(--line); padding: 16px 0 24px; }
-  .row { display: grid; grid-template-columns: minmax(0, 3fr) minmax(280px, 1fr); gap: 24px; align-items: start; }
-  .mermaid { margin: 0; overflow-x: auto; background: none; }
-  aside { font-size: 0.9rem; color: var(--muted); }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  h2 { margin: 0 0 12px; }
+  button { font: inherit; padding: 6px 14px; border: 1px solid #154273; border-radius: 4px; background: #fff; color: #154273; cursor: pointer; }
+  button[aria-expanded="true"] { background: #154273; color: #fff; }
+  /* The chart scrolls inside its own box, so a wide chart never runs under the text. */
+  .row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+  .row.with-text { grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); }
+  .chart { min-width: 0; overflow: auto; border: 1px solid var(--line); border-radius: 4px; padding: 12px; }
+  .mermaid { margin: 0 auto; background: none; width: max-content; }
+  aside { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow: auto; font-size: 0.9rem; color: var(--muted); background: #fafbfc; border: 1px solid var(--line); border-radius: 4px; padding: 12px 16px; }
   aside h3 { font-size: 0.95rem; color: var(--ink); margin: 0 0 8px; }
-  @media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) {
+    .row.with-text { grid-template-columns: minmax(0, 1fr); }
+    .row.with-text aside { order: -1; position: static; max-height: none; }
+  }
 </style>
 </head>
 <body>
@@ -76,7 +89,25 @@ ${sections}
 </main>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true, theme: 'base', flowchart: { htmlLabels: true, useMaxWidth: false, wrappingWidth: 260, curve: 'basis' } });
+  for (const button of document.querySelectorAll('section header button')) {
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') !== 'true';
+      const aside = document.getElementById(button.getAttribute('aria-controls'));
+      button.setAttribute('aria-expanded', String(open));
+      button.textContent = open ? 'Verberg wettekst' : 'Toon wettekst';
+      aside.hidden = !open;
+      aside.parentElement.classList.toggle('with-text', open);
+      centre(aside.parentElement.querySelector('.chart'));
+    });
+  }
+  // A chart wider than its box opens on its middle, where the start node is.
+  function centre(chart) {
+    chart.scrollLeft = (chart.scrollWidth - chart.clientWidth) / 2;
+  }
+  mermaid.initialize({ startOnLoad: false, theme: 'base', flowchart: { htmlLabels: true, useMaxWidth: false, wrappingWidth: 260, curve: 'basis' } });
+  await mermaid.run();
+  document.querySelectorAll('.chart').forEach(centre);
+  document.body.dataset.rendered = 'true';
 </script>
 </body>
 </html>
